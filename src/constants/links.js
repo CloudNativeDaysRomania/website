@@ -95,7 +95,7 @@ export default {
     target: '_blank',
   },
   sponsorProspectus: {
-    to: 'bit.ly/4g240dc',
+    to: 'https://bit.ly/4g240dc',
     target: '_blank',
   },
 };
