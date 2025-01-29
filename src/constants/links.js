@@ -36,7 +36,7 @@ export default {
     target: '_blank',
   },
   tickets: {
-    to: null,
+    to: 'https://oveit.com/hub/event/cloud-native-days-romania-2025-6zqQm0zl/buy-tickets?language=en',
     target: '_blank',
   },
   cfp: {
