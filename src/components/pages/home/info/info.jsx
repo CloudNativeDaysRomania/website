@@ -29,27 +29,49 @@ const Venue = () => (
         events that gather adopters and technologists from open source and cloud native communities.
       </p>
       <p className="mt-7">
-        This is our second event in <span className="font-bold">Romania</span>, and
-        we’re excited to bring the community together. We want to provide a platform for
-        professionals and experts from all levels and backgrounds to learn, network, and share their
-        knowledge on all things cloud native.
+        This is our second event in <span className="font-bold">Romania</span>, and we’re excited to
+        bring the community together. We want to provide a platform for professionals and experts
+        from all levels and backgrounds to learn, network, and share their knowledge on all things
+        cloud native.
       </p>
       <p className="mb-0 mt-7">
         <span className="font-bold">Date:</span> 5-6 May 2025
       </p>
+      <p className="mt-0">
+        <span className="font-bold">Events schedule:</span>
+      </p>
+      <p className="ml-0 mt-0">
+        5th May: <span className="font-bold">Workshops</span> Day
+      </p>
+      <li className="ml-8 mt-0" key={1}>
+        Participate in up to 2 Cloud Native-related workshops.
+      </li>
+      <li className="ml-8 mt-0" key={2}>
+        Requires the Workshops Addon. Not available with only the Conference ticket.
+      </li>
+      <p className="ml-0 mt-0">
+        6th May: <span className="font-bold">Conference</span> Day
+      </p>
+      <li className="ml-8 mt-0" key={1}>
+        Full-day talks, panels, and networking.
+      </li>
+      <li className="ml-8 mt-0" key={2}>
+        Available with the Conference ticket.
+      </li>
+
       <p className="mt-0">
         <span className="font-bold">Location:</span>{' '}
         <Link {...LINKS.googlemaps}>
           <u>Radison Blu</u>
         </Link>
       </p>
-      <p className="mt-0">
+      <p className="ml-8 mt-0">
         Parking info:
         <Link {...LINKS.parkingInfo}>
           <u> Parking Bucharest</u>
         </Link>
       </p>
-      <p className="mt-0">
+      <p className="ml-8 mt-0">
         Metro info: Piata Romana (Roman Square) and follow the Google Maps route.
       </p>
       <br />
@@ -63,6 +85,10 @@ const Venue = () => (
         <p className="mt-7">
           <span className="font-bold">Technically competent talks</span>, relevant to the larger
           community and coming from end-user.
+        </p>
+        <p className="mt-7">
+          <span className="font-bold">Hands-on workshops</span> offering deep dives with practical,
+          real-world applications.
         </p>
         <p className="mt-7">
           <span className="font-bold">Leading experts </span>from Open Source, DevOps and Cloud
