@@ -4,13 +4,16 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
+import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
 import AndreiPietricicaPhoto from './images/andrei-pietricica-photo.png';
 import BettyHalaszPhoto from './images/betty-halasz-photo.jpg';
 import BogdanLucaciuPhoto from './images/bogdan-lucaciu-photo.png';
 import CatalinJoraPhoto from './images/catalin-jora-photo.png';
 import DorianaSimandanPhoto from './images/doriana-simandan-photo.png';
 import ElifSamedinPhoto from './images/elif-samedin-photo.png';
+import GeorgeTudureanPhoto from './images/george-tudurean-photo.jpg';
 import IonMeitoiuPhoto from './images/ion-meitoiu-photo.png';
+import RaduZamfirPhoto from './images/radu-zamfir-photo.jpg';
 import RominaDrutaPhoto from './images/romina-druta-photo.png';
 import VictorVarzaPhoto from './images/victor-varza-photo.png';
 import VladFratilaPhoto from './images/vlad-fratila-photo.png';
@@ -82,6 +85,24 @@ const ORGANIZERS = [
     position: 'Junior Content Creator at Visma',
     photo: BettyHalaszPhoto,
     url: 'https://www.linkedin.com/in/betty-halasz-44806a208/',
+  },
+  {
+    name: 'Andrei Cioc',
+    position: 'Software Engineer at dvloper.io',
+    photo: AndreiCiocPhoto,
+    url: 'https://www.linkedin.com/in/alex-andrei-cioc-31933b22b/',
+  },
+  {
+    name: 'Radu Zamfir',
+    position: 'DevOps Consultant',
+    photo: RaduZamfirPhoto,
+    url: 'https://www.linkedin.com/in/zsradu/',
+  },
+  {
+    name: 'George Tudurean',
+    position: 'Software Engineer at dvloper.io',
+    photo: GeorgeTudureanPhoto,
+    url: 'https://www.linkedin.com/in/george-alexandru-t-17772113a/',
   },
 ];
 
