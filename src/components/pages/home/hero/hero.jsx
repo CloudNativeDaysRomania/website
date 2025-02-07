@@ -45,17 +45,17 @@ const Hero = () => (
             className="mt-7 text-white shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
             theme="blue"
             size="lg"
-            {...LINKS.sponsorProspectus}
+            {...LINKS.tickets}
           >
-            Sponsor prospectus
+            Get your tickets now
           </Button>
           <Button
             className="ml-3 mt-7 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
             theme="primary"
             size="lg"
-            {...LINKS.cfp}
+            {...LINKS.sponsorProspectus}
           >
-            Call For Proposals (CFP)
+            Sponsor prospectus
           </Button>
         </div>
         {/* <div style={{ marginTop: '3vh' }}>

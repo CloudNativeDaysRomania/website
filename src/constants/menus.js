@@ -18,7 +18,7 @@ const MENUS = {
     // { text: 'Speakers', ...LINKS.speakers },
     // { text: 'Schedule', ...LINKS.schedule },
     // { text: 'Sponsors', ...LINKS.sponsors },
-    { text: 'Get your tickets now', ...LINKS.tickets },
+    // { text: 'Get your tickets now', ...LINKS.tickets },
     { text: 'Team', ...LINKS.team },
     { text: 'Archive 2024', ...LINKS.archive2024 },
   ],

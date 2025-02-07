@@ -59,19 +59,6 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName }) => {
 
         <nav>
           <ul className="-ml-8 flex space-x-8 text-white lg:ml-0 lg:space-x-6 md:hidden">
-            <li className="text-[15px] font-semibold text-primary-1">
-              <a
-                className="transition-[colors, opacity] border-nonemd:hidden group relative inline-flex h-14 w-60 items-center justify-center overflow-hidden whitespace-nowrap rounded bg-none px-8 py-[18px] text-center text-lg font-bold !leading-none text-primary-1 outline-none duration-200 hover:bg-primary-1 hover:bg-opacity-10"
-                href="https://oveit.com/hub/event/cloud-native-days-romania-2025-6zqQm0zl/buy-tickets?language=en"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span className="absolute h-full w-full bg-gradient-to-br from-[#3333ff] via-[#3333ff] to-[#3333ff] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05]" />
-                <span className="bg-gray-900 duration-400 relative rounded-md px-6 py-3 transition-all ease-out group-hover:bg-opacity-0">
-                  <span className="relative font-bold text-white">Get your tickets now</span>
-                </span>
-              </a>
-            </li>
             {MENUS.header.map(({ text, to, homeTo }, index) => (
               <li
                 className="inline-flex items-center justify-center text-[15px] font-semibold text-primary-1"
