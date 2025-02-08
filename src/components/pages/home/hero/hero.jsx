@@ -50,7 +50,7 @@ const Hero = () => (
             Get your tickets now
           </Button>
           <Button
-            className="ml-3 mt-7 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
+            className="mt-7 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
             theme="primary"
             size="lg"
             {...LINKS.sponsorProspectus}
