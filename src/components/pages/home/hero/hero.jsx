@@ -40,7 +40,7 @@ const Hero = () => (
         <p className="mt-5 max-w-[500px] text-lg leading-normal text-primary-1 lg:max-w-[500px]">
           {DESCRIPTION}
         </p>
-        <div className="relative md:flex md:flex-col md:items-center md:text-center">
+        <div className="relative flex flex-row space-x-4 md:flex-col md:items-center md:space-x-0 md:text-center">
           <Button
             className="mt-7 text-white shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
             theme="blue"
