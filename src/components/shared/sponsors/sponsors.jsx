@@ -5,14 +5,14 @@ import React from 'react';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links';
 import AdoreMe from 'icons/sponsors-2025/adoreme-logo.png';
-import CloudHero from 'icons/sponsors-2025/cloudhero-logo.svg';
+import CloudHero from 'icons/sponsors-2025/cloudhero-logo.png';
 import ControlPlane from 'icons/sponsors-2025/controlplane-logo.png';
 import CTSTradeIt from 'icons/sponsors-2025/ctstradeit-logo.png';
 import Metaminds from 'icons/sponsors-2025/metaminds-logo.png';
 import Oveit from 'icons/sponsors-2025/oveit-logo.png';
-import Stripe from 'icons/sponsors-2025/stripe-logo.svg';
+import Stripe from 'icons/sponsors-2025/stripe-logo.png';
 import Systematic from 'icons/sponsors-2025/systematic-logo.png';
-import Zitec from 'icons/sponsors-2025/zitec-logo.svg';
+import Zitec from 'icons/sponsors-2025/zitec-logo.png';
 
 const TITLE = 'Sponsors';
 
