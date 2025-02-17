@@ -8,14 +8,14 @@ import Partners from 'components/pages/home/partners';
 // import Supported from 'components/pages/home/supported';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
-// import Sponsors from 'components/shared/sponsors';
+import Sponsors from 'components/shared/sponsors';
 
 const HomePage = () => (
   <Layout homepage>
     <Hero />
     <Info />
     {/* <Speakers /> */}
-    {/* <Sponsors /> */}
+    <Sponsors />
     <Partners />
     {/* <Supported /> */}
   </Layout>

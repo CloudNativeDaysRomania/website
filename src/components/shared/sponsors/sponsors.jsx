@@ -4,18 +4,15 @@ import React from 'react';
 // import Button from 'components/shared/button';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links';
-// import Adobe from 'icons/adobe-logo.png';
-// import AdoreMe from 'icons/adoreme-logo.png';
-// import CloudHero from 'icons/cloudhero-logo.png';
-// import Dynatrace from 'icons/dynatrace-logo.png';
-// import EvolveMedia from 'icons/evolvemedia.png';
-// import FikaWorks from 'icons/fikaworks-logo.png';
-// import GoogleCloud from 'icons/google-cloud.svg';
-// import IngHubs from 'icons/inghubs.png';
-// import Kluger from 'icons/kluger-logo.png';
-// import Stripe from 'icons/stripe-logo.png';
-// import Systematic from 'icons/systematic-logo.png';
-// import VictoriaSecrets from 'icons/victoriasecrets-logo.png';
+import AdoreMe from 'icons/sponsors-2025/adoreme-logo.png';
+import CloudHero from 'icons/sponsors-2025/cloudhero-logo.svg';
+import ControlPlane from 'icons/sponsors-2025/controlplane-logo.png';
+import CTSTradeIt from 'icons/sponsors-2025/ctstradeit-logo.png';
+import Metaminds from 'icons/sponsors-2025/metaminds-logo.png';
+import Oveit from 'icons/sponsors-2025/oveit-logo.png';
+import Stripe from 'icons/sponsors-2025/stripe-logo.svg';
+import Systematic from 'icons/sponsors-2025/systematic-logo.png';
+import Zitec from 'icons/sponsors-2025/zitec-logo.svg';
 
 const TITLE = 'Sponsors';
 
@@ -24,20 +21,27 @@ const TITLE = 'Sponsors';
 const ITEMS = [
   {
     title: 'Diamond',
-    logos: [
-      // { icon: GoogleCloud, url: 'https://www.google.com/' }
-    ],
+    logos: [{ icon: Stripe, url: 'https://stripe.com/' }],
     cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
     iconClassname: 'max-w-[390px] sm:max-w-[350px]',
   },
+  // {
+  //   title: 'Platinum',
+  //   logos: [
+  //     // { icon: PureStorage, url: 'https://www.google.com/' }
+  //     // { icon: Orange, url: 'https://www.google.com/' }
+  //   ],
+  //   cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
+  //   iconClassname: 'max-w-[390px] sm:max-w-[350px]',
+  // },
   {
     title: 'Gold',
     logos: [
-      // { icon: Adobe, url: 'https://www.adobe.com/' },
-      // { icon: IngHubs, url: 'https://inghubsromania.com/' },
-      // { icon: CloudHero, url: 'https://cloudhero.io/' },
-      // { icon: AdoreMe, url: 'https://www.adoreme.com/' },
-      // { icon: Stripe, url: 'https://stripe.com' },
+      {
+        icon: AdoreMe,
+        url: 'https://www.linkedin.com/company/27228337/admin/page-posts/published/',
+      },
+      { icon: Metaminds, url: 'https://www.linkedin.com/company/metaminds-romania/' },
     ],
     cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
     iconClassname: 'max-w-[390px] sm:max-w-[350px]',
@@ -45,8 +49,8 @@ const ITEMS = [
   {
     title: 'Silver',
     logos: [
-      // { icon: Dynatrace, url: 'https://www.dynatrace.com/' },
-      // { icon: Systematic, url: 'https://systematic.com/' },
+      { icon: Systematic, url: 'https://www.linkedin.com/company/systematic/' },
+      { icon: Zitec, url: 'https://www.linkedin.com/company/lifeatzitec/' },
     ],
     cardClassname: 'min-w-[384px] min-h-[122px] sm:min-w-[320px] sm:min-h-[115px]',
     iconClassname: 'max-w-[330px] sm:min-w-[290px]',
@@ -54,11 +58,19 @@ const ITEMS = [
   {
     title: 'Bronze',
     logos: [
-      // { icon: Kluger, url: 'https://www.kluger.ro/' },
-      // { icon: VictoriaSecrets, url: 'https://www.victoriassecret.com/' },
-      // { icon: FikaWorks, url: 'https://fika.works/' },
-      // { icon: EvolveMedia, url: 'https://evolvemedia.co/' },
+      { icon: CTSTradeIt, url: 'https://cz.linkedin.com/company/cts-trade-it' },
+      { icon: Oveit, url: 'https://www.linkedin.com/company/oveit/' },
+      {
+        icon: ControlPlane,
+        url: 'https://www.linkedin.com/company/controlplane/?viewAsMember=true',
+      },
     ],
+    cardClassname: 'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:min-h-[94px]',
+    iconClassname: 'max-w-[330px] sm:min-w-[290px]',
+  },
+  {
+    title: 'Coffee Sponsor',
+    logos: [{ icon: CloudHero, url: 'https://www.linkedin.com/company/cloud-hero' }],
     cardClassname: 'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:min-h-[94px]',
     iconClassname: 'max-w-[330px] sm:min-w-[290px]',
   },
