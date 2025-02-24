@@ -27,7 +27,10 @@ const ITEMS = [
   // { icon: CloudNativeTimisoara, url: '' }, // No logo
   { icon: KubeCareers, url: 'https://kube.careers/' }, // Learnk8s
   { icon: KubeEvents, url: 'https://kube.events/' }, // Learnk8s
-  { icon: ROSEdu, url: 'https://www.linkedin.com/company/rosedu/' },
+  {
+    icon: ROSEdu,
+    url: 'https://www.rosedu.org/?fbclid=IwY2xjawH8dDpleHRuA2FlbQIxMAABHXiQW_eipMYbkZFFQAzDZQq96Q0dlKttutoMxlaV7jjpYPv9zQg1oEbCmg_aem_805t1vkqzYnrQOHRKH03rQ',
+  },
   // { icon: StagiiPeBune, url: '' }, // No logo
   // { icon: AwsTransylvaniaCloud, url: '' }, // No logo
   { icon: AsociatiaBEST, url: 'https://bestbucharest.ro/' },
