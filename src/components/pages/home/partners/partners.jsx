@@ -2,16 +2,35 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
+import AwsCommunityDayRomania from './images/AwsCommunityDayRomania_reworked.png';
+import AwsUserGroupTimisoara from './images/AwsUserGroupTimisoara.png';
+import AsociatiaBEST from './images/BEST_Bucharest.png';
+import BucharestDevOpsHackersMeetup from './images/BucharestDevOpsHackersMeetup.png';
 import KubeCareers from './images/kube-careers.png';
-import KubeEvents from './images/kubevents.svg';
-import TheBucharestHackaton from './images/the-bucharest-hackaton.png';
+import KubeEvents from './images/kubevents.png';
+import ROSEdu from './images/ROSEdu.png';
 
 const TITLE = 'Community & Media Partners';
 
 const ITEMS = [
-  { icon: KubeCareers, url: 'https://kube.careers/' },
-  { icon: KubeEvents, url: 'https://kube.events/' },
-  { icon: TheBucharestHackaton, url: 'https://thebucharesthackathon.com/' },
+  {
+    icon: AwsUserGroupTimisoara,
+    url: 'https://www.linkedin.com/company/aws-user-group-timisoara/',
+  },
+  {
+    icon: AwsCommunityDayRomania,
+    url: 'https://www.linkedin.com/company/aws-community-day-romania/',
+  },
+  { icon: BucharestDevOpsHackersMeetup, url: 'https://www.meetup.com/devops_hackers/' },
+  // { icon: CloudNativeBucharest, url: '' }, // No logo
+  // { icon: CloudNativeCluj, url: '' }, // No logo
+  // { icon: CloudNativeTimisoara, url: '' }, // No logo
+  { icon: KubeCareers, url: 'https://kube.careers/' }, // Learnk8s
+  { icon: KubeEvents, url: 'https://kube.events/' }, // Learnk8s
+  { icon: ROSEdu, url: 'https://www.linkedin.com/company/rosedu/' },
+  // { icon: StagiiPeBune, url: '' }, // No logo
+  // { icon: AwsTransylvaniaCloud, url: '' }, // No logo
+  { icon: AsociatiaBEST, url: 'https://bestbucharest.ro/' },
 ];
 
 const Partners = () => (
