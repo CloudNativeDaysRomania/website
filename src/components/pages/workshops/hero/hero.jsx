@@ -3,7 +3,7 @@ import React from 'react';
 // import Button from 'components/shared/button';
 // import LINKS from 'constants/links.js';
 
-const TITLE = 'Schedule for <time class="text-blue-1 xs:block">6 May, 2025</time>';
+const TITLE = 'Schedule for <time class="text-blue-1 xs:block">5 May, 2025</time>';
 // const DESCRIPTION =
 //   'We hope you had a great time attending this event. Please fill in the survey and have a look at the photos using the links below.';
 
