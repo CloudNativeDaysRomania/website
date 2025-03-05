@@ -1,8 +1,13 @@
 export default {
   schedule: {
-    title: 'Cloud Native Days Romania - Event Schedule for April 25, 2024',
+    title: 'Cloud Native Days Romania - Event Schedule for May 6, 2025',
     description:
-      'Explore the detailed agenda for Cloud Native Days in Romania on April 25, 2024. Listen to expert talks, and connect with Kubernetes professionals. Plan your day now!',
+      'Explore the detailed agenda for Cloud Native Days in Romania on May 6, 2025. Listen to expert talks, and connect with Kubernetes professionals. Plan your day now!',
+  },
+  workshops: {
+    title: 'Cloud Native Days Romania - Workshops Schedule for May 5, 2025',
+    description:
+      'Discover the hands-on workshops at Cloud Native Days in Romania on May 5, 2025. Learn from industry experts, gain practical Kubernetes skills, and deepen your cloud-native knowledge. Secure your spot today!',
   },
   team: {
     title: 'Team — Cloud Native Days',
