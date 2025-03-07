@@ -34,7 +34,7 @@ const ORGANIZERS = [
   },
   {
     name: 'Romina Druta',
-    position: 'Senior Infrastructure Engineer at Visma',
+    position: 'Cloud and Security Research Engineer',
     photo: RominaDrutaPhoto,
     url: 'https://www.linkedin.com/in/romina201/',
   },
