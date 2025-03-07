@@ -322,7 +322,7 @@ const Workshops = ({ location }) => {
   }, [location]);
 
   return (
-    <section className="safe-paddings pb-48 pt-9 lg:px-8 lg:pb-44 md:px-5 md:pb-40 sm:pb-24 sm:pt-10 xs:px-0">
+    <section className="safe-paddings pb-20 pt-9 lg:px-8 md:px-5 sm:pt-10 xs:px-0">
       <ul className="mx-auto w-[1600px] max-w-full rounded-[10px] border border-primary-2 shadow-lg">
         {ITEMS.map(
           (

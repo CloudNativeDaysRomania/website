@@ -8,7 +8,7 @@ import illustration from './images/romania.svg';
 const TITLE = 'Cloud Native Days Romania';
 
 const DESCRIPTION =
-  'The Kubernetes & Cloud Native community will gather at the Radison Blu in Bucharest, Romania. Join us for one day technical event loaded with exciting talks and networking opportunities. Cloud Native Days Romania is aimed at developers, platform people, and other IT professionals with an interest in cloud native technologies.';
+  'The Kubernetes & Cloud Native community will gather at the Radisson Blu in Bucharest, Romania. Join us for one day technical event loaded with exciting talks and networking opportunities. Cloud Native Days Romania is aimed at developers, platform people, and other IT professionals with an interest in cloud native technologies.';
 const Hero = () => (
   /*
     const cloudsBack = {
