@@ -62,7 +62,7 @@ const Venue = () => (
       <p className="mt-0">
         <span className="font-bold">Location:</span>{' '}
         <Link {...LINKS.googlemaps}>
-          <u>Radison Blu</u>
+          <u>Radisson Blu</u>
         </Link>
       </p>
       <p className="ml-8 mt-0">
