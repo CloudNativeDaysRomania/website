@@ -10,6 +10,7 @@ import ControlPlane from 'icons/sponsors-2025/controlplane-logo.png';
 import CTSTradeIt from 'icons/sponsors-2025/ctstradeit-logo.png';
 import Metaminds from 'icons/sponsors-2025/metaminds-logo.png';
 import Oveit from 'icons/sponsors-2025/oveit-logo.png';
+import PureStorage from 'icons/sponsors-2025/purestorage-portworx-logo.png';
 import Stripe from 'icons/sponsors-2025/stripe-logo.png';
 import Systematic from 'icons/sponsors-2025/systematic-logo.png';
 import Zitec from 'icons/sponsors-2025/zitec-logo.png';
@@ -25,15 +26,15 @@ const ITEMS = [
     cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
     iconClassname: 'max-w-[390px] sm:max-w-[350px]',
   },
-  // {
-  //   title: 'Platinum',
-  //   logos: [
-  //     // { icon: PureStorage, url: 'https://www.google.com/' }
-  //     // { icon: Orange, url: 'https://www.google.com/' }
-  //   ],
-  //   cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
-  //   iconClassname: 'max-w-[390px] sm:max-w-[350px]',
-  // },
+  {
+    title: 'Platinum',
+    logos: [
+      { icon: PureStorage, url: 'https://www.linkedin.com/company/6578150/admin/dashboard/' },
+      // { icon: Orange, url: 'https://www.google.com/' }
+    ],
+    cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
+    iconClassname: 'max-w-[390px] sm:max-w-[350px]',
+  },
   {
     title: 'Gold',
     logos: [

@@ -44,10 +44,11 @@ const Venue = () => (
         5th May: <span className="font-bold">Workshops</span> Day
       </p>
       <li className="ml-8 mt-0" key={1}>
-        Participate in up to 2 Cloud Native-related workshops.
+        Participate in multiple Cloud Native-related workshops throughout the day.
       </li>
       <li className="ml-8 mt-0" key={2}>
-        Requires the Workshops Addon. Not available with only the Conference ticket.
+        Requires the Workshops Addon acquired with the Conference ticket. The Workshop ticket cannot
+        be bought individually, separate from the Conference ticket.
       </li>
       <p className="ml-0 mt-0">
         6th May: <span className="font-bold">Conference</span> Day
