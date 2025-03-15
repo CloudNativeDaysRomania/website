@@ -7,11 +7,11 @@ import Modal from 'components/shared/modal';
 
 import AbdelSghiouarPhoto from './images/abdel-sghiouar.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu.jpg';
+import ClaudiuSonelPhoto from './images/claudiu-sonel.jpg';
 import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
 import MarkSagiKazarPhoto from './images/mark-sagi-kazar.jpg';
 import PatrickDeKruijfPhoto from './images/patrick-de-kruijf.jpg';
 import RaduDobrinescuPhoto from './images/radu-dobrinescu.png';
-import RaduVunvuleaPhoto from './images/radu-vunvulea.jpg';
 import RazvanValceanuPhoto from './images/razvan-valceanu.jpg';
 import StefanProdanPhoto from './images/stefan-prodan.jpeg';
 import ViorelAnghelPhoto from './images/viorel-anghel.jpg';
@@ -261,18 +261,44 @@ const ITEMS = [
     thirdTrack: {
       id: '033',
       time: '14:00',
-      title: 'FinOps in Practice',
-      duration: '120 min',
+      title: 'Amazon EKS Autoscaling',
+      duration: '90 min',
       speakers: [
         {
           id: '10',
-          name: 'Radu Vunvulea',
+          name: 'Claudiu Sonel',
           company: 'Endava',
-          photo: RaduVunvuleaPhoto,
+          photo: ClaudiuSonelPhoto,
         },
       ],
       presentation:
-        'Inform, Optimize, and Operate are the pillars of FinOps. In this session, we tackle the challenges associated with each phase, covering real-life examples, approaches, tools, and the benefits of FinOps practice. We learn together how to manage better and control cloud spending while maximising the business value.',
+        'Efficient resource management is vital for businesses scaling their applications in Amazon EKS. This makes autoscaling a crucial aspect of managing workloads in Amazon Elastic Kubernetes Service (EKS), ensuring optimal resource utilization and performance while keeping costs under control.' +
+        '<br/><br/>' +
+        "In this hands-on workshop, you'll dive into the world of autoscaling in Amazon Elastic Kubernetes Service (EKS) using a variety of powerful tools and techniques. We'll start by exploring the fundamentals of autoscaling in Kubernetes and how it integrates with Amazon EKS. You'll learn how to use Cluster Autoscaler and Horizontal Pod Autoscaler to dynamically scale your clusters and workloads based on demand." +
+        '<br/><br/>' +
+        "We'll then introduce Karpenter, an open-source, high-performance Kubernetes cluster autoscaler that simplifies the scaling process with advanced features like node provisioning and efficient resource utilization. A key part of the session will include a detailed comparison between Cluster Autoscaler (CA) and Karpenter, focusing on their differences, use cases, and benefits, helping you choose the best autoscaling tool for your environment." +
+        '<br/><br/>' +
+        "Additionally, you’ll gain hands-on experience with practical tools such as Terraform for automating infrastructure setup and kubectl commands to manage Kubernetes resources efficiently. By the end of this workshop, you'll be equipped with the knowledge and skills to implement autoscaling strategies in your EKS environment, optimizing both performance and cost." +
+        '<br/><br/>' +
+        "What You'll Learn:" +
+        '<br/>' +
+        ' - Setting up and configuring Cluster Autoscaler and Horizontal Pod Autoscaler in Amazon EKS.' +
+        '<br/>' +
+        ' - Introduction to Karpenter and how it compares to Cluster Autoscaler.' +
+        '<br/>' +
+        ' - Automating infrastructure provisioning with Terraform.' +
+        '<br/>' +
+        ' - Managing autoscaling with kubectl commands for EKS.' +
+        '<br/>' +
+        ' - Best practices for autoscaling Kubernetes workloads in production environments.' +
+        '<br/><br/>' +
+        'Prerequisites:' +
+        '<br/>' +
+        ' - Basic familiarity with Kubernetes concepts and Amazon EKS.' +
+        '<br/>' +
+        ' - Experience with command-line tools like kubectl and Terraform is helpful but not required.' +
+        '<br/><br/>' +
+        "This workshop is ideal for DevOps engineers, Kubernetes enthusiasts, and anyone looking to optimize resource management in Amazon EKS through autoscaling. Whether you're looking to fine-tune your existing autoscaling setup or explore new ways to optimize resource usage in Amazon EKS, this workshop will equip you with the tools and knowledge to scale your infrastructure effectively.",
     },
   },
   {
