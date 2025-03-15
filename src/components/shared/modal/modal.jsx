@@ -341,13 +341,23 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                     <span className="relative ml-8 rounded-full bg-yellow px-2 py-1.5 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3">
                       {duration}
                     </span>
-                    <Link
-                      className="mt-3 block text-left text-lg font-semibold leading-normal text-primary-1 transition-colors duration-200 hover:text-blue-1"
-                      to="/schedule"
-                      // state={{ modalId: id, isCoincidedEvent }}
-                    >
-                      {title}
-                    </Link>
+                    {title.includes('Workshop') ? (
+                      <Link
+                        className="mt-3 block text-left text-lg font-semibold leading-normal text-primary-1 transition-colors duration-200 hover:text-blue-1"
+                        to="/workshops"
+                        // state={{ modalId: id, isCoincidedEvent }}
+                      >
+                        {title}
+                      </Link>
+                    ) : (
+                      <Link
+                        className="mt-3 block text-left text-lg font-semibold leading-normal text-primary-1 transition-colors duration-200 hover:text-blue-1"
+                        to="/schedule"
+                        // state={{ modalId: id, isCoincidedEvent }}
+                      >
+                        {title}
+                      </Link>
+                    )}
                   </div>
                 </div>
               </>
