@@ -7,6 +7,7 @@ const MENUS = {
     { text: 'Workshops', ...LINKS.workshops },
     { text: 'Sponsors', ...LINKS.sponsors },
     { text: 'Team', ...LINKS.team },
+    { text: 'Code of Conduct', ...LINKS.conduct },
     { text: 'Archive 2024', ...LINKS.archive2024 },
   ],
   footer: [
@@ -22,6 +23,7 @@ const MENUS = {
     { text: 'Sponsors', ...LINKS.sponsors },
     // { text: 'Get your tickets now', ...LINKS.tickets },
     { text: 'Team', ...LINKS.team },
+    { text: 'Code of Conduct', ...LINKS.conduct },
     { text: 'Archive 2024', ...LINKS.archive2024 },
   ],
 };

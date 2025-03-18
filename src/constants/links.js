@@ -57,9 +57,13 @@ export default {
     target: '_blank',
   },
   conduct: {
-    to: 'https://events.linuxfoundation.org/about/code-of-conduct/',
-    target: '_blank',
+    to: '/conduct',
+    homeTo: '/conduct',
   },
+  // conduct: {
+  //   to: 'https://events.linuxfoundation.org/about/code-of-conduct/',
+  //   target: '_blank',
+  // },
   podcast: {
     to: '/podcast',
     homeTo: '/podcast',
@@ -102,5 +106,8 @@ export default {
   sponsorProspectus: {
     to: 'https://bit.ly/4g240dc',
     target: '_blank',
+  },
+  emailVladFratila: {
+    to: 'mailto:vlad.fratila@gmail.com',
   },
 };
