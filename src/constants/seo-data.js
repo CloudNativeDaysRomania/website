@@ -18,6 +18,11 @@ export default {
     description:
       'Relive the exciting moments from Cloud Native Days Romania 2024. Explore our collection of talk videos and event pictures that capture the best of this event.',
   },
+  conduct: {
+    title: 'Cloud Native Days Romania 2024 - Code of Conduct',
+    description:
+      'Cloud Native Days Romania is dedicated to providing a harassment-free conference experience for everyone. Learn more about our code of conduct.',
+  },
   podcast: {
     title: 'Meet the Speakers of Kubernetes Community Day Romania 2024 Podcast',
     description:
