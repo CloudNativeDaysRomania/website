@@ -76,7 +76,7 @@ const ITEMS = [
         photo: AndraSomesanPhoto,
       },
     ],
-    presentation: ``,
+    presentation: `Andra Somesan, Solutions Architect at Amazon Web Services (AWS), brings her expertise in innovation and problem-solving in her talk, "Unlocking Innovation: Start Thinking Like a Scientist." Andra will explore how curiosity and collaboration drive groundbreaking solutions.`,
   },
   {
     id: '02',
@@ -92,7 +92,7 @@ const ITEMS = [
         photo: GeorgeHaberPhoto,
       },
     ],
-    presentation: ``,
+    presentation: `With a distinguished career in AI, tech innovation, and entrepreneurship, George will dive into the future of technology and business in his keynote.`,
   },
   {
     time: '10:45',
