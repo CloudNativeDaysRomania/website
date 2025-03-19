@@ -7,11 +7,11 @@ export default {
   home: {
     to: '/',
   },
-  // schedule: {
-  //   to: '/schedule',
-  //   id: getAnchor('Schedule'),
-  //   homeTo: '/schedule',
-  // },
+  schedule: {
+    to: '/schedule',
+    id: getAnchor('Schedule'),
+    homeTo: '/schedule',
+  },
   workshops: {
     to: '/workshops',
     id: getAnchor('Workshops'),

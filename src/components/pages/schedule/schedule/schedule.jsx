@@ -9,291 +9,254 @@ import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
 import AlexRaiuPhoto from './images/alex-raiu-photo.jpg';
+import AlexandrosCharosPhoto from './images/alexandros-charos-photo.jpg';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
 import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
-import AndreiPitisPhoto from './images/andrei-pitis-photo.jpg';
-import AndreiStefaniePhoto from './images/andrei-stefanie-photo.jpg';
 import AndreiaIrinaOcanoaiaPhoto from './images/andreia-irina-ocanoaia-photo.jpg';
+import CarlosMestrePhoto from './images/carlos-mestre-del-pino-photo.jpg';
 import CarmenBobeiPhoto from './images/carmen-bobei-photo.jpg';
 import ClaudiuHobjilaPhoto from './images/claudiu-hobjila-photo.jpg';
+import DianaTodeaPhoto from './images/diana-todea-photo.jpg';
 import FlorinLoghiadePhoto from './images/florin-loghiade-photo.jpg';
 import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
-import GeorgeHantzarasPhoto from './images/george-hantzaras-photo.jpeg';
 import GeorgeTudureanPhoto from './images/george-tudurean-photo.jpg';
 import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
-import JosephSandovalPhoto from './images/joseph-sandoval-photo.jpg';
 import KatharinaSickPhoto from './images/katharina-sick-photo.jpg';
-import MarkSagiKazarPhoto from './images/mark-sagi-kazar-photo.jpg';
+import MariusIordachePhoto from './images/marius-iordache-photo.jpg';
 import MihaiGoguPhoto from './images/mihai-gogu-photo.png';
-import MihalceaMihaiAlexandruPhoto from './images/mihalcea-mihai-alexandru-photo.jpg';
-import OctavianPetrePhoto from './images/octavian-petre-photo.jpg';
 import OvidiuValeanuPhoto from './images/ovidiu-valeanu-photo.jpg';
+import RaduGheorghePhoto from './images/radu-gheorghe-photo.jpg';
 import RaduZamfirPhoto from './images/radu-zamfir-photo.jpg';
-import StefanProdanPhoto from './images/stefan-prodan-photo.jpeg';
+import RazvanDeaconescuPhoto from './images/razvan-deaconescu-photo.jpg';
 import TimothyMamoPhoto from './images/timothy-mamo-photo.jpg';
-import VincenzoScamporlinoPhoto from './images/vincenzo-scamporlino-photo.jpeg';
 import YujinKimPhoto from './images/yujin-kim-photo.jpg';
 
 // GenericSpeakerPhoto is default when no speaker picture is present
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
-    title: 'Atlas 1',
+    title: 'Room 1',
     isHeader: true,
     secondTrack: {
-      title: 'Atlas 2',
+      title: 'Room 2',
     },
     thirdTrack: {
-      title: 'Merope',
+      title: 'Room 3',
     },
   },
   {
-    time: '8:00',
-    title: 'Registration/Badge Pick Up/ Welcome Coffee',
-    duration: '75 min',
+    time: '8:30',
+    title: 'Welcome coffee',
+    duration: '60 min',
   },
   {
-    time: '9:15',
+    time: '9:30',
     title: 'Intro from the Organizers',
     duration: '15 min',
   },
   {
     id: '01',
-    time: '09:30',
-    title: 'Keynote: A Decade of Kubernetes: Community-Driven Evolution and the Path Forward',
+    time: '9:45',
+    title: 'Unlocking Innovation: Start Thinking Like a Scientist',
     duration: '30 min',
     isKeynote: true,
     speakers: [
       {
-        id: '2',
-        name: 'Joseph Sandoval',
-        company: 'Adobe',
-        photo: JosephSandovalPhoto,
+        id: '21',
+        name: 'Andra Somesan',
+        company: 'AWS',
+        photo: AndraSomesanPhoto,
       },
     ],
-    presentation:
-      "We celebrate the milestone of ten years of Kubernetes; this keynote explores the journey from its inception to becoming the backbone of cloud-native technology. We'll look back at its history and the pivotal factor behind Kubernetes' success: its vibrant, innovative community." +
-      '<br/><br/>' +
-      "This talk delves into how the collective passion, expertise, and collaborative spirit of the Kubernetes community have not only propelled the platform's advancements but also shaped the very future of cloud computing. Looking ahead, we'll discuss the crucial role the community will play in steering Kubernetes through the next decade of challenges and opportunities, ensuring its continued relevance and leadership in the tech landscape.",
+    presentation: ``,
   },
   {
     id: '02',
-    time: '10:05',
-    title: 'Keynote: From Open Source Contributor to Serial Entrepreneur',
+    time: '10:15',
+    title: ' AI or Not AI, That Is the Question',
     duration: '30 min',
     isKeynote: true,
     speakers: [
       {
-        id: '1',
-        name: 'Andrei Pitis',
-        company: 'Genezio',
-        photo: AndreiPitisPhoto,
+        id: '22',
+        name: 'George Haber',
+        company: 'Entrepreneur',
+        photo: GenericSpeakerPhoto,
       },
     ],
-    presentation:
-      'This talk highlights the importance of contributing to open-source projects and the impact of community engagement on both personal growth and the development of the tech industry.' +
-      '<br/><br/>' +
-      'Andrei will share his journey from co-founding RoEduNet, which provided free internet to students, to becoming a serial entrepreneur.',
+    presentation: ``,
   },
   {
-    time: '10:40',
-    title: 'Break',
-    duration: '20 min',
+    time: '10:45',
+    title: 'Break/Split Room',
+    duration: '15 min',
   },
   {
     id: '031',
     time: '11:00',
-    title: 'Revolutionise your Kubernetes game with cdk8s',
+    title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
     duration: '30 min',
+    isKeynote: false,
     speakers: [
       {
-        id: '5',
-        name: 'Andra Somesan',
-        company: 'Amazon Web Services',
-        photo: AndraSomesanPhoto,
+        id: '12',
+        name: 'Adrian Vladu',
+        company: 'Cloudbase Solutions',
+        photo: AdrianVladuPhoto,
+      },
+      {
+        id: '11',
+        name: 'Alessandro Pilotti',
+        company: 'Cloudbase Solutions',
+        photo: AlessandroPilottiPhoto,
       },
     ],
     presentation:
-      'Developer experience finally gets the attention it deserves. Many organisations have adopted different frameworks and technologies to help enhance it.' +
-      '<br/><br/>' +
-      'Join this session to learn how to write secure, well-architected Kubernetes applications and learn how cdk8s leverages third-party integrations to combat misconfigurations, all that while improving your developers experience and productivity.' +
-      '<br/><br/>' +
-      'A key benefit of cdk8s is its environment agnosticism. It generates portable YAML manifests that can be readily deployed to any Kubernetes cluster, whether self-managed on-premises or managed services on public clouds. Overall, cdk8s has the potential to revolutionise how cloud native development teams define, deploy, and manage modern distributed applications on Kubernetes. Its abstractions enable developers to focus on business logic rather than YAML Engineering.',
+      "'A community Linux distribution designed for container workloads, with high security and low maintenance' - Flatcar Container Linux is the first Linux based operating system CNCF incubating project. In this presentation, we will go through what makes Flatcar Container Linux secure, easy to deploy and use in the cloud native context of containerization and Kubernetes.",
     secondTrack: {
       id: '032',
       time: '11:00',
-      title: 'Trust no one: implementing zero trust security with Ambient Service Mesh',
+      title: 'The Way of Cloud Native AI',
       duration: '30 min',
       speakers: [
         {
-          id: '7',
+          id: '13',
           name: 'Alessandro Vozza',
-          company: 'CNCF Ambassador',
+          company: 'Microsoft',
           photo: AlessandroVozzaPhoto,
         },
       ],
-      presentation:
-        'We live in a brave new world of cyber attacks, state-sponsored hacking and global instability fueled by (cyber and not) wars; perimeter security is just not up to the task of securing the modern digital infrastructure.' +
-        '<br/><br/>' +
-        'Zero Trust Security Model assumes that an enterprise-owned environment is not different or trustworthy than any non enterprise-owned environment. In this paradigm, an enterprise must assume no implicit trust and continually analyze and evaluate the risks to its assets.' +
-        '<br/><br/>' +
-        'We will show how we can simply and scalably implement new ways to perform the necessary steps towards achieving perfect zero-trust architecture, and what entails for operations and development.',
+      presentation: `We will delve into the magic world of LLM training and inference using cloud native and open source tooling; we will explore how the current GenAI revolution benefits from open standards, programmable infrastructure and the powerful paradigms of cloud native. We will expouse practical knowledge on how and why running AI/ML workloads on Kubernetes and end up with a short demo.`,
     },
     thirdTrack: {
       id: '033',
       time: '11:00',
-      title: 'Building Internal Developer Platforms with Kubernetes Operators',
+      title: 'Cloud Native Telco Transformation: From Legacy to Agility',
       duration: '30 min',
       speakers: [
         {
-          id: '10',
-          name: 'George Hantzaras',
-          company: 'MongoDB',
-          photo: GeorgeHantzarasPhoto,
+          id: '14',
+          name: 'Marius Iordache',
+          company: 'Orange Romania',
+          photo: MariusIordachePhoto,
         },
       ],
-      presentation:
-        'In this presentation, we will dive deep into the world of Kubernetes operators and how they can be leveraged to empower platform engineering teams and extend Kubernetes as the platform of platforms.' +
-        '<br/><br/>' +
-        'We will start by introducing the concept of Kubernetes operators, their architecture, as well as how their development becomes easier leveraging the Operator Framework. We will then explore the advantages of using Kubernetes operators to manage complex applications and how they can streamline the deployment, scaling, and management of these applications. We will also provide real-world examples of operators that have been successfully deployed by platform engineering teams in the process of building an IDP.' +
-        '<br/><br/>' +
-        'We will then demonstrate how an architecture of an IDP leveraging operators would look like and how this integrates with other CNCF tools, like Tekton, ArgoCD, Istio, and more as well as how infrastructure as code can be simplified with this approach.',
+      presentation: `Exploring how telecommunications providers modernize their infrastructure using cloud native principles and technologies`,
     },
   },
   {
     id: '041',
     time: '11:45',
-    title: 'Introducing Timoni the Next-Gen Package Manager for Kubernetes',
+    title: 'Nested Worlds: Unleash the Power of vClusters for Accelerated CI Workflows and Testing',
     duration: '30 min',
     speakers: [
       {
-        id: '6',
-        name: 'Stefan Prodan',
-        company: 'ControlPlane',
-        photo: StefanProdanPhoto,
+        id: '15',
+        name: 'Iulian Taiatu',
+        company: 'Adobe',
+        photo: IulianTaiatuPhoto,
       },
     ],
-    presentation:
-      'In this session, Stefan will introduce a new open source tool called Timoni.' +
-      '<br/>' +
-      'Stefan will tell the story how he discovered CUE, a novel language, with a rich set of APIs which has the potential to revolutionise the way we think about configuration.' +
-      '<br/><br/>' +
-      'He will explain how Timoni leverages CUE to offer a better experience of creating, packaging and delivering apps to Kubernetes.' +
-      '<br/><br/>' +
-      ' Finally, Stefan will demonstrate how Timoni can be used together with CNCF Flux and how Timoni overcomes the limitations of Helm and Kustomize.',
+    presentation: `As Kubernetes adoption accelerates, the demand for scalable, efficient, and isolated environments to manage increasingly complex workloads has become paramount. Virtual clusters (vClusters) offer an innovative solution by enabling nested Kubernetes clusters within shared host infrastructures. This paradigm integrates the advantages of independent control planes, dedicated API servers, and resource abstraction and sharing to facilitate seamless multi-tenancy while optimizing resource utilization.
+<br/><br/>
+This session provides a comprehensive exploration of the architecture and operational advantages of vClusters, emphasizing their role in enhancing multi-tenancy, automating testing processes, and streamlining CI/CD workflows. Through a detailed demonstration, attendees will gain practical insights into the application of vClusters in real-world scenarios, focusing on their capability to replicate production-grade environments for testing.
+<br/><br/>
+The live demo will highlight how vClusters simplify Kubernetes controller testing by creating isolated environments that integrate seamlessly with existing AWS Roles & Policies. Attendees will observe an end-to-end workflow, from provisioning vClusters to executing Pull Request tests, showcasing how this approach minimizes configuration overhead, optimizes CI pipelines, and supports scalable, efficient Kubernetes development practices.`,
     secondTrack: {
       id: '042',
       time: '11:45',
-      title: 'Cloud native for governmental workloads: Challenges & Lesson Learned',
+      title: 'Vespa: A Fast Search/Vector DB with a Microservices Architecture',
       duration: '30 min',
       speakers: [
         {
-          id: '11',
-          name: 'Mihai Mihalcea',
-          company: 'STS',
-          photo: MihalceaMihaiAlexandruPhoto,
-        },
-        {
-          id: '12',
-          name: 'Octavian Petre',
-          company: 'STS',
-          photo: OctavianPetrePhoto,
+          id: '16',
+          name: 'Radu Gheorghe',
+          company: 'Vespa.ai',
+          photo: RaduGheorghePhoto,
         },
       ],
-      presentation:
-        "Although the current market shift inclines towards public cloud adoption, how can you manage the situation if your business model requires your product to operate with citizens' data and state-level affairs?" +
-        '<br/><br/>' +
-        'Well, the straightforward answer will be on-prem infrastructure, and what doesn’t work better with on-prem infrastructure than open-source technologies? We will see how this approach has been working for us so far.' +
-        '<br/><br/>' +
-        'At STS we provide secure networks, IT&C services and support for the Romanian public government authorities and institutions.' +
-        '<br/><br/>' +
-        'During this talk, we will outline the implementation of specific operations on our on-premises K8s infrastructure, along with the challenges that arise. Our focus will be primarily on the adoption process of the GitOps concept, the implementation of the Continuous Delivery ecosystem across multiple projects, and the networking challenges at the container level. We will also delve into the processes encountered within a self-managed infrastructure.',
+      presentation: `An architecture session, contrasting the layout of Vespa with that of more familiar search engines like Elasticsearch.
+<br/><br/>
+Explains how we can get a more stable and scalable cluster with massive query performance gains. And because there's no free lunch, the trade-offs in terms of complexity and write performance.
+<br/><br/>
+Contains an obligatory demo of running Vespa in Kubernetes.`,
     },
     thirdTrack: {
       id: '043',
       time: '11:45',
-      title: "Cyscale's Journey on Kubernetes",
+      title: 'From zero to developer: my one year serendipity journey with OpenTelemetry',
       duration: '30 min',
       speakers: [
         {
-          id: '13',
-          name: 'Andrei Stefanie',
-          company: 'Cyscale',
-          photo: AndreiStefaniePhoto,
+          id: '17',
+          name: 'Diana Todea',
+          company: 'EQS Group',
+          photo: DianaTodeaPhoto,
         },
       ],
-      presentation:
-        "Starting from humble origins with clusters created through ClickOps, a single umbrella Helm chart, and an inclination towards the 'latest tag' mentality, Cyscale's infrastructure has evolved into a fully-fledged GitOps platform (based on Argo CD)." +
-        '<br/><br/>' +
-        "In this session, we will delve into our decision-making process behind the adoption of pivotal technologies such as service meshes (Linkerd vs Istio) and messaging systems (NATS). We'll also explore the gradual evolution of our deployment processes and secrets management over time. Learn how the CNCF landscape played a crucial role in enabling us to maintain the platform's portability.",
+      presentation: `Becoming a contributor to an open-source project is a transformative step in any developer's career. This session explores the journey from first-time contributor to active developer, covering best practices for navigating project communities, understanding codebases, and making meaningful contributions. Learn strategies for selecting the right project, mastering collaboration tools, and embracing the culture of open-source development. The audience will be inspired about my one year journey with the open source project OpenTelemetry and how I have built a proof of concept for it and achieved developer status for this project. By the end of this talk, the public will gain insights into the tools to become a better developer and how to build more engagement with the community.`,
     },
   },
   {
-    id: '052',
+    id: '051',
     time: '12:30',
-    title: 'The Daemonset in the Details - Pitfalls of OpenTelemetry Collector Deployments',
+    title: 'The Infinite Hotel: Scaling Multi-Tenant Platforms through a Unified API',
     duration: '30 min',
     speakers: [
       {
-        id: '14',
-        name: 'Christopher Olsen',
-        company: 'Adobe',
-        photo: GenericSpeakerPhoto,
+        id: '18',
+        name: 'Carlos Mestre del Pino',
+        company: 'Microsoft',
+        photo: CarlosMestrePhoto,
       },
     ],
-    presentation:
-      "It's easy to run Otel collectors on K8S. But it's hard to observe engineering principles without faith and manual validation. Why is that so? I'll explain as I walk through my experiences deploying Otel collectors with the Otel Operator with complex configurations." +
-      '<br/><br/>' +
-      "This talk is about Unit-Testing. It's specific to Helm, K8S and Otel but it should have lessons for anyone doing SRE. It is a lesson of why you must learn the language of the technology you are using to be able to do your job effectively." +
-      '<br/><br/>' +
-      'The setting:' +
-      '<br/>' +
-      'Your company has hundreds of K8s clusters, deployed with ArgoCD using Helm charts. You are responsible for deploying Otel collectors on all clusters. You use the Otel Operator. You ARE the Otel Operator.' +
-      '<br/><br/>' +
-      "I'll walk through 4 days of your life, 3 ending in failure with demos and code. Each failure shows the dangers that await you and I'll show working code how to protect yourself." +
-      '<br/><br/>' +
-      'This talk is a plea for better unit tests, a rant about Helm and an ode to the Otel engineers.',
+    presentation: `As platform teams evolve, platforms extend beyond infrastructure to application services, cloud resource management, and middleware orchestration. Managing these distributed components across clusters and teams demands a unified, scalable approach. This session shows how to manage infrastructure, tenants, and application services entirely through Kubernetes by building a modular, multi-tenant, multi-control-plane platform. Attendees will learn to extend the Kubernetes API with Control Planes for distributed, tenant-aware infrastructure management. We’ll explore CNCF projects to create abstractions and automation, enabling platform teams to offer consistent services and self-service capabilities. Topics include multi-tenancy with in- and out-of-cluster isolation, unified APIs for control-plane orchestration, and avoiding common pitfalls in multi-control-plane management. By the end, attendees will have a roadmap for scalable platforms supporting centralized and tenant-managed services.`,
     secondTrack: {
-      id: '051',
+      id: '052',
       time: '12:30',
-      title: 'Efficiency in Engineering: The Game-Changing Role of Developer Portals',
+      title: 'CAPtivating architecture: Navigating Distributed Systems and Microservices',
       duration: '30 min',
       speakers: [
         {
-          id: '9',
-          name: 'Vincenzo Scamporlino',
-          company: 'Spotify',
-          photo: VincenzoScamporlinoPhoto,
+          id: '19',
+          name: 'Alexandros Charos',
+          company: 'OPAP',
+          photo: AlexandrosCharosPhoto,
         },
       ],
-      presentation:
-        'Developer Experience is all about the process of software creation. Currently, developers are forced to navigate through an array of tools, APIs, frameworks, and languages, which, over time, can hamper their pace.' +
-        '<br/><br/>' +
-        'A few years ago, Spotify faced and resolved this issue by integrating all the tools into a unified interface. This was achieved through the creation of Backstage, a Developer Portal which, in 2020, was open-sourced and donated to the CNCF, thus becoming a framework for building Developer Portals. Today, Backstage is adopted by over 2.5k companies, boosting productivity and tackling issues such as Discoverability, System Ownership, Fragmentation, Duplication, and Context Switching.' +
-        '<br/><br/>' +
-        'In this talk, we will explore the benefits a developer portal can bring to your organization, explaining how you can build your own Developer Portal using Backstage. We will also share insights into how Spotify uses Backstage and provide the latest tips from hundreds of Backstage adopters.',
+      presentation: `The goal of this presentation is to go through with the audience the various pitfalls and gotchas that distributed systems entail.
+We will go through a case study where a monolith was broken down to smaller services and the technical, business and organisational justifications for doing so.
+<br/><br/>
+We will evaluate our approaches in tackling some tough distributed systems problems as we analyse them in terms of communication (synchronous/asynchronous) and coordination (orchestration/choreography).
+<br/><br/>
+Finally we will focus on the overlooked importance of proper timeout and retry policies as a means to increase your system's resilience and therefore stability.`,
     },
 
     thirdTrack: {
       id: '053',
       time: '12:30',
-      title: 'Future-Proof Your Platform’s CI/CD Without Developers Noticing a Thing',
+      title: 'Headless Browsers in the Cloud',
       duration: '30 min',
       speakers: [
         {
-          id: '15',
-          name: 'Márk Sági-Kazár',
-          company: 'OpenMeter',
-          photo: MarkSagiKazarPhoto,
+          id: '20',
+          name: 'Razvan Deaconescu',
+          company: 'Unikraft / POLITEHNICA Bucharest',
+          photo: RazvanDeaconescuPhoto,
         },
       ],
-      presentation:
-        "You've just perfected CI and/or CD for your organization, again. It was a huge, frustrating effort, and learning another proprietary DSL or YAML didn't deliver the promised tenfold increase in release frequency. It wasn't the first re-platform and it won’t be the last. Now that things have calmed down, there must be a way to prepare, to future-proof your CI/CD and protect developers, the business, and your sanity." +
-        '<br/><br/>' +
-        'In this talk we’ll demonstrate how to use abstraction, containerization, DAGs, and general-purpose programming languages that your team already knows to create portable CI/CD workflows that can run anywhere without rewriting everything. We’ll also highlight how this approach has additional benefits like composability, reuse, testing of CI/CD code itself, and fast feedback loops for developers (since you can run these pipelines locally). This talk is aimed at anyone who is expecting to have to re-platform CI/CD again in the future (that’s you) and just wants the pain to stop.',
+      presentation: `With the advanced of AI agents, headless browsers are an increasingly important part in the cloud ecosystem. They are useful to scrape websites, create screenshots and export contents, while using the full power of modern browsers (Chromium, Firefox).
+<br/><br/>
+The cloud ecosystem presents several headless browser offerings, such as <a href='https://www.browserless.io/'><u>Browserless.io</u></a>, <a href='https://www.browserbase.com/'><u>Browserbase</u></a>, <a href='https://www.zenrows.com/'><u>Zenrows</u></a>, <a href='https://phantomjscloud.com/'><u>PhantomJS Cloud</u></a>. Yet, these solutions mostly still use containers and do not fully use a true serverless model.
+<br/><br/>
+Enter <a href='https://unikraft.cloud/'><u>Unikraft Cloud</u></a>, the True Serverless Platform. Unikraft Cloud is the platform of choice for intermitent and bursty workloads, such as those that include headless browsers.
+<br/><br/>
+At Unikraft Cloud we offer support for Playwright and Puppeteer frameworks, backed by Firefox, Chromium and WebKit browsers, all running in a true serverless manner, including scale-to-zero, auto-scale, and stateful millisecond (re)starts. Moreover, we are to provide singular instances running browsers with a WebSocket interface, decoupling the application logic from the browser service. All backed by efficient virtual machines and the millisecond Unikraft Cloud technology.
+<br/><br/>
+We will demo the deployment and use of headless browsers in Unikraft Cloud, we will show how you can create fleets of headless browser instances with minimum costs and millisecond semantics, and we will take a glimpse into the inner magic of the Unikraft Cloud platform.`,
     },
   },
   {
