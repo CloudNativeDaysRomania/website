@@ -5,295 +5,269 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
+import AdelinaStanciuPhoto from './images/adelina-stanciu-photo.jpg';
 import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
-import AlexRaiuPhoto from './images/alex-raiu-photo.jpg';
+import AlexandrosCharosPhoto from './images/alexandros-charos-photo.jpg';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
-import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
-import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
-import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
-import AndreiPitisPhoto from './images/andrei-pitis-photo.jpg';
-import AndreiStefaniePhoto from './images/andrei-stefanie-photo.jpg';
-import AndreiaIrinaOcanoaiaPhoto from './images/andreia-irina-ocanoaia-photo.jpg';
-import CarmenBobeiPhoto from './images/carmen-bobei-photo.jpg';
-import ClaudiuHobjilaPhoto from './images/claudiu-hobjila-photo.jpg';
-import FlorinLoghiadePhoto from './images/florin-loghiade-photo.jpg';
+import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
+import AndrewMartinPhoto from './images/andrew-martin-photo.jpeg';
+import BogdanTrufandaPhoto from './images/bogdan-trufanda-photo.jpg';
+import CarlosMestrePhoto from './images/carlos-mestre-del-pino-photo.jpg';
+import DianaTodeaPhoto from './images/diana-todea-photo.jpg';
 import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
-import GeorgeHantzarasPhoto from './images/george-hantzaras-photo.jpeg';
-import GeorgeTudureanPhoto from './images/george-tudurean-photo.jpg';
+import GeorgeHaberPhoto from './images/george-haber-photo.jpeg';
+import IrinaVerlanPhoto from './images/irina-verlan-photo.jpg';
 import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
-import JosephSandovalPhoto from './images/joseph-sandoval-photo.jpg';
-import KatharinaSickPhoto from './images/katharina-sick-photo.jpg';
-import MarkSagiKazarPhoto from './images/mark-sagi-kazar-photo.jpg';
-import MihaiGoguPhoto from './images/mihai-gogu-photo.png';
-import MihalceaMihaiAlexandruPhoto from './images/mihalcea-mihai-alexandru-photo.jpg';
-import OctavianPetrePhoto from './images/octavian-petre-photo.jpg';
-import OvidiuValeanuPhoto from './images/ovidiu-valeanu-photo.jpg';
-import RaduZamfirPhoto from './images/radu-zamfir-photo.jpg';
-import StefanProdanPhoto from './images/stefan-prodan-photo.jpeg';
-import TimothyMamoPhoto from './images/timothy-mamo-photo.jpg';
-import VincenzoScamporlinoPhoto from './images/vincenzo-scamporlino-photo.jpeg';
-import YujinKimPhoto from './images/yujin-kim-photo.jpg';
+import LukaszHusarzPhoto from './images/lukasz-husarz-photo.jpg';
+import MarcinPaluszekPhoto from './images/marcin-paluszek-photo.jpeg';
+import MariusIordachePhoto from './images/marius-iordache-photo.jpg';
+import MihaiVasilescuPhoto from './images/mihai-vasilescu-photo.jpg';
+import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
+import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
+import PlamenPetkovPhoto from './images/plamen-petkov-photo.jpg';
+import RaduGheorghePhoto from './images/radu-gheorghe-photo.jpg';
+import RalucaBicaPhoto from './images/raluca-bica-photo.jpg';
+import RazvanDeaconescuPhoto from './images/razvan-deaconescu-photo.jpg';
+import SimonaBotnerPhoto from './images/simona-botner-photo.jpg';
+import VladOnetiuPhoto from './images/vlad-onetiu-photo.jpg';
 
 // GenericSpeakerPhoto is default when no speaker picture is present
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
-    title: 'Atlas 1',
+    title: 'Room 1',
     isHeader: true,
     secondTrack: {
-      title: 'Atlas 2',
+      title: 'Room 2',
     },
     thirdTrack: {
-      title: 'Merope',
+      title: 'Room 3',
     },
   },
   {
     time: '8:00',
-    title: 'Registration/Badge Pick Up/ Welcome Coffee',
-    duration: '75 min',
+    title: 'Registration/Badge Pick Up',
+    duration: '30 min',
   },
   {
-    time: '9:15',
+    time: '8:30',
+    title: 'Welcome coffee',
+    duration: '60 min',
+  },
+  {
+    time: '9:30',
     title: 'Intro from the Organizers',
     duration: '15 min',
   },
   {
     id: '01',
-    time: '09:30',
-    title: 'Keynote: A Decade of Kubernetes: Community-Driven Evolution and the Path Forward',
+    time: '9:45',
+    title: 'Unlocking Innovation: Start Thinking Like a Scientist',
     duration: '30 min',
     isKeynote: true,
     speakers: [
       {
-        id: '2',
-        name: 'Joseph Sandoval',
-        company: 'Adobe',
-        photo: JosephSandovalPhoto,
+        id: '21',
+        name: 'Andra Somesan',
+        company: 'AWS',
+        photo: AndraSomesanPhoto,
       },
     ],
-    presentation:
-      "We celebrate the milestone of ten years of Kubernetes; this keynote explores the journey from its inception to becoming the backbone of cloud-native technology. We'll look back at its history and the pivotal factor behind Kubernetes' success: its vibrant, innovative community." +
-      '<br/><br/>' +
-      "This talk delves into how the collective passion, expertise, and collaborative spirit of the Kubernetes community have not only propelled the platform's advancements but also shaped the very future of cloud computing. Looking ahead, we'll discuss the crucial role the community will play in steering Kubernetes through the next decade of challenges and opportunities, ensuring its continued relevance and leadership in the tech landscape.",
+    presentation: ``,
   },
   {
     id: '02',
-    time: '10:05',
-    title: 'Keynote: From Open Source Contributor to Serial Entrepreneur',
+    time: '10:15',
+    title: ' AI or Not AI, That Is the Question',
     duration: '30 min',
     isKeynote: true,
     speakers: [
       {
-        id: '1',
-        name: 'Andrei Pitis',
-        company: 'Genezio',
-        photo: AndreiPitisPhoto,
+        id: '22',
+        name: 'George Haber',
+        company: 'Entrepreneur',
+        photo: GeorgeHaberPhoto,
       },
     ],
-    presentation:
-      'This talk highlights the importance of contributing to open-source projects and the impact of community engagement on both personal growth and the development of the tech industry.' +
-      '<br/><br/>' +
-      'Andrei will share his journey from co-founding RoEduNet, which provided free internet to students, to becoming a serial entrepreneur.',
+    presentation: ``,
   },
   {
-    time: '10:40',
-    title: 'Break',
-    duration: '20 min',
+    time: '10:45',
+    title: 'Break/Split Room',
+    duration: '15 min',
   },
   {
     id: '031',
     time: '11:00',
-    title: 'Revolutionise your Kubernetes game with cdk8s',
+    title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
     duration: '30 min',
+    isKeynote: false,
     speakers: [
       {
-        id: '5',
-        name: 'Andra Somesan',
-        company: 'Amazon Web Services',
-        photo: AndraSomesanPhoto,
+        id: '12',
+        name: 'Adrian Vladu',
+        company: 'Cloudbase Solutions',
+        photo: AdrianVladuPhoto,
+      },
+      {
+        id: '11',
+        name: 'Alessandro Pilotti',
+        company: 'Cloudbase Solutions',
+        photo: AlessandroPilottiPhoto,
       },
     ],
     presentation:
-      'Developer experience finally gets the attention it deserves. Many organisations have adopted different frameworks and technologies to help enhance it.' +
-      '<br/><br/>' +
-      'Join this session to learn how to write secure, well-architected Kubernetes applications and learn how cdk8s leverages third-party integrations to combat misconfigurations, all that while improving your developers experience and productivity.' +
-      '<br/><br/>' +
-      'A key benefit of cdk8s is its environment agnosticism. It generates portable YAML manifests that can be readily deployed to any Kubernetes cluster, whether self-managed on-premises or managed services on public clouds. Overall, cdk8s has the potential to revolutionise how cloud native development teams define, deploy, and manage modern distributed applications on Kubernetes. Its abstractions enable developers to focus on business logic rather than YAML Engineering.',
+      "'A community Linux distribution designed for container workloads, with high security and low maintenance' - Flatcar Container Linux is the first Linux based operating system CNCF incubating project. In this presentation, we will go through what makes Flatcar Container Linux secure, easy to deploy and use in the cloud native context of containerization and Kubernetes.",
     secondTrack: {
       id: '032',
       time: '11:00',
-      title: 'Trust no one: implementing zero trust security with Ambient Service Mesh',
+      title: 'The Way of Cloud Native AI',
       duration: '30 min',
       speakers: [
         {
-          id: '7',
+          id: '13',
           name: 'Alessandro Vozza',
-          company: 'CNCF Ambassador',
+          company: 'Microsoft',
           photo: AlessandroVozzaPhoto,
         },
       ],
-      presentation:
-        'We live in a brave new world of cyber attacks, state-sponsored hacking and global instability fueled by (cyber and not) wars; perimeter security is just not up to the task of securing the modern digital infrastructure.' +
-        '<br/><br/>' +
-        'Zero Trust Security Model assumes that an enterprise-owned environment is not different or trustworthy than any non enterprise-owned environment. In this paradigm, an enterprise must assume no implicit trust and continually analyze and evaluate the risks to its assets.' +
-        '<br/><br/>' +
-        'We will show how we can simply and scalably implement new ways to perform the necessary steps towards achieving perfect zero-trust architecture, and what entails for operations and development.',
+      presentation: `We will delve into the magic world of LLM training and inference using cloud native and open source tooling; we will explore how the current GenAI revolution benefits from open standards, programmable infrastructure and the powerful paradigms of cloud native. We will expouse practical knowledge on how and why running AI/ML workloads on Kubernetes and end up with a short demo.`,
     },
     thirdTrack: {
       id: '033',
       time: '11:00',
-      title: 'Building Internal Developer Platforms with Kubernetes Operators',
+      title: 'Cloud Native Telco Transformation: From Legacy to Agility',
       duration: '30 min',
       speakers: [
         {
-          id: '10',
-          name: 'George Hantzaras',
-          company: 'MongoDB',
-          photo: GeorgeHantzarasPhoto,
+          id: '14',
+          name: 'Marius Iordache',
+          company: 'Orange Romania',
+          photo: MariusIordachePhoto,
         },
       ],
-      presentation:
-        'In this presentation, we will dive deep into the world of Kubernetes operators and how they can be leveraged to empower platform engineering teams and extend Kubernetes as the platform of platforms.' +
-        '<br/><br/>' +
-        'We will start by introducing the concept of Kubernetes operators, their architecture, as well as how their development becomes easier leveraging the Operator Framework. We will then explore the advantages of using Kubernetes operators to manage complex applications and how they can streamline the deployment, scaling, and management of these applications. We will also provide real-world examples of operators that have been successfully deployed by platform engineering teams in the process of building an IDP.' +
-        '<br/><br/>' +
-        'We will then demonstrate how an architecture of an IDP leveraging operators would look like and how this integrates with other CNCF tools, like Tekton, ArgoCD, Istio, and more as well as how infrastructure as code can be simplified with this approach.',
+      presentation: `Exploring how telecommunications providers modernize their infrastructure using cloud native principles and technologies`,
     },
   },
   {
     id: '041',
     time: '11:45',
-    title: 'Introducing Timoni the Next-Gen Package Manager for Kubernetes',
+    title: 'Nested Worlds: Unleash the Power of vClusters for Accelerated CI Workflows and Testing',
     duration: '30 min',
     speakers: [
       {
-        id: '6',
-        name: 'Stefan Prodan',
-        company: 'ControlPlane',
-        photo: StefanProdanPhoto,
+        id: '15',
+        name: 'Iulian Taiatu',
+        company: 'Adobe',
+        photo: IulianTaiatuPhoto,
       },
     ],
-    presentation:
-      'In this session, Stefan will introduce a new open source tool called Timoni.' +
-      '<br/>' +
-      'Stefan will tell the story how he discovered CUE, a novel language, with a rich set of APIs which has the potential to revolutionise the way we think about configuration.' +
-      '<br/><br/>' +
-      'He will explain how Timoni leverages CUE to offer a better experience of creating, packaging and delivering apps to Kubernetes.' +
-      '<br/><br/>' +
-      ' Finally, Stefan will demonstrate how Timoni can be used together with CNCF Flux and how Timoni overcomes the limitations of Helm and Kustomize.',
+    presentation: `As Kubernetes adoption accelerates, the demand for scalable, efficient, and isolated environments to manage increasingly complex workloads has become paramount. Virtual clusters (vClusters) offer an innovative solution by enabling nested Kubernetes clusters within shared host infrastructures. This paradigm integrates the advantages of independent control planes, dedicated API servers, and resource abstraction and sharing to facilitate seamless multi-tenancy while optimizing resource utilization.
+<br/><br/>
+This session provides a comprehensive exploration of the architecture and operational advantages of vClusters, emphasizing their role in enhancing multi-tenancy, automating testing processes, and streamlining CI/CD workflows. Through a detailed demonstration, attendees will gain practical insights into the application of vClusters in real-world scenarios, focusing on their capability to replicate production-grade environments for testing.
+<br/><br/>
+The live demo will highlight how vClusters simplify Kubernetes controller testing by creating isolated environments that integrate seamlessly with existing AWS Roles & Policies. Attendees will observe an end-to-end workflow, from provisioning vClusters to executing Pull Request tests, showcasing how this approach minimizes configuration overhead, optimizes CI pipelines, and supports scalable, efficient Kubernetes development practices.`,
     secondTrack: {
       id: '042',
       time: '11:45',
-      title: 'Cloud native for governmental workloads: Challenges & Lesson Learned',
+      title: 'Vespa: A Fast Search/Vector DB with a Microservices Architecture',
       duration: '30 min',
       speakers: [
         {
-          id: '11',
-          name: 'Mihai Mihalcea',
-          company: 'STS',
-          photo: MihalceaMihaiAlexandruPhoto,
-        },
-        {
-          id: '12',
-          name: 'Octavian Petre',
-          company: 'STS',
-          photo: OctavianPetrePhoto,
+          id: '16',
+          name: 'Radu Gheorghe',
+          company: 'Vespa.ai',
+          photo: RaduGheorghePhoto,
         },
       ],
-      presentation:
-        "Although the current market shift inclines towards public cloud adoption, how can you manage the situation if your business model requires your product to operate with citizens' data and state-level affairs?" +
-        '<br/><br/>' +
-        'Well, the straightforward answer will be on-prem infrastructure, and what doesn’t work better with on-prem infrastructure than open-source technologies? We will see how this approach has been working for us so far.' +
-        '<br/><br/>' +
-        'At STS we provide secure networks, IT&C services and support for the Romanian public government authorities and institutions.' +
-        '<br/><br/>' +
-        'During this talk, we will outline the implementation of specific operations on our on-premises K8s infrastructure, along with the challenges that arise. Our focus will be primarily on the adoption process of the GitOps concept, the implementation of the Continuous Delivery ecosystem across multiple projects, and the networking challenges at the container level. We will also delve into the processes encountered within a self-managed infrastructure.',
+      presentation: `An architecture session, contrasting the layout of Vespa with that of more familiar search engines like Elasticsearch.
+<br/><br/>
+Explains how we can get a more stable and scalable cluster with massive query performance gains. And because there's no free lunch, the trade-offs in terms of complexity and write performance.
+<br/><br/>
+Contains an obligatory demo of running Vespa in Kubernetes.`,
     },
     thirdTrack: {
       id: '043',
       time: '11:45',
-      title: "Cyscale's Journey on Kubernetes",
+      title: 'Zero Downtime, Maximum Play: Evolving Game Servers from Bare Metal to K3s',
       duration: '30 min',
       speakers: [
         {
-          id: '13',
-          name: 'Andrei Stefanie',
-          company: 'Cyscale',
-          photo: AndreiStefaniePhoto,
+          id: '17',
+          name: 'Łukasz Husarz',
+          company: 'Ten Square Games S.A.',
+          photo: LukaszHusarzPhoto,
+        },
+        {
+          id: '23',
+          name: 'Marcin Paluszek',
+          company: 'Ten Square Games S.A.',
+          photo: MarcinPaluszekPhoto,
         },
       ],
-      presentation:
-        "Starting from humble origins with clusters created through ClickOps, a single umbrella Helm chart, and an inclination towards the 'latest tag' mentality, Cyscale's infrastructure has evolved into a fully-fledged GitOps platform (based on Argo CD)." +
-        '<br/><br/>' +
-        "In this session, we will delve into our decision-making process behind the adoption of pivotal technologies such as service meshes (Linkerd vs Istio) and messaging systems (NATS). We'll also explore the gradual evolution of our deployment processes and secrets management over time. Learn how the CNCF landscape played a crucial role in enabling us to maintain the platform's portability.",
+      presentation: `In this session, we’ll share our journey of transforming a high-performance, custom-protocol-based game server from a traditional bare-metal setup to a dynamic, Kubernetes-powered environment (k3s) hosted entirely by our team. This transition from a classic Java, database, and load balancer model to a fully containerized deployment leveraged powerful tools like ArgoCD, Helm, Istio, and the Prometheus stack to achieve zero downtime during updates (custom solution), boost server responsiveness, enhance player experience, and introduce agile deployment strategies including canary, blue-green, and autoscaling based on player session metrics. Attendees will gain insight into the specific architectural choices, the challenges of adapting custom communication protocols to cloud-native solutions, and how we balanced the demands of performance and flexibility—all while keeping players in mind.`,
     },
   },
   {
-    id: '052',
+    id: '051',
     time: '12:30',
-    title: 'The Daemonset in the Details - Pitfalls of OpenTelemetry Collector Deployments',
+    title: 'The Infinite Hotel: Scaling Multi-Tenant Platforms through a Unified API',
     duration: '30 min',
     speakers: [
       {
-        id: '14',
-        name: 'Christopher Olsen',
-        company: 'Adobe',
-        photo: GenericSpeakerPhoto,
+        id: '18',
+        name: 'Carlos Mestre del Pino',
+        company: 'Microsoft',
+        photo: CarlosMestrePhoto,
       },
     ],
-    presentation:
-      "It's easy to run Otel collectors on K8S. But it's hard to observe engineering principles without faith and manual validation. Why is that so? I'll explain as I walk through my experiences deploying Otel collectors with the Otel Operator with complex configurations." +
-      '<br/><br/>' +
-      "This talk is about Unit-Testing. It's specific to Helm, K8S and Otel but it should have lessons for anyone doing SRE. It is a lesson of why you must learn the language of the technology you are using to be able to do your job effectively." +
-      '<br/><br/>' +
-      'The setting:' +
-      '<br/>' +
-      'Your company has hundreds of K8s clusters, deployed with ArgoCD using Helm charts. You are responsible for deploying Otel collectors on all clusters. You use the Otel Operator. You ARE the Otel Operator.' +
-      '<br/><br/>' +
-      "I'll walk through 4 days of your life, 3 ending in failure with demos and code. Each failure shows the dangers that await you and I'll show working code how to protect yourself." +
-      '<br/><br/>' +
-      'This talk is a plea for better unit tests, a rant about Helm and an ode to the Otel engineers.',
+    presentation: `As platform teams evolve, platforms extend beyond infrastructure to application services, cloud resource management, and middleware orchestration. Managing these distributed components across clusters and teams demands a unified, scalable approach. This session shows how to manage infrastructure, tenants, and application services entirely through Kubernetes by building a modular, multi-tenant, multi-control-plane platform. Attendees will learn to extend the Kubernetes API with Control Planes for distributed, tenant-aware infrastructure management. We’ll explore CNCF projects to create abstractions and automation, enabling platform teams to offer consistent services and self-service capabilities. Topics include multi-tenancy with in- and out-of-cluster isolation, unified APIs for control-plane orchestration, and avoiding common pitfalls in multi-control-plane management. By the end, attendees will have a roadmap for scalable platforms supporting centralized and tenant-managed services.`,
     secondTrack: {
-      id: '051',
+      id: '052',
       time: '12:30',
-      title: 'Efficiency in Engineering: The Game-Changing Role of Developer Portals',
+      title: 'CAPtivating architecture: Navigating Distributed Systems and Microservices',
       duration: '30 min',
       speakers: [
         {
-          id: '9',
-          name: 'Vincenzo Scamporlino',
-          company: 'Spotify',
-          photo: VincenzoScamporlinoPhoto,
+          id: '19',
+          name: 'Alexandros Charos',
+          company: 'OPAP',
+          photo: AlexandrosCharosPhoto,
         },
       ],
-      presentation:
-        'Developer Experience is all about the process of software creation. Currently, developers are forced to navigate through an array of tools, APIs, frameworks, and languages, which, over time, can hamper their pace.' +
-        '<br/><br/>' +
-        'A few years ago, Spotify faced and resolved this issue by integrating all the tools into a unified interface. This was achieved through the creation of Backstage, a Developer Portal which, in 2020, was open-sourced and donated to the CNCF, thus becoming a framework for building Developer Portals. Today, Backstage is adopted by over 2.5k companies, boosting productivity and tackling issues such as Discoverability, System Ownership, Fragmentation, Duplication, and Context Switching.' +
-        '<br/><br/>' +
-        'In this talk, we will explore the benefits a developer portal can bring to your organization, explaining how you can build your own Developer Portal using Backstage. We will also share insights into how Spotify uses Backstage and provide the latest tips from hundreds of Backstage adopters.',
+      presentation: `The goal of this presentation is to go through with the audience the various pitfalls and gotchas that distributed systems entail.
+We will go through a case study where a monolith was broken down to smaller services and the technical, business and organisational justifications for doing so.
+<br/><br/>
+We will evaluate our approaches in tackling some tough distributed systems problems as we analyse them in terms of communication (synchronous/asynchronous) and coordination (orchestration/choreography).
+<br/><br/>
+Finally we will focus on the overlooked importance of proper timeout and retry policies as a means to increase your system's resilience and therefore stability.`,
     },
 
     thirdTrack: {
       id: '053',
       time: '12:30',
-      title: 'Future-Proof Your Platform’s CI/CD Without Developers Noticing a Thing',
+      title: 'Headless Browsers in the Cloud',
       duration: '30 min',
       speakers: [
         {
-          id: '15',
-          name: 'Márk Sági-Kazár',
-          company: 'OpenMeter',
-          photo: MarkSagiKazarPhoto,
+          id: '20',
+          name: 'Razvan Deaconescu',
+          company: 'Unikraft / POLITEHNICA Bucharest',
+          photo: RazvanDeaconescuPhoto,
         },
       ],
-      presentation:
-        "You've just perfected CI and/or CD for your organization, again. It was a huge, frustrating effort, and learning another proprietary DSL or YAML didn't deliver the promised tenfold increase in release frequency. It wasn't the first re-platform and it won’t be the last. Now that things have calmed down, there must be a way to prepare, to future-proof your CI/CD and protect developers, the business, and your sanity." +
-        '<br/><br/>' +
-        'In this talk we’ll demonstrate how to use abstraction, containerization, DAGs, and general-purpose programming languages that your team already knows to create portable CI/CD workflows that can run anywhere without rewriting everything. We’ll also highlight how this approach has additional benefits like composability, reuse, testing of CI/CD code itself, and fast feedback loops for developers (since you can run these pipelines locally). This talk is aimed at anyone who is expecting to have to re-platform CI/CD again in the future (that’s you) and just wants the pain to stop.',
+      presentation: `With the advanced of AI agents, headless browsers are an increasingly important part in the cloud ecosystem. They are useful to scrape websites, create screenshots and export contents, while using the full power of modern browsers (Chromium, Firefox).
+<br/><br/>
+The cloud ecosystem presents several headless browser offerings, such as <a href='https://www.browserless.io/'><u>Browserless.io</u></a>, <a href='https://www.browserbase.com/'><u>Browserbase</u></a>, <a href='https://www.zenrows.com/'><u>Zenrows</u></a>, <a href='https://phantomjscloud.com/'><u>PhantomJS Cloud</u></a>. Yet, these solutions mostly still use containers and do not fully use a true serverless model.
+<br/><br/>
+Enter <a href='https://unikraft.cloud/'><u>Unikraft Cloud</u></a>, the True Serverless Platform. Unikraft Cloud is the platform of choice for intermitent and bursty workloads, such as those that include headless browsers.
+<br/><br/>
+At Unikraft Cloud we offer support for Playwright and Puppeteer frameworks, backed by Firefox, Chromium and WebKit browsers, all running in a true serverless manner, including scale-to-zero, auto-scale, and stateful millisecond (re)starts. Moreover, we are to provide singular instances running browsers with a WebSocket interface, decoupling the application logic from the browser service. All backed by efficient virtual machines and the millisecond Unikraft Cloud technology.
+<br/><br/>
+We will demo the deployment and use of headless browsers in Unikraft Cloud, we will show how you can create fleets of headless browser instances with minimum costs and millisecond semantics, and we will take a glimpse into the inner magic of the Unikraft Cloud platform.`,
     },
   },
   {
@@ -305,32 +279,43 @@ const ITEMS = [
     id: '061',
     time: '14:00',
     title:
-      'Dynamic Large Scale Spark on Kubernetes:Empowering the Community with Argo Workflows and Argo Events',
+      'Fleet Commander: Building a Scalable Hub-and-Spoke Architecture for Kubernetes Clusters',
     duration: '30 min',
     speakers: [
       {
-        id: '16',
-        name: 'Ovidiu Valeanu',
-        company: 'Amazon Web Services',
-        photo: OvidiuValeanuPhoto,
+        id: '24',
+        name: 'Plamen Petkov',
+        company: 'Fastmarkets',
+        photo: PlamenPetkovPhoto,
       },
     ],
     presentation:
-      'Are you eager to build and manage large-scale Spark clusters on Kubernetes for powerful data processing? Whether you are starting from scratch or considering migrating Spark workloads from existing Hadoop clusters to Kubernetes, the challenges of configuring storage, compute, networking, and optimizing job scheduling can be daunting. Join us as we unveil the best practices to construct a scalable Spark clusters on Kubernetes, with a special emphasis on leveraging Argo Workflows and Argo Events.' +
+      "Every organization's journey with Kubernetes is unique. This talk shares our evolution from a simple AKS cluster template to Fleet Commander - a comprehensive hub-and-spoke platform managing multiple clusters. Through practical examples and real implementation details, we'll explore how we combined GitOps principles with open-source tools to build a solution that feels like a premium platform while maintaining full transparency and avoiding vendor lock-in. You'll see how we leveraged GitHub Actions, Terraform, and ArgoCD to create a streamlined workflow, and how we implemented Grafana's LGTM stack to achieve enterprise-grade observability without the enterprise price tag." +
       '<br/><br/>' +
-      'In this talk, we will guide you through the journey of building highly scalable Spark clusters on Kubernetes, using the most popular open-source tools. We will showcase how to harness the potential of Argo Workflows and Argo Events for event-driven job scheduling, enabling efficient resource utilization and seamless scalability. By integrating these powerful tools, you will gain better control and flexibility for executing Spark jobs on Kubernetes.',
-
+      `Key Takeaways:<br/>
+- Understanding the benefits and implementation patterns of a hub-and-spoke architecture for Kubernetes cluster management with practical configuration examples<br/>
+- Learning how to leverage existing tools (ArgoCD, Grafana's LGTM) to build a centralized observability setup that feels like a premium SaaS solution<br/>
+- Practical insights into cluster lifecycle with GitHub Actions and Terraform and cost-benefit analysis of building vs buying a cluster management solution<br/>
+- Real-world examples of extending monitoring beyond Kubernetes to traditional VM workloads and SSL certificates` +
+      '<br/><br/>' +
+      'This talk is aimed at DevOps engineers, SREs, and platform engineers who manage multiple Kubernetes clusters and are looking for practical, transparent solutions to cluster management and observability challenges. Basic familiarity with Kubernetes concepts and GitOps principles is helpful but not required.',
     secondTrack: {
       id: '062',
       time: '14:00',
-      title: 'Closing the Loop: Applying Least Privilege and Ensuring We Did It Well',
+      title: 'Containing the Threat: Analyzing cryptomining campaigns',
       duration: '30 min',
       speakers: [
         {
-          id: '17',
-          name: 'Katharina Sick',
-          company: 'Dynatrace',
-          photo: KatharinaSickPhoto,
+          id: '25',
+          name: 'Bogdan Trufanda',
+          company: 'CrowdStrike',
+          photo: BogdanTrufandaPhoto,
+        },
+        {
+          id: '26',
+          name: 'Mihai Vasilescu',
+          company: 'CrowdStrike',
+          photo: MihaiVasilescuPhoto,
         },
       ],
       presentation:
@@ -344,315 +329,246 @@ const ITEMS = [
     thirdTrack: {
       id: '063',
       time: '14:00',
-      title: 'Bare metal Kubernetes on mixed x64 and ARM64',
+      title: 'Mastering Modern Software Distribution: On-Prem, Air-Gapped, and BYOC Challenges',
       duration: '30 min',
       speakers: [
         {
-          id: '18',
-          name: 'Alessandro Pilotti',
-          company: 'Cloudbase Solutions',
-          photo: AlessandroPilottiPhoto,
-        },
-        {
-          id: '19',
-          name: 'Adrian Vladu',
-          company: 'Cloudbase Solutions',
-          photo: AdrianVladuPhoto,
+          id: '27',
+          name: 'Philip Miglinci',
+          company: 'Glasskube',
+          photo: PhilipMiglinciPhoto,
         },
       ],
       presentation:
-        'This session goes through the lifecycle of an automated Kubernetes deployment on bare metal platforms, both ARM64 and X64 servers. The focus is on full automation, scalability, repeatability of the deployment, leveraging ArgoCD, Cluster API and Tinkerbell stack.' +
+        'Distributing software across diverse environments—on-premises, air-gapped systems, and bring-your-own-cloud (BYOC) setups—presents unique challenges that can overwhelm even experienced teams. Each deployment target introduces specific requirements for installation, configuration, updates, and lifecycle management, making it critical to design flexible yet reliable distribution strategies.' +
         '<br/><br/>' +
-        'The end result of the automation is a production grade Kubernetes cluster that has BGP networking using Cilium, Ceph hyperconverged storage using Rook and even a VM control plane with Kubevirt. As for observability, Prometheus/Grafana and Sentry are a given.' +
+        `This talk provides a comprehensive look into the modern approaches and tools that can help streamline software delivery. Topics include:
+<br/>
+- Packaging Strategies: Best practices for semantic versioning, dependency management, and build automation to ensure consistency and ease of deployment.
+<br/>
+- Pre-Flight and Target Assessments: How to prepare your software for complex environments by including pre-flight checks, configuration validation, and packaging dependencies for air-gapped installations.
+<br/>
+- Deployment Methods: Comparing methods like binaries, Docker images, Helm charts, and other BYOC models, highlighting their strengths and use cases.
+<br/>
+- Security and Application Boundaries: Key considerations for securing software within Kubernetes clusters, including the decision between namespaced and cluster-scoped installations, and how to minimize risks while maintaining operational flexibility.
+<br/>
+- Lifecycle Management: Strategies for managing updates, monitoring licenses, and maintaining communication with distributed deployment teams post-installation.
+` +
         '<br/><br/>' +
-        'From the perspective of the underlying operating systems, generic ones like Ubuntu and Mariner, or container native like Flatcar -- all are supported via the extendability of Cluster API.',
+        'The session will also dive into anonymized real-world examples, illustrating how successful organizations have navigated these challenges. You’ll learn actionable dos and don’ts, evaluate state-of-the-art tools, and discover new techniques to make your software easier to distribute, maintain, and upgrade across diverse environments.' +
+        '<br/><br/>' +
+        'Whether you’re dealing with air-gapped installations, multi-cloud configurations, or on-prem solutions, this talk will equip you with the knowledge and insights to take your software distribution processes to the next level.',
     },
   },
   {
     id: '071',
     time: '14:45',
-    title: 'CD and GitOps with flux @AdoreMe',
+    title:
+      'Architecting Seismic Intelligence with a High-Performance Serverless Earthquake Alert System',
     duration: '30 min',
     speakers: [
       {
-        id: '20',
-        name: 'Mihai Gogu',
-        company: 'AdoreMe',
-        photo: MihaiGoguPhoto,
+        id: '28',
+        name: 'Vlad Onetiu',
+        company: 'DataIceberg',
+        photo: VladOnetiuPhoto,
       },
     ],
-    presentation:
-      'The session is about how we handle gitops with flux at AdoreMe.' +
-      '<br/><br/>' +
-      'The presentation will touch subjects like: what is gitops, what are the advantages of it, how we chose flux and how it helps us managing multiple clusters and continous delivery for our microservices.',
+    presentation: `In our upcoming presentation, we'll explore a cutting-edge architectural solution for real-time SMS and email notifications, particularly geared towards responding to earthquake events. This system is designed to handle rapid data transmission, listening for event changes every second, making it ideal for real time critical alert scenarios. Central to our discussion will be the integration of Lambda functions and Confluent Kafka, coupled with advanced multithreading techniques and DynamoDB lock strategies.<br/><br/>
+      A focal point of our presentation will be addressing the challenges and innovative solutions involved in integrating Confluent Kafka with Lambda functions to enable serverless operation of both producers and consumers. This is a key element in ensuring the quick and efficient distribution of notifications through parallel methods. Additionally, we will delve into the implementation of an automated scaling mechanism, which is vital for optimising the performance of the Serverless Notification ecosystem.<br/><br/>
+      Our aim is to provide a comprehensive insight into how these technologies can be effectively combined to develop a robust and efficient system, capable of delivering critical real-time alerts for situations like earthquake occurrences, ultimately playing a crucial role in saving human lives.`,
 
     secondTrack: {
       id: '072',
       time: '14:45',
-      title: "Mastering Cloud Kubernetes: Navigating Azure's Kubernetes Service Maze",
+      title: 'Never Trust, Always Verify: Principles of Zero-Trust Security in Kubernetes',
       duration: '30 min',
       speakers: [
         {
-          id: '8',
-          name: 'Florin Loghiade',
-          company: 'UiPath',
-          photo: FlorinLoghiadePhoto,
+          id: '29',
+          name: 'Raluca Bica',
+          company: 'Ericsson',
+          photo: RalucaBicaPhoto,
         },
       ],
-      presentation:
-        "Containers are easy; orchestrating them is the issue. We have cloud providers which offer 'managed' Kubernetes offerings that provide a no-headache experience. Are they actually? What are cloud providers actually offering?" +
-        '<br/><br/>' +
-        "We have multiple and even 'serverless' options when looking at cloud offerings for Kubernetes. Take Azure with their AKS offering, not fully managed; AWS with their EKS, not fully managed; the same thing goes with GCP." +
-        '<br/><br/>' +
-        'Picking your poison has meaning when coming to cloud offerings, and this session will cover pain points, issues and other caveats while deploying your services on Azure Kubernetes-managed offering while finding tips & tricks on making your life easier.',
+      presentation: `In an era of increasingly sophisticated cyber threats, the traditional "trust but verify" approach to security is no longer enough. Zero-trust security adopts the principle of "Never Trust, Always Verify" to secure every layer of a distributed system.<br/><br/>
+        This session delves into how zero-trust can be used in Kubernetes with tools like network policies, service meshes, and policy engines to enforce authentication, authorization, and encryption.`,
     },
 
     thirdTrack: {
       id: '073',
       time: '14:45',
-      title: 'Using Unikernels to deploy real-world apps',
+      title: 'Migrating a production workload to another AWS account',
       duration: '30 min',
       speakers: [
         {
-          id: '21',
-          name: 'Andreia-Irina Ocanoaia',
-          company: 'Genezio',
-          photo: AndreiaIrinaOcanoaiaPhoto,
+          id: '30',
+          name: 'Andreea Olaru',
+          company: 'eMag',
+          photo: AndreeaOlaruPhoto,
         },
       ],
       presentation:
-        'In this presentation, we will dive deep into the practical aspects of using unikernels to deploy production environments. Unikernels bring a fresh perspective to how we deploy applications promising significant increase in efficiency, security, and resource utilization.' +
-        '<br/><br/>' +
-        'But how can we practically harness this power to run real world applications?' +
-        '<br/><br/>' +
-        "That's the question we'll answer together in this talk." +
-        '<br/><br/>' +
-        "Whether you're a seasoned Node.js developer, a DevOps enthusiast, or just curious about the next frontier in cloud architectures, this talk is a great introduction to the challenges of running in a different and more lightweight architecture.",
+        'Our journey of migrating our production workload to another AWS account with challenges and discoveries. Migration including aurora db(mysql), TBs of s3 data, route53 zone, elasticache and some other aws compute services.',
     },
   },
 
   {
     id: '081',
     time: '15:30',
-    title: 'Challenges of Migrating a High Traffic Mobile Game to Kubernetes',
+    title: 'Kube Resource Orchestrator: Simplify Kubernetes Resource Optimization',
     duration: '30 min',
     speakers: [
       {
-        id: '22',
-        name: 'Andrei Petrescu',
-        company: 'CloudHero',
-        photo: AndreiPetrescuPhoto,
+        id: '31',
+        name: 'Simona Botner',
+        company: 'Google Cloud',
+        photo: SimonaBotnerPhoto,
       },
     ],
     presentation:
-      'Migrating high-traffic applications is not easy, more so when you are constrained to do the migration within a reasonable time frame. Add to mix fundamental changes to the platform (Kubernetes instead of VMs, different cloud providers, different database versions), things can get tricky.' +
-      '<br/><br/>' +
-      "Join Andrei Petrescu, who leads the DevOps department at CloudHero, in a presentation about how he an his team planned and executed the migration of one of their customer's most popular game from VMs on Digital Ocean to Kubernetes on AWS." +
-      '<br/><br/>' +
-      'Andrei will go through the migration plan, setting up replication of the data, observability, developer productivity and security improvements of the new platform. Some of the technologies discussed are: MySQL, GitHub Actions, Jenkins, ArgoCD, Kubernetes (EKS), Redis / KeyDB, PHP-FPM.',
+      "This session provides a technical dive into Kube Resource Orchestrator, a groundbreaking tool for Kubernetes resource management. We'll explore its architecture, key components, and how it integrates with existing Kubernetes infrastructure. Learn how it leverages advanced algorithms and machine learning to automate resource optimization, improve cluster density, and reduce operational complexity. We'll also cover its API, configuration options, and best practices for deployment and management.",
 
     secondTrack: {
       id: '082',
       time: '15:30',
-      title: 'From Code to Cluster: Orchestrating 10,000+ Kubernetes deployments with 1 pipeline',
+      title:
+        'Proactive Threat Mitigation with Threat Modeler: Securing APIs and Authentication in Azure',
       duration: '30 min',
       speakers: [
         {
-          id: '23',
-          name: 'Andrada Raducanu',
-          company: 'ING Hubs Romania',
-          photo: AndradaRaducanuPhoto,
+          id: '32',
+          name: 'Adelina Stanciu',
+          company: 'Finastra',
+          photo: AdelinaStanciuPhoto,
         },
       ],
-      presentation:
-        'There is a sea of tools one can use for the critical phase of Deployment during your SDLC. To keep our environment secure and reliable, ING chose to work with Kubernetes and Azure DevOps.' +
-        '<br/><br/>' +
-        'In this talk, we will share the success story of how 700 in-house developed APIs reached 10 000+ Production deployments in half a year, using one single pipeline.' +
-        '<br/>' +
-        'In order to stay in control, we use Open Policy Agent. To ensure the reliability and the resilience of the APIs, we use tools like: QuotaAutoscaler (ING open source CRD) and HorizontalPodAustoscaler, native rollback mechanisms with Helm, automatic certificates using CertManager and Prometheus monitoring.' +
-        '<br/><br/>' +
-        'The pipeline deploys code in Azure Kubernetes Service and on-prem Kubernetes clusters.' +
-        '<br/>' +
-        'This solution was built as a platform, designed to be agnostic to the target system, reducing the cognitive load on the teams and allowing them to focus on the application development.' +
-        '<br/>' +
-        'We call this The Kingsroad.',
+      presentation: `This in-depth session explores how to proactively identify and mitigate security threats in your cloud-native applications.
+<br/><br/>
+We will examine common security vulnerabilities such as Authentication Abuse, Malicious Insiders, and Insecure Interfaces and APIs in cloud environments, with a specific focus on Azure-native solutions.
+<br/><br/>
+You will learn best practices for securing APIs, including strong authentication, encryption, and API access control, to protect against unauthorized access and data breaches.
+<br/><br/>
+We will also highlight how Azure tools like Azure Key Vault and Azure API Management can help securely manage sensitive information and facilitate integration with external systems.
+<br/><br/>
+Through practical, real-world examples, we’ll explore how to leverage threat modeling techniques, identify vulnerable interfaces, and apply targeted security controls to defend against common attack vectors.`,
     },
 
     thirdTrack: {
       id: '083',
       time: '15:30',
-      title: 'Histology Augmentation: Scaling Federated Learning Solutions with Kubernetes',
+      title: 'From zero to developer: my one year serendipity journey with OpenTelemetry',
       duration: '30 min',
       speakers: [
         {
-          id: '24',
-          name: 'Iulian Taiatu',
-          company: 'Adobe',
-          photo: IulianTaiatuPhoto,
+          id: '33',
+          name: 'Diana Todea',
+          company: 'EQS Group',
+          photo: DianaTodeaPhoto,
         },
       ],
       presentation:
-        'This paper presents a novel approach to augmenting histological image datasets for colorectal cancer using an Auxiliary Classifier Generative Adversarial Network (ACGAN) model within a Federated Learning (FL) framework.' +
-        '<br/><br/>' +
-        'The primary objective of this project is to enhance the dataset by generating synthetic images through the ACGAN model while preserving data privacy via FL. Different CNN and Vision Transformer-based models are employed to capture intrinsic data patterns.' +
-        '<br/><br/>' +
-        'Evaluation metrics include comparing classifier performance before and after augmentation, t-SNE plots to assess data structure similarity, FID scores for image quality comparison, and GradCAM analysis to visualize classifier focus areas.' +
-        '<br/><br/>' +
-        'The implementation leverages Kubernetes clusters to simulate FL, with each client represented as a namespace (e.g., hospital) to ensure data privacy. A dedicated namespace serves as the server for aggregating local client models into a global model for subsequent FL rounds.',
-    },
-  },
-  {
-    time: '16:00',
-    title: ' Break',
-    duration: '20 min',
-    secondTrack: {},
-    thirdTrack: {
-      id: '092',
-      time: '16:00',
-      title: "2024: I Don't Know K8S and at This Point, I'm Too Afraid To Ask",
-      duration: '20 min',
-      speakers: [
-        {
-          id: '25',
-          name: 'Alexandru Dejanu',
-          company: 'Systematic',
-          photo: AlexandruDejanuPhoto,
-        },
-      ],
-      presentation:
-        "It's 2024 and everybody has used or at least heard about Kubernetes… If you're at the start of the journey into Kubernetes, or you'd like to understand why Kubernetes is a compute abstraction and a platform for building platforms, then this talk is for you.",
+        "Becoming a contributor to an open-source project is a transformative step in any developer's career. This session explores the journey from first-time contributor to active developer, covering best practices for navigating project communities, understanding codebases, and making meaningful contributions. Learn strategies for selecting the right project, mastering collaboration tools, and embracing the culture of open-source development. The audience will be inspired about my one year journey with the open source project OpenTelemetry and how I have built a proof of concept for it and achieved developer status for this project. By the end of this talk, the public will gain insights into the tools to become a better developer and how to build more engagement with the community.",
     },
   },
   {
     id: '091',
-    time: '16:20',
-    title: '⚡️ Lightning Talk: Github Actions on Kubernetes',
-    duration: '5 min',
+    time: '16:15',
+    title: 'Ops Conservation: The Total Amount of Operations in the Universe Remains Constant',
+    duration: '30 min',
     speakers: [
       {
-        id: '26',
-        name: 'Alex Raiu',
-        company: 'Adobe',
-        photo: AlexRaiuPhoto,
+        id: '34',
+        name: 'Alexandru Dejanu',
+        company: 'Systematic',
+        photo: AlexandruDejanuPhoto,
       },
     ],
     presentation:
-      'GitHub Actions workflows for CI/CD with the power of multitenant Kubernetes clusters for enhanced scalability, security and resource utilization.',
-  },
-  {
-    id: '101',
-    time: '16:25',
-    title: '⚡️ Lightning Talk: Kubernetes: A journey from Deckhand to Captain by passing CKA',
-    duration: '5 min',
-    speakers: [
-      {
-        id: '27',
-        name: 'Carmen Bobei',
-        company: 'ING Hubs',
-        photo: CarmenBobeiPhoto,
-      },
-    ],
-    presentation:
-      'Kubernetes is like a ship, you either learn how to dock it and control it over seas or you shipwreck and drown. Being a DevOps Engineer controlling Kubernetes for the past 5 years I’ve been asked multiple times to dock the ship to port and thus to be the captain, but without an official rank I questioned myself over and over again.' +
-      '<br/><br/>' +
-      'I want to share my journey with you on achieving the rank of captain Kubernetes (CKA).' +
-      '<br/><br/>' +
-      'With this talk I hope to shed some light on the journey to come. I will tell you what I did to get ready in terms of trainings, playgrounds, and how to use the official documentation to your advantage, how to plan for a better study schedule, and how I made sure I was ready on the exam day and most importantly how I overcome my emotions.' +
-      '<br/><br/>' +
-      'It is not easy but if you practice, you will get to be captain K.',
-  },
-  {
-    id: '111',
-    time: '16:30',
-    title: '⚡️ Lightning Talk: Securing the Cluster: Navigating Kubernetes Backup and Recovery',
-    duration: '5 min',
-    speakers: [
-      {
-        id: '28',
-        name: 'Yujin Kim',
-        company: 'consider it GmbH',
-        photo: YujinKimPhoto,
-      },
-    ],
-    presentation:
-      'Securing a Kubernetes cluster involves addressing the challenges of backup and recovery, and transitioning beyond disaster recovery to ensure data resilience. In this presentation, I will share our journey to securing our own cluster. I will give a short overview over available solutions and explain which one we picked for our needs.' +
-      '<br/>' +
-      '<br/>' +
-      'Furthermore, this talk will shed light on the various stages of the backup lifecycle from the initial setup and backup phases to the eventual restoration in the event of data loss. (And remember: a backup is only a backup if you checked that you can restore your data!) I hope to empower you to effectively respond to unexpected issues in your cluster.',
-  },
-  {
-    id: '121',
-    time: '16:35',
-    title: '⚡️ Lightning Talk: Forester - KubeCon Hackathon Winner',
-    duration: '5 min',
-    speakers: [
-      {
-        id: '29',
-        name: 'Radu Zamfir',
-        company: 'dvloper.io',
-        photo: RaduZamfirPhoto,
-      },
-      {
-        id: '30',
-        name: 'Andrei Cioc',
-        company: 'dvloper.io',
-        photo: AndreiCiocPhoto,
-      },
-      {
-        id: '31',
-        name: 'George Tudurean',
-        company: 'dvloper.io',
-        photo: GeorgeTudureanPhoto,
-      },
-    ],
-    presentation:
-      'We designed Forester, an app that spreads awareness and handles automatic detection and monitoring of deforestation globally, leveraging AI, open-source software and publicly available data such as satellite imagery.',
+      'From DevOps, to SRE and Platform Engineering, the world of operations is vast and ever-evolving. Join this presentation to explore and understand the intricate connections between containers, container runtimes, Kubernetes, GitOps and how they come together to shape modern Operations.',
+
+    secondTrack: {
+      id: '092',
+      time: '16:15',
+      title: 'Ethical AI in Cloud Native: Building Trustworthy Applications',
+      duration: '30 min',
+      speakers: [
+        {
+          id: '35',
+          name: 'Irina Verlan',
+          company: 'Google',
+          photo: IrinaVerlanPhoto,
+        },
+      ],
+      presentation: `As AI becomes an integral part of cloud-native technologies, the need for ethical considerations has never been greater. This workshop explores the critical frameworks and practices for ensuring AI applications are trustworthy, transparent, and fair. Attendees will learn how to address challenges like data privacy, algorithmic bias, and ethical decision-making within cloud-native environments. Through real-world case studies and hands-on exercises, participants will gain practical tools to assess and mitigate ethical risks in AI pipelines. Join us to discover how to build AI-driven solutions that not only perform but also align with responsible technology practices.`,
+    },
+
+    thirdTrack: {
+      id: '093',
+      time: '16:15',
+      title: 'End-to-End Pull Request Testing on Kubernetes: A Walkthrough',
+      duration: '30 min',
+      speakers: [
+        {
+          id: '36',
+          name: 'Nicolas Fränkel',
+          company: 'Loft Labs',
+          photo: NicolasFrankelPhoto,
+        },
+      ],
+      presentation: `As applications increasingly rely on Kubernetes for deployment, ensuring seamless integration and end-to-end testing during pull requests is crucial. This talk dives into the practical steps of building a robust CI/CD pipeline that mirrors production environments, enabling reliable and efficient testing within your Kubernetes ecosystem.
+<br/><br/>
+We’ll explore how to:
+<br/>
+- Set up foundational unit and integration tests using modern tools like Testcontainers and GitHub Workflows.<br/>
+- Integrate Google Kubernetes Engine (GKE) to emulate a production-grade cluster for testing.<br/>
+- Leverage vCluster to isolate test environments, ensuring parallel runs and minimizing interference.<br/>
+- Attendees will gain actionable insights to create scalable and maintainable testing pipelines via an existing working example.`,
+    },
   },
   {
     time: '16:45',
-    title: 'Break',
+    title: 'Break/Split room revert',
     duration: '15 min',
   },
   {
-    id: '131',
+    id: '101',
     time: '17:00',
-    title: 'Sponsored Keynote: May the Pods Be With You: A GKE Odyssey',
+    title: 'Evolving to a Human-Centric Cloud Computing',
     duration: '30 min',
     isKeynote: true,
     speakers: [
       {
-        id: '3',
-        name: 'Claudiu Hobjila',
-        company: 'Google Cloud',
-        photo: ClaudiuHobjilaPhoto,
+        id: '37',
+        name: 'Aleodor Tabarcea',
+        company: 'Stripe',
+        photo: GenericSpeakerPhoto,
       },
     ],
     presentation:
-      "The session will provide a comprehensive overview of Google Kubernetes Engine (GKE). We'll cover core concepts, best practices, and real-world use cases.",
+      'Aleodor Tabarcea, Engineering Manager at Stripe, will explore how AI and natural language interfaces are revolutionizing cloud-native systems in his keynote.',
   },
   {
-    id: '141',
+    id: '111',
     time: '17:30',
-    title: 'Keynote: DevOps Lessons from a Primary School Teacher',
+    title: "Andrew Martin's Keynote - Pending Title",
     duration: '30 min',
     isKeynote: true,
     speakers: [
       {
-        id: '4',
-        name: 'Timothy Mamo',
-        company: 'Community Enthusiast',
-        photo: TimothyMamoPhoto,
+        id: '38',
+        name: 'Andrew Martin',
+        company: 'CEO of ControlPlane',
+        photo: AndrewMartinPhoto,
       },
     ],
     presentation:
-      'The ability to run stateful applications in general, and RDMS in particular, on Kubernetes is relatively new, but brings new and exciting capabilities to developers, DBAs and devops teams alike.' +
-      '<br/><br/>' +
-      'Think of self-service cluster creation and management, self-service backup and restore, automatic configuration of point-in-time recovery scenarios, etc. On top of that, by making Postgres clusters Kubernetes resources, you can now apply GitOps, CI/CD pipelines like Tekton and policy frameworks to your database.',
+      'Andrew Martin, CEO of ControlPlane, will share his insights from a wealth of experience in security engineering, systems development, and containerized solutions.',
   },
   {
     time: '18:00',
-    title: 'Closing Remarks from the Organizers',
-    duration: '15 min',
+    title: 'Mingle and Networking',
+    duration: '60 min',
   },
 ];
 
