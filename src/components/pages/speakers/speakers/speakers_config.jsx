@@ -1,25 +1,41 @@
 import AbdelSghiouarPhoto from './images/abdel-sghiouar.jpg';
+import AdelinaStanciuPhoto from './images/adelina-stanciu-photo.jpg';
 import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
 import AlexandrosCharosPhoto from './images/alexandros-charos-photo.jpg';
+import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
+import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
+import AndrewMartinPhoto from './images/andrew-martin-photo.jpeg';
+import BogdanTrufandaPhoto from './images/bogdan-trufanda-photo.jpg';
 import CarlosMestrePhoto from './images/carlos-mestre-del-pino-photo.jpg';
 import ClaudiuSonelPhoto from './images/claudiu-sonel.jpg';
 import DianaTodeaPhoto from './images/diana-todea-photo.jpg';
 import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
+import GeorgeHaberPhoto from './images/george-haber-photo.jpeg';
+import IrinaVerlanPhoto from './images/irina-verlan-photo.jpg';
 import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
+import LukaszHusarzPhoto from './images/lukasz-husarz-photo.jpg';
+import MarcinPaluszekPhoto from './images/marcin-paluszek-photo.jpeg';
 import MariusIordachePhoto from './images/marius-iordache-photo.jpg';
 import MarkSagiKazarPhoto from './images/mark-sagi-kazar-photo.jpg';
+import MihaiVasilescuPhoto from './images/mihai-vasilescu-photo.jpg';
+import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
 import PatrickDeKruijfPhoto from './images/patrick-de-kruijf.jpg';
+import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
+import PlamenPetkovPhoto from './images/plamen-petkov-photo.jpg';
 import RaduDobrinescuPhoto from './images/radu-dobrinescu.png';
 import RaduGheorghePhoto from './images/radu-gheorghe-photo.jpg';
+import RalucaBicaPhoto from './images/raluca-bica-photo.jpg';
 import RazvanDeaconescuPhoto from './images/razvan-deaconescu-photo.jpg';
 import RazvanValceanuPhoto from './images/razvan-valceanu.jpg';
+import SimonaBotnerPhoto from './images/simona-botner-photo.jpg';
 import StefanProdanPhoto from './images/stefan-prodan-photo.jpeg';
 import ViorelAnghelPhoto from './images/viorel-anghel.jpg';
 import VladMocanuPhoto from './images/vlad-mocanu.jpg';
+import VladOnetiuPhoto from './images/vlad-onetiu-photo.jpg';
 
 const SPEAKERS = [
   {
@@ -318,17 +334,17 @@ Iulian’s dedication to advancing his field is evident through his continuous i
   },
   {
     id: '17',
-    name: 'Diana Todea',
-    position: 'Senior Site Reliability Engineer @ EQS Group',
-    content: `Diana is a Senior Site Reliability Engineer at EQS Group specialized in Observability. She is passionate about serverless, SecOps and machine learning. She is an OpenTelemetry contributor and supports women in tech.`,
-    photo: DianaTodeaPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/diana-todea-b2a79968',
-    githubUrl: 'https://github.com/didiViking/Conferences_Talks',
-    communityUrl: '',
+    name: 'Łukasz Husarz',
+    position: 'Ten Square Games S.A. - Senior Systems Engineer',
+    content: `I'm Łukasz Husarz, a DevOps enthusiast at Ten Square Games. With a passion for observability, I'm a Prometheus Certified Associate. I enjoy helping teams gain a deep understanding of their products based on metrics, whether in cloud or on-premise environments.`,
+    photo: LukaszHusarzPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/%C5%82ukasz-husarz-390204141/',
+    githubUrl: '',
+    communityUrl: 'https://tensquaregames.com',
     instagramUrl: '',
-    websiteUrl: 'https://sessionize.com/diana-todea',
+    websiteUrl: 'https://sessionize.com/lukasz-husarz',
     time: '11:45',
-    title: 'From zero to developer: my one year serendipity journey with OpenTelemetry',
+    title: 'Zero Downtime, Maximum Play: Evolving Game Servers from Bare Metal to K3s',
     duration: '30 min',
   },
   {
@@ -401,7 +417,7 @@ In his free time, he enjoys playing football, reading literature, and running.`,
     name: 'George Haber',
     position: 'Entrepreneur',
     content: ``,
-    photo: GenericSpeakerPhoto,
+    photo: GeorgeHaberPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/georgehaber/',
     githubUrl: '',
     communityUrl: '',
@@ -409,6 +425,259 @@ In his free time, he enjoys playing football, reading literature, and running.`,
     websiteUrl: '',
     time: '10:15',
     title: ' AI or Not AI, That Is the Question',
+    duration: '30 min',
+  },
+  {
+    id: '23',
+    name: 'Marcin Paluszek',
+    position: 'Ten Square Games S.A. - Senior Systems Engineer',
+    content: `Senior Systems Engineer at game-dev company.`,
+    photo: MarcinPaluszekPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/marcin-paluszek-1b3a63130/',
+    githubUrl: '',
+    communityUrl: 'https://sessionize.com/marcin-paluszek',
+    instagramUrl: '',
+    websiteUrl: 'https://tensquaregames.com/',
+    time: '11:45',
+    title: 'Zero Downtime, Maximum Play: Evolving Game Servers from Bare Metal to K3s',
+    duration: '30 min',
+  },
+  {
+    id: '24',
+    name: 'Plamen Petkov',
+    position: 'Site Reliability Engineer at Fastmarkets',
+    content: `Plamen Petkov is a Site Reliability Engineer and Kubernetes & Cloud-Native Solutions Architect with extensive experience in building resilient, secure, and highly automated systems. Currently based in Sofia, Bulgaria, he holds all three key Kubernetes certifications (CKA, CKD, and CKS) and specializes in GitOps, security automation, and scalable platform solutions. His recent work includes developing enterprise-grade Kubernetes platforms, cross-region logging systems, and comprehensive observability solutions. With a background that spans from early website development to modern cloud architecture, Plamen brings practical, hands-on experience in implementing production-grade cloud-native solutions that enable teams to work more efficiently.`,
+    photo: PlamenPetkovPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/marcin-paluszek-1b3a63130/',
+    githubUrl: '',
+    communityUrl: 'https://sessionize.com/plamen-petkov',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '14:00',
+    title:
+      'Fleet Commander: Building a Scalable Hub-and-Spoke Architecture for Kubernetes Clusters',
+    duration: '30 min',
+  },
+  {
+    id: '25',
+    name: 'Bogdan Trufanda',
+    position: 'Threat Hunter, CrowdStrike',
+    content: `Bogdan Trufanda and Mihai Vasilescu are Threat Hunters in CrowdStrike's Cloud Runtime Security Team.<br/>
+Bogdan is responsible for gathering actionable application and security intelligence for CrowdStrike products, specialising in gathering Threat Intelligence and researching exploitation techniques involving containers and the cloud space.<br/>
+Mihai's expertise lies in gathering Threat Intelligence on recent botnets and network attack exploitation techniques, including malware analysis and botnet tracking.`,
+    photo: BogdanTrufandaPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/bogdan-trufanda-b31913130/',
+    githubUrl: '',
+    communityUrl: 'https://sessionize.com/bogdanT',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '14:00',
+    title: 'Containing the Threat: Analyzing cryptomining campaigns',
+    duration: '30 min',
+  },
+  {
+    id: '26',
+    name: 'Mihai Vasilescu',
+    position: 'Threat Hunter, CrowdStrike',
+    content: `Mihai Vasilescu is a Threat Hunters in CrowdStrike's Cloud Runtime Security Team. Mihai's expertise lies in gathering Threat Intelligence on recent botnets and network attack exploitation techniques, including malware analysis and botnet tracking.`,
+    photo: MihaiVasilescuPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/mihai-v-38a1baa8/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '14:00',
+    title: 'Containing the Threat: Analyzing cryptomining campaigns',
+    duration: '30 min',
+  },
+  {
+    id: '27',
+    name: 'Philip Miglinci',
+    position: 'Co-Founder Glasskube',
+    content: `Philip holds a Bachelor's degree in computer science and economics from the Vienna University of Technology and a Master's degree in Biomedical Engineering.<br/>
+In 2024 Philip co founded Glasskube, an Open Source Developer Tooling company that maintains an Open Source Package Manager for Kubernetes with over 3.000 stars and additional tooling to distribute modern software.<br/>
+Before working on Glasskube, Philip helped build up the alerting infrastructure for firefighting organizations in Austria and Germany as CTO.`,
+    photo: PhilipMiglinciPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/pmigat/',
+    githubUrl: '',
+    communityUrl: 'https://pmig.at/',
+    instagramUrl: '',
+    websiteUrl: 'https://glasskube.dev/',
+    time: '14:00',
+    title: 'Mastering Modern Software Distribution: On-Prem, Air-Gapped, and BYOC Challenges',
+    duration: '30 min',
+  },
+  {
+    id: '28',
+    name: 'Vlad Onetiu',
+    position: 'DataIceberg, DevSecOps Engineer',
+    content: `Vlad Onetiu, a DevSecOps and Software Automation Engineer from Cluj-Napoca, Romania, is renowned for his expertise in cloud technology, cybersecurity, and software automation. Since embarking on his career in 2018, he has been instrumental in conducting security research for Romania's major banks, significantly bolstering their cybersecurity measures. Vlad has also contributed to the field through his research papers on malware and phishing, shedding light on these critical cyber threats. His proficiency in employing cloud-based solutions for system automation, combined with his skillful handling of CI/CD processes and cloud architecture, reflects his commitment to fostering secure and resilient digital environments. Known for his passion for technology and relentless innovation, Vlad stands out as a leading figure in cybersecurity, continuously exploring and implementing cutting-edge strategies to address the challenges of evolving cyber threats.`,
+    photo: VladOnetiuPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/vlad-onetiu/',
+    githubUrl: '',
+    communityUrl: 'https://dataiceberg.com/blog',
+    instagramUrl: '',
+    websiteUrl: 'https://dataiceberg.com/blog/',
+    time: '14:45',
+    title:
+      'Architecting Seismic Intelligence with a High-Performance Serverless Earthquake Alert System',
+    duration: '30 min',
+  },
+  {
+    id: '29',
+    name: 'Raluca Bica',
+    position: 'Ericsson, Integration engineer',
+    content: `I have over a decade of experience working in the telecom industry, with the last five years focused on Kubernetes. During this time, I’ve developed a deep understanding of container orchestration and cloud-native technologies. I’m proud to be one of the six Kubestronauts from Romania and the first Kubestronaut woman from my country—a milestone that motivates me to inspire and support others in the Kubernetes community.
+    <br/><br/>
+    Outside of my professional work, I’m passionate about maintaining a balanced and fulfilling lifestyle. I enjoy going to the gym, traveling to new destinations, and diving into books that broaden my horizons and spark new ideas.
+`,
+    photo: RalucaBicaPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/raluca-bica-12602a96/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '14:45',
+    title: 'Never Trust, Always Verify: Principles of Zero-Trust Security in Kubernetes',
+    duration: '30 min',
+  },
+  {
+    id: '30',
+    name: 'Andreea Olaru',
+    position: 'eMag, Nodejs Developer',
+    content: `8 years of experience <br/>
+3 years with AWS, terraform and kafka. <br/>
+5 years with nodejs, php, mysql
+`,
+    photo: AndreeaOlaruPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/andreea-olaru-824b98137/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '14:45',
+    title: 'Migrating a production workload to another AWS account',
+    duration: '30 min',
+  },
+  {
+    id: '31',
+    name: 'Simona Botner',
+    position: 'Google Cloud, Customer Engineer',
+    content: `Customer Engineer at Google Cloud, specializing in helping organizations leverage cloud technologies for improved service delivery. With over 15 years of experience in IT, Project Management and Regulations. Empowering customers to adopt secure and transformative cloud solutions, unlocking new possibilities for their missions.`,
+    photo: SimonaBotnerPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/simonabotner/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '15:30',
+    title: 'Kube Resource Orchestrator: Simplify Kubernetes Resource Optimization',
+    duration: '30 min',
+  },
+  {
+    id: '32',
+    name: 'Adelina Stanciu',
+    position: 'Senior Engineering Manager at Finastra',
+    content: `Agile Tour Dublin, Various Tech Meetups, Trainer for 2 years at Tech Academy, Teaching Assistant for 1 year, Corporate Technical Trainer for 5 years(software architecture and development) (600 hours of training)`,
+    photo: AdelinaStanciuPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/adelinastanciu',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '15:30',
+    title:
+      'Proactive Threat Mitigation with Threat Modeler: Securing APIs and Authentication in Azure',
+    duration: '30 min',
+  },
+  {
+    id: '33',
+    name: 'Diana Todea',
+    position: 'Senior Site Reliability Engineer at EQS Group',
+    content: `Diana is a Senior Site Reliability Engineer at EQS Group specialized in Observability. She is passionate about serverless, SecOps and machine learning. She is an OpenTelemetry contributor and supports women in tech.`,
+    photo: DianaTodeaPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/diana-todea-b2a79968',
+    githubUrl: 'https://github.com/didiViking/Conferences_Talks',
+    communityUrl: 'https://sessionize.com/diana-todea',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '15:30',
+    title: 'From zero to developer: my one year serendipity journey with OpenTelemetry',
+    duration: '30 min',
+  },
+  {
+    id: '34',
+    name: 'Alexandru Dejanu',
+    position: 'SRE @ Systematic: Software engineer doing operations',
+    content: `Jack of all trades master of None. Alexandru Dejanu is a SRE @ Systematic with a strong passion for cloud-native landscape. Opinionated and tech agnostic loves helping others and sharing knowledge be it on tech stages, or StackOverflow and Medium.`,
+    photo: AlexandruDejanuPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/dejanualex/',
+    githubUrl: '',
+    communityUrl: 'https://dejanu.github.io/',
+    instagramUrl: 'https://www.instagram.com/dejanualex/',
+    websiteUrl: 'https://systematic.com/en-gb/',
+    time: '15:30',
+    title: 'Ops Conservation: The Total Amount of Operations in the Universe Remains Constant',
+    duration: '30 min',
+  },
+  {
+    id: '35',
+    name: 'Irina Verlan',
+    position: 'AI Ethics Advocate | Cloud Marketing Expert',
+    content: `Irina is a cloud marketing professional, specializing in scalable strategies and AI Ethics advocate. With expertise in cloud-native technologies and AI-driven solutions, she delivers impactful marketing projects across 33 countries. An Executive MBA student and speaker, she bridges technical innovation with responsible AI practices to drive sustainable growth.`,
+    photo: IrinaVerlanPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/irina-verlan/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '15:30',
+    title: 'Ethical AI in Cloud Native: Building Trustworthy Applications',
+    duration: '30 min',
+  },
+  {
+    id: '36',
+    name: 'Nicolas Fränkel',
+    position: 'Developer Advocate for Loft Labs',
+    content: `Nicolas Fränkel is a technologist focusing on cloud-native technologies, DevOps, CI/CD pipelines, and system observability. His focus revolves around creating technical content, delivering talks, and engaging with developer communities to promote the adoption of modern software practices. With a strong background in software, he has worked extensively with the JVM, applying his expertise across various industries. In addition to his technical work, he is the author of several books and regularly shares insights through his blog and open-source contributions.`,
+    photo: NicolasFrankelPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/nicolasfrankel/',
+    githubUrl: '',
+    communityUrl: 'https://blog.frankel.ch/',
+    instagramUrl: '',
+    websiteUrl: 'https://www.loft.sh/',
+    time: '15:30',
+    title: 'End-to-End Pull Request Testing on Kubernetes: A Walkthrough',
+    duration: '30 min',
+  },
+  {
+    id: '37',
+    name: 'Aleodor Tabarcea',
+    position: 'Engineering Manager at Stripe',
+    content: `Empowering Leader | Kindness spreader | Stanford GSB`,
+    photo: GenericSpeakerPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/aleodor-tabarcea/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '17:00',
+    title: 'Evolving to a Human-Centric Cloud Computing',
+    duration: '30 min',
+  },
+  {
+    id: '38',
+    name: 'Andrew Martin',
+    position: 'CEO of ControlPlane',
+    content: `CEO, ControlPlane | CISO, OpenUK | Co-chair emeritus, CNCF Security TAG ▲ Kubernetes & cloud security consulting ▲ FluxCD & Secure GitOps ▲ O'Reilly & SANS author | Hacker | Leading the Future of Enterprise Security`,
+    photo: AndrewMartinPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/andr3wmartin/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '17:30',
+    title: "Andrew Martin's Keynote - Pending Title",
     duration: '30 min',
   },
 ];
