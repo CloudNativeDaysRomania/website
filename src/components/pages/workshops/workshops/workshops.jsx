@@ -42,7 +42,7 @@ const ITEMS = [
     duration: '90 min',
     speakers: [
       {
-        id: '1',
+        id: '21',
         name: 'Abdel Sghiouar',
         company: 'Google Cloud',
         photo: AbdelSghiouarPhoto,
@@ -59,7 +59,7 @@ const ITEMS = [
       duration: '90 min',
       speakers: [
         {
-          id: '2',
+          id: '22',
           name: 'Andrei Petrescu',
           company: 'CloudHero',
           photo: AndreiPetrescuPhoto,
@@ -79,13 +79,13 @@ const ITEMS = [
       duration: '90 min',
       speakers: [
         {
-          id: '3',
+          id: '37',
           name: 'Vlad Mocanu',
           company: 'Metaminds',
           photo: VladMocanuPhoto,
         },
         {
-          id: '4',
+          id: '38',
           name: 'Razvan Valceanu',
           company: 'Metaminds',
           photo: RazvanValceanuPhoto,
