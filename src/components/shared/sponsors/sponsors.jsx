@@ -5,6 +5,7 @@ import React from 'react';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links';
 import AdoreMe from 'icons/sponsors-2025/adoreme-logo.png';
+import AWSIcon from 'icons/sponsors-2025/aws-logo.png';
 import CloudHero from 'icons/sponsors-2025/cloudhero-logo.png';
 import ControlPlane from 'icons/sponsors-2025/controlplane-logo.png';
 import CTSTradeIt from 'icons/sponsors-2025/ctstradeit-logo.png';
@@ -64,6 +65,10 @@ const ITEMS = [
       {
         icon: ControlPlane,
         url: 'https://www.linkedin.com/company/controlplane/?viewAsMember=true',
+      },
+      {
+        icon: AWSIcon,
+        url: 'https://www.linkedin.com/company/amazon-web-services/',
       },
     ],
     cardClassname: 'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:min-h-[94px]',
