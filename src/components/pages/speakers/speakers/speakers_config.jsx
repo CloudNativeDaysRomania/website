@@ -1,6 +1,7 @@
 import AbdelSghiouarPhoto from './images/abdel-sghiouar.jpg';
 import AdelinaStanciuPhoto from './images/adelina-stanciu-photo.jpg';
 import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
+import AleodorTabarceaPhoto from './images/aleodor-tabarcea-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
 import AlexandrosCharosPhoto from './images/alexandros-charos-photo.jpg';
@@ -13,7 +14,7 @@ import BogdanTrufandaPhoto from './images/bogdan-trufanda-photo.jpg';
 import CarlosMestrePhoto from './images/carlos-mestre-del-pino-photo.jpg';
 import ClaudiuSonelPhoto from './images/claudiu-sonel.jpg';
 import DianaTodeaPhoto from './images/diana-todea-photo.jpg';
-import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
+// import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
 import GeorgeHaberPhoto from './images/george-haber-photo.jpeg';
 import IrinaVerlanPhoto from './images/irina-verlan-photo.jpg';
 import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
@@ -40,76 +41,91 @@ import VladOnetiuPhoto from './images/vlad-onetiu-photo.jpg';
 const SPEAKERS = [
   {
     id: '1',
-    name: 'Abdel Sghiouar',
-    position: 'Cloud Developer Advocate at Google Cloud',
-    content:
-      'Abdel Sghiouar is a senior Cloud Developer Advocate @Google Cloud. A co-host of the Kubernetes Podcast by Google and a CNCF Ambassador. His focused areas are GKE/Kubernetes, Service Mesh and Serverless.' +
-      '<br/><br/>' +
-      "Abdel started his career in datacenters and infrastructure in Morocco where he is originally. Before moving to Google's largest EU datacenter in Belgium. Then in Sweden he joined Google Cloud Professional Services and spent 5 years working with Google Cloud customers on architecting and designing large scale distributed systems before turning to advocacy and community work.",
-    photo: AbdelSghiouarPhoto,
-    twitterUrl: 'https://x.com/boredabdel',
-    linkedInUrl: 'https://www.linkedin.com/in/sabdelfettah/',
+    name: 'Andra Somesan',
+    position: 'Solutions Architect @ AWS',
+    content: `Andra is a Solutions Architect at Amazon Web Services, based in Romania. She has transitioned from telco to IT with a focus on cloud and DevOps. She is curious to learn and excited to share the knowledge. In over 10 years of working experience, she has deepen her technical expertise and broaden her perspectives by diving into topics like community, inclusion and diversity, and EQ.`,
+    photo: AndraSomesanPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/andra-somesan-0003ab69/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
-    websiteUrl: 'https://boredabdel.medium.com',
-    time: '09:30',
-    title: 'Workshop: Hands-on with Ray on Kubernetes',
-    duration: '90 min',
+    websiteUrl: '',
+    time: '09:45',
+    title: 'Unlocking Innovation: Start Thinking Like a Scientist',
+    duration: '30 min',
   },
   {
     id: '2',
-    name: 'Andrei Petrescu',
-    position: 'DevOps Department Lead @ CloudHero',
-    content:
-      'Andrei Petrescu leads the DevOps Department at CloudHero and has experience with running Kubernetes in production for 7+ years.' +
-      '<br/><br/>' +
-      'He has held workshops and presentations on various topics at Cloud Native Bucharest, Voxxed Days and CloudHero-organized events. He is a CKA and Professional Architect on AWS.',
-    photo: AndreiPetrescuPhoto,
-    twitterUrl: '',
-    linkedInUrl: 'https://www.linkedin.com/in/andrei-petrescu-cloudhero/',
+    name: 'George Haber',
+    position: 'Entrepreneur turned VC',
+    content: `George Haber is known as a technology entrepreneur, investor, and visionary. He has been involved in various technology ventures, particularly in the realms of AI, multimedia, data storage, and software. George Haber is recognized for founding and investing in technology companies that have had significant impacts in their fields.
+<br/><br/>
+    
+Haber's Laws: (c): <br/>
+ 2024: AI is AntiFragile.<br/>
+ 2020: AI does it better, if it can be done.<br/>
+ 2016: If it can be done in Software, AI will do it better.<br/>
+ 1993: If it can be done in Software, it will.<br/>
+<br/><br/>
+Successful Silicon Valley entrepreneur with profound foresight regarding AI, evidenced by "Haber's Laws." 
+<br/><br/>
+Expertise in Strategic Marketing, Competitive Analysis, Financing, Mergers, and Acquisitions, with proven track record, in envisioning, implementing, guiding, and managing High Tech Companies from StartUp to M&A or IPO. 
+ <br/><br/>
+Recognized for contributions to the tech industry, including a pivotal role in the development of the Microsoft Xbox.
+<br/><br/>
+Active Angel Investor, Board Member working with entrepreneurs on serious, innovative, disruptive technologies especially AI integration into everything where AI's Super Powers are beneficial.
+<br/><br/>
+BOD Board of Directors, Public and Private Companies: <br/>
+Zoran (Nasdaq: ZRAN), <br/>
+3Dfx (Nasdaq: TDFX), <br/>
+Intervideo (Nasdaq: IVII), <br/>
+Class Data Systems acquired by Cisco (Nasdaq: CSCO), <br/>
+InterAKT acquired by Adobe (Nasdaq: ADBE), <br/>
+BitDefender.`,
+    photo: GeorgeHaberPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/georgehaber/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '09:30',
-    title: 'Workshop: Istio Service Mesh',
-    duration: '90 min',
+    time: '10:15',
+    title: ' AI or Not AI, That Is the Question',
+    duration: '30 min',
   },
   {
     id: '3',
-    name: 'Vlad Mocanu',
-    position: 'Senior Platform Engineer at Metaminds',
-    content:
-      'With 20 years of experience in the tech trenches, I’ve seen it all—from bare-metal servers that needed a hug to cloud-native architectures that scale like magic.' +
-      '<br/><br/>' +
-      'These days, I’m all about Kubernetes and cloud-native technologies, where my passion lies somewhere between “obsession” and “true love.” If it runs in a container, orchestrates with Kubernetes I’m probably already tinkering with it.',
-    photo: VladMocanuPhoto,
-    twitterUrl: '',
-    linkedInUrl: 'https://www.linkedin.com/in/vtmocanu/',
+    name: 'Aleodor Tabarcea',
+    position: 'Engineering Manager at Stripe',
+    content: `Aleodor Tabarcea is an Engineering Manager at Stripe with over a decade of experience in web development and software architecture. Having worked at Bitdefender, Adobe, and Snyk before joining Stripe, he has played a key role in building and scaling products that impact millions globally.<br/><br/>
+Passionate about leadership, open-source innovation, and the intersection of AI and cloud computing, Aleodor explores how technology is evolving to become more intuitive, accessible, and human-centric. His work and speaking engagements focus on how AI-driven natural language interfaces are revolutionizing cloud-native infrastructure, changing how engineers build, manage, and interact with complex systems.<br/><br/>
+Beyond his professional work, Aleodor actively engages with developer communities, mentoring the next generation of engineers and leaders. He believes in a future where technology isn’t just coded—it’s conversed with, in our problem solving process, making software development and infrastructure management more collaborative & efficient.
+`,
+    photo: AleodorTabarceaPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/aleodor-tabarcea/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '09:30',
-    title: 'Workshop: Escape from Certificate Hell: Managing Trust in Your Kubernetes Cluster',
-    duration: '90 min',
+    time: '17:00',
+    title: 'Evolving to a Human-Centric Cloud Computing',
+    duration: '30 min',
   },
   {
     id: '4',
-    name: 'Razvan Valceanu',
-    position: 'Senior DevOps at Metaminds',
-    content: 'Automation enthusiast and Open Source believer.',
-    photo: RazvanValceanuPhoto,
-    twitterUrl: '',
-    linkedInUrl: 'https://linkedin.com/in/oxigen/',
+    name: 'Andrew Martin',
+    position: 'CEO of ControlPlane',
+    content: `Andrew has an incisive security engineering ethos gained building and destroying high-traffic web applications. Proficient in systems development, testing, and operations, he is comfortable profiling and securing every tier of a bare metal or cloud native system, and has battle-hardened experience delivering containerised solutions to enterprise and government. He is a co-founder at ControlPlane (ControlPlane.io)
+<br/><br/>
+Andrew has presented at international conferences including KubeCon, Velocity, SANS, OWASP, DevOpsDays, Container Camp, IPExpo, and numerous other local events and meetups.`,
+    photo: AndrewMartinPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/andr3wmartin/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '09:30',
-    title: 'Workshop: Escape from Certificate Hell: Managing Trust in Your Kubernetes Cluster',
-    duration: '90 min',
+    time: '17:30',
+    title: "Andrew Martin's Keynote - Pending Title",
+    duration: '30 min',
   },
   {
     id: '5',
@@ -242,7 +258,7 @@ const SPEAKERS = [
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: 'https://cloudbase.it/blog',
-    time: '09:30',
+    time: '11:00',
     title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
     duration: '60 min',
   },
@@ -264,7 +280,7 @@ Besides the coding time, his interests in the cloud domain are performance frame
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: 'https://sessionize.com/adrian-vladu',
-    time: '09:30',
+    time: '11:00',
     title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
     duration: '60 min',
   },
@@ -272,14 +288,14 @@ Besides the coding time, his interests in the cloud domain are performance frame
     id: '13',
     name: 'Alessandro Vozza',
     position: 'Technical Specialist Application Innovation & AI @ Microsoft',
-    content: `Community leader and CNCF ambassador, Alessandro has spent the last few years building cloud native infrastructures for Microsoft customers, animating the Dutch community, and training others to pass the CKx exams. He has passion for all things cloud native, he's been around open source for 25 years and recently moved to a new Developer Relations role. Twitter handle: @bongo`,
+    content: `Community leader and CNCF ambassador, Alessandro has spent the last few years building cloud native infrastructures for Microsoft customers, animating the Dutch community, and training others to pass the CKx exams. He has passion for all things cloud native, he's been around open source for 25 years and recently moved to a new Developer Relations role.`,
     photo: AlessandroVozzaPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/alessandrovozza',
     githubUrl: 'https://github.com/ader1990',
     communityUrl: '',
     instagramUrl: 'https://www.instagram.com/cloudnativeams/',
     websiteUrl: 'https://dev.to/ams0',
-    time: '11',
+    time: '11:00',
     title: 'The Way of Cloud Native AI',
     duration: '30 min',
   },
@@ -296,7 +312,7 @@ Involved in networks evolution activities and principles, author or co-author of
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '11',
+    time: '11:00',
     title: 'Cloud Native Telco Transformation: From Legacy to Agility',
     duration: '30 min',
   },
@@ -386,7 +402,7 @@ In his free time, he enjoys playing football, reading literature, and running.`,
     id: '20',
     name: 'Razvan Deaconescu',
     position: 'Community Manager @ Unikraft, Associate Professor @ POLITEHNICA Bucharest',
-    content: `Razvan is an Associate Professor at University POLITEHNICA of Bucharest, Romania, the Computer Science and Engineering Department and Community Manager for the Unikraft OSS community (and Unikraft GmbH). He's primarily interested in operating systems and security, with a penchant for teaching and mentoring. If a class uses "operating systems" as part of its name, it's likely e is part of the team.`,
+    content: `Razvan is an Associate Professor at University POLITEHNICA of Bucharest, Romania, the Computer Science and Engineering Department and Community Manager for the Unikraft OSS community (and Unikraft GmbH). He's primarily interested in operating systems and security, with a penchant for teaching and mentoring. If a class uses "operating systems" as part of its name, it's likely he is part of the team.`,
     photo: RazvanDeaconescuPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/razvandeaconescu/',
     githubUrl: '',
@@ -399,33 +415,41 @@ In his free time, he enjoys playing football, reading literature, and running.`,
   },
   {
     id: '21',
-    name: 'Andra Somesan',
-    position: 'Solutions Architect @ AWS',
-    content: ``,
-    photo: AndraSomesanPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/andra-somesan-0003ab69/',
+    name: 'Abdel Sghiouar',
+    position: 'Cloud Developer Advocate at Google Cloud',
+    content:
+      'Abdel Sghiouar is a senior Cloud Developer Advocate @Google Cloud. A co-host of the Kubernetes Podcast by Google and a CNCF Ambassador. His focused areas are GKE/Kubernetes, Service Mesh and Serverless.' +
+      '<br/><br/>' +
+      "Abdel started his career in datacenters and infrastructure in Morocco where he is originally. Before moving to Google's largest EU datacenter in Belgium. Then in Sweden he joined Google Cloud Professional Services and spent 5 years working with Google Cloud customers on architecting and designing large scale distributed systems before turning to advocacy and community work.",
+    photo: AbdelSghiouarPhoto,
+    twitterUrl: 'https://x.com/boredabdel',
+    linkedInUrl: 'https://www.linkedin.com/in/sabdelfettah/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
-    websiteUrl: '',
-    time: '09:45',
-    title: 'Unlocking Innovation: Start Thinking Like a Scientist',
-    duration: '30 min',
+    websiteUrl: 'https://boredabdel.medium.com',
+    time: '09:30',
+    title: 'Workshop: Hands-on with Ray on Kubernetes',
+    duration: '90 min',
   },
   {
     id: '22',
-    name: 'George Haber',
-    position: 'Entrepreneur',
-    content: ``,
-    photo: GeorgeHaberPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/georgehaber/',
+    name: 'Andrei Petrescu',
+    position: 'DevOps Department Lead @ CloudHero',
+    content:
+      'Andrei Petrescu leads the DevOps Department at CloudHero and has experience with running Kubernetes in production for 7+ years.' +
+      '<br/><br/>' +
+      'He has held workshops and presentations on various topics at Cloud Native Bucharest, Voxxed Days and CloudHero-organized events. He is a CKA and Professional Architect on AWS.',
+    photo: AndreiPetrescuPhoto,
+    twitterUrl: '',
+    linkedInUrl: 'https://www.linkedin.com/in/andrei-petrescu-cloudhero/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '10:15',
-    title: ' AI or Not AI, That Is the Question',
-    duration: '30 min',
+    time: '09:30',
+    title: 'Workshop: Istio Service Mesh',
+    duration: '90 min',
   },
   {
     id: '23',
@@ -462,8 +486,8 @@ In his free time, he enjoys playing football, reading literature, and running.`,
     id: '25',
     name: 'Bogdan Trufanda',
     position: 'Threat Hunter, CrowdStrike',
-    content: `Bogdan Trufanda and Mihai Vasilescu are Threat Hunters in CrowdStrike's Cloud Runtime Security Team.<br/>
-Bogdan is responsible for gathering actionable application and security intelligence for CrowdStrike products, specialising in gathering Threat Intelligence and researching exploitation techniques involving containers and the cloud space.<br/>
+    content: `Bogdan Trufanda and Mihai Vasilescu are Threat Hunters in CrowdStrike's Cloud Runtime Security Team.<br/><br/>
+Bogdan is responsible for gathering actionable application and security intelligence for CrowdStrike products, specialising in gathering Threat Intelligence and researching exploitation techniques involving containers and the cloud space.<br/><br/>
 Mihai's expertise lies in gathering Threat Intelligence on recent botnets and network attack exploitation techniques, including malware analysis and botnet tracking.`,
     photo: BogdanTrufandaPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/bogdan-trufanda-b31913130/',
@@ -494,8 +518,8 @@ Mihai's expertise lies in gathering Threat Intelligence on recent botnets and ne
     id: '27',
     name: 'Philip Miglinci',
     position: 'Co-Founder Glasskube',
-    content: `Philip holds a Bachelor's degree in computer science and economics from the Vienna University of Technology and a Master's degree in Biomedical Engineering.<br/>
-In 2024 Philip co founded Glasskube, an Open Source Developer Tooling company that maintains an Open Source Package Manager for Kubernetes with over 3.000 stars and additional tooling to distribute modern software.<br/>
+    content: `Philip holds a Bachelor's degree in computer science and economics from the Vienna University of Technology and a Master's degree in Biomedical Engineering.<br/><br/>
+In 2024 Philip co founded Glasskube, an Open Source Developer Tooling company that maintains an Open Source Package Manager for Kubernetes with over 3.000 stars and additional tooling to distribute modern software.<br/><br/>
 Before working on Glasskube, Philip helped build up the alerting infrastructure for firefighting organizations in Austria and Germany as CTO.`,
     photo: PhilipMiglinciPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/pmigat/',
@@ -511,7 +535,11 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     id: '28',
     name: 'Vlad Onetiu',
     position: 'DataIceberg, DevSecOps Engineer',
-    content: `Vlad Onetiu, a DevSecOps and Software Automation Engineer from Cluj-Napoca, Romania, is renowned for his expertise in cloud technology, cybersecurity, and software automation. Since embarking on his career in 2018, he has been instrumental in conducting security research for Romania's major banks, significantly bolstering their cybersecurity measures. Vlad has also contributed to the field through his research papers on malware and phishing, shedding light on these critical cyber threats. His proficiency in employing cloud-based solutions for system automation, combined with his skillful handling of CI/CD processes and cloud architecture, reflects his commitment to fostering secure and resilient digital environments. Known for his passion for technology and relentless innovation, Vlad stands out as a leading figure in cybersecurity, continuously exploring and implementing cutting-edge strategies to address the challenges of evolving cyber threats.`,
+    content: `Vlad Onetiu, a DevSecOps and Software Automation Engineer from Cluj-Napoca, Romania, is renowned for his expertise in cloud technology, cybersecurity, and software automation. Since embarking on his career in 2018, he has been instrumental in conducting security research for Romania's major banks, significantly bolstering their cybersecurity measures. 
+    <br/><br/>
+    Vlad has also contributed to the field through his research papers on malware and phishing, shedding light on these critical cyber threats. His proficiency in employing cloud-based solutions for system automation, combined with his skillful handling of CI/CD processes and cloud architecture, reflects his commitment to fostering secure and resilient digital environments. 
+    <br/><br/>
+    Known for his passion for technology and relentless innovation, Vlad stands out as a leading figure in cybersecurity, continuously exploring and implementing cutting-edge strategies to address the challenges of evolving cyber threats.`,
     photo: VladOnetiuPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/vlad-onetiu/',
     githubUrl: '',
@@ -639,7 +667,9 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     id: '36',
     name: 'Nicolas Fränkel',
     position: 'Developer Advocate for Loft Labs',
-    content: `Nicolas Fränkel is a technologist focusing on cloud-native technologies, DevOps, CI/CD pipelines, and system observability. His focus revolves around creating technical content, delivering talks, and engaging with developer communities to promote the adoption of modern software practices. With a strong background in software, he has worked extensively with the JVM, applying his expertise across various industries. In addition to his technical work, he is the author of several books and regularly shares insights through his blog and open-source contributions.`,
+    content: `Nicolas Fränkel is a technologist focusing on cloud-native technologies, DevOps, CI/CD pipelines, and system observability. His focus revolves around creating technical content, delivering talks, and engaging with developer communities to promote the adoption of modern software practices. 
+    <br/><br/>
+    With a strong background in software, he has worked extensively with the JVM, applying his expertise across various industries. In addition to his technical work, he is the author of several books and regularly shares insights through his blog and open-source contributions.`,
     photo: NicolasFrankelPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/nicolasfrankel/',
     githubUrl: '',
@@ -652,33 +682,38 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
   },
   {
     id: '37',
-    name: 'Aleodor Tabarcea',
-    position: 'Engineering Manager at Stripe',
-    content: `Empowering Leader | Kindness spreader | Stanford GSB`,
-    photo: GenericSpeakerPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/aleodor-tabarcea/',
+    name: 'Vlad Mocanu',
+    position: 'Senior Platform Engineer at Metaminds',
+    content:
+      'With 20 years of experience in the tech trenches, I’ve seen it all—from bare-metal servers that needed a hug to cloud-native architectures that scale like magic.' +
+      '<br/><br/>' +
+      'These days, I’m all about Kubernetes and cloud-native technologies, where my passion lies somewhere between “obsession” and “true love.” If it runs in a container, orchestrates with Kubernetes I’m probably already tinkering with it.',
+    photo: VladMocanuPhoto,
+    twitterUrl: '',
+    linkedInUrl: 'https://www.linkedin.com/in/vtmocanu/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '17:00',
-    title: 'Evolving to a Human-Centric Cloud Computing',
-    duration: '30 min',
+    time: '09:30',
+    title: 'Workshop: Escape from Certificate Hell: Managing Trust in Your Kubernetes Cluster',
+    duration: '90 min',
   },
   {
     id: '38',
-    name: 'Andrew Martin',
-    position: 'CEO of ControlPlane',
-    content: `CEO, ControlPlane | CISO, OpenUK | Co-chair emeritus, CNCF Security TAG ▲ Kubernetes & cloud security consulting ▲ FluxCD & Secure GitOps ▲ O'Reilly & SANS author | Hacker | Leading the Future of Enterprise Security`,
-    photo: AndrewMartinPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/andr3wmartin/',
+    name: 'Razvan Valceanu',
+    position: 'Senior DevOps at Metaminds',
+    content: 'Automation enthusiast and Open Source believer.',
+    photo: RazvanValceanuPhoto,
+    twitterUrl: '',
+    linkedInUrl: 'https://linkedin.com/in/oxigen/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '17:30',
-    title: "Andrew Martin's Keynote - Pending Title",
-    duration: '30 min',
+    time: '09:30',
+    title: 'Workshop: Escape from Certificate Hell: Managing Trust in Your Kubernetes Cluster',
+    duration: '90 min',
   },
 ];
 

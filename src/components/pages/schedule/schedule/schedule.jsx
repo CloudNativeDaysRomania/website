@@ -7,6 +7,7 @@ import Modal from 'components/shared/modal';
 
 import AdelinaStanciuPhoto from './images/adelina-stanciu-photo.jpg';
 import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
+import AleodorTabarceaPhoto from './images/aleodor-tabarcea-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
 import AlexandrosCharosPhoto from './images/alexandros-charos-photo.jpg';
@@ -70,13 +71,13 @@ const ITEMS = [
     isKeynote: true,
     speakers: [
       {
-        id: '21',
+        id: '1',
         name: 'Andra Somesan',
         company: 'AWS',
         photo: AndraSomesanPhoto,
       },
     ],
-    presentation: `Andra Somesan, Solutions Architect at Amazon Web Services (AWS), brings her expertise in innovation and problem-solving in her talk, "Unlocking Innovation: Start Thinking Like a Scientist." Andra will explore how curiosity and collaboration drive groundbreaking solutions.`,
+    presentation: `Let’s dive into the mindset that drives groundbreaking discoveries. This keynote explores how curiosity, experimentation, and collaboration can revolutionize any new solution. Join me as we uncover practical strategies to foster innovation, break down complex problems, and harness data-driven insights to transform your strategies into game-changing realities.`,
   },
   {
     id: '02',
@@ -86,7 +87,7 @@ const ITEMS = [
     isKeynote: true,
     speakers: [
       {
-        id: '22',
+        id: '2',
         name: 'George Haber',
         company: 'Entrepreneur',
         photo: GeorgeHaberPhoto,
@@ -539,10 +540,10 @@ We’ll explore how to:
     isKeynote: true,
     speakers: [
       {
-        id: '37',
+        id: '3',
         name: 'Aleodor Tabarcea',
         company: 'Stripe',
-        photo: GenericSpeakerPhoto,
+        photo: AleodorTabarceaPhoto,
       },
     ],
     presentation:
@@ -551,12 +552,12 @@ We’ll explore how to:
   {
     id: '111',
     time: '17:30',
-    title: "Andrew Martin's Keynote - Pending Title",
+    title: "Andrew Martin's Closing Keynote",
     duration: '30 min',
     isKeynote: true,
     speakers: [
       {
-        id: '38',
+        id: '4',
         name: 'Andrew Martin',
         company: 'CEO of ControlPlane',
         photo: AndrewMartinPhoto,
@@ -671,7 +672,7 @@ const Schedule = ({ location }) => {
                         <h2 className="text-2xl font-bold leading-snug">{title}</h2>
                       </div>
                     ) : (
-                      <h3 className="inline-flex items-center gap-x-2">
+                      <h3 className="inline-flex items-center justify-center gap-x-2">
                         {id ? (
                           <Button
                             className="!whitespace-normal !text-left text-lg !font-semibold !leading-snug tracking-tight text-primary-1 transition-colors duration-200 hover:text-blue-1 md:text-base"
@@ -692,7 +693,7 @@ const Schedule = ({ location }) => {
                         )}
                       </h3>
                     )}
-                    <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
+                    <div className="mt-auto flex items-center justify-center gap-x-8 sm:gap-x-7">
                       {duration && (
                         <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
                           {room || ITEMS[0].title} - {duration}
