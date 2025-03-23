@@ -6,7 +6,7 @@ import SPEAKERS from '../../speakers/speakers/speakers_config';
 
 const TITLE = 'Speakers';
 const Speakers = () => (
-  <section className="safe-paddings relative bg-white  2xl:pb-20 md:pb-20 sm:pb-20">
+  <section className="safe-paddings relative mb-20 bg-white 2xl:pb-20 md:pb-20 sm:pb-20">
     <div className="container text-center">
       <h2 className="text-6xl font-bold leading-denser text-primary-1">{TITLE}</h2>
       <br />
