@@ -52,13 +52,13 @@ export default {
     to: '/mission-statement',
     target: '_blank',
   },
-  privacy: {
-    to: '/data-privacy',
-    target: '_blank',
-  },
   conduct: {
     to: '/conduct',
     homeTo: '/conduct',
+  },
+  privacy: {
+    to: '/privacy',
+    homeTo: '/privacy',
   },
   // conduct: {
   //   to: 'https://events.linuxfoundation.org/about/code-of-conduct/',
