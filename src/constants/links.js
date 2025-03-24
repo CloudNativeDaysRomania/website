@@ -60,6 +60,10 @@ export default {
     to: '/privacy',
     homeTo: '/privacy',
   },
+  terms: {
+    to: '/terms',
+    homeTo: '/terms',
+  },
   // conduct: {
   //   to: 'https://events.linuxfoundation.org/about/code-of-conduct/',
   //   target: '_blank',

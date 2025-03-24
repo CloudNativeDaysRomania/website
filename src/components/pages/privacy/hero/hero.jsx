@@ -9,6 +9,7 @@ const Hero = () => (
         className="text-6xl font-bold leading-denser tracking-[-0.01em] md:text-4xl"
         dangerouslySetInnerHTML={{ __html: TITLE }}
       />
+      <br />
       <p>Last updated: March 24, 2025</p> <br />
       <p>
         Your privacy is important to Us. It is Cloud Native Days Romania's policy to respect Your
@@ -511,7 +512,7 @@ const Hero = () => (
       <h2 className="text-4xl leading-normal text-primary-1">Contact Us</h2>
       <p>If you have any questions about this Privacy Policy, You can contact us:</p>
       <ul className="ml-8 mt-4 list-disc">
-        <li>By email: vlad.fratila@gmail.com</li>
+        <li>By email: cloudnativedaysromania@gmail.com</li>
       </ul>{' '}
       <br />
     </div>
