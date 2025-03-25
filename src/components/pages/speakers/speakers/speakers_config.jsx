@@ -4,7 +4,6 @@ import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AleodorTabarceaPhoto from './images/aleodor-tabarcea-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
-import AlexandrosCharosPhoto from './images/alexandros-charos-photo.jpg';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
@@ -26,6 +25,7 @@ import MihaiVasilescuPhoto from './images/mihai-vasilescu-photo.jpg';
 import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
 import PatrickDeKruijfPhoto from './images/patrick-de-kruijf.jpg';
 import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
+import PiotrTrebaczPhoto from './images/piotr-trebacz-photo.jpg';
 import PlamenPetkovPhoto from './images/plamen-petkov-photo.jpg';
 import RaduDobrinescuPhoto from './images/radu-dobrinescu.png';
 import RaduGheorghePhoto from './images/radu-gheorghe-photo.jpg';
@@ -258,7 +258,7 @@ Andrew has presented at international conferences including KubeCon, Velocity, S
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: 'https://cloudbase.it/blog',
-    time: '11:00',
+    time: '15:30',
     title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
     duration: '60 min',
   },
@@ -280,7 +280,7 @@ Besides the coding time, his interests in the cloud domain are performance frame
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: 'https://sessionize.com/adrian-vladu',
-    time: '11:00',
+    time: '15:30',
     title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
     duration: '60 min',
   },
@@ -344,7 +344,7 @@ Iulian’s dedication to advancing his field is evident through his continuous i
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '11:45',
+    time: '15:30',
     title: 'Vespa: A Fast Search/Vector DB with a Microservices Architecture',
     duration: '30 min',
   },
@@ -382,20 +382,19 @@ Member of the organizing team for KCD Netherlands, he is a community oriented pe
   },
   {
     id: '19',
-    name: 'Alexandros Charos',
-    position: 'Engineering Manager @ OPAP',
-    content: `Passionate about creating functional and efficient software, Alex was introduced to the world of software engineering in his teenage years and has never stopped learning since.
-Currently, as a Software Development Manager at OPAP, Greece’s leading lottery and Sportsbook operator, Alex has over 15 years of experience in software engineering, specializing in distributed systems. He has led numerous successful projects worldwide, demonstrating expertise in designing and implementing scalable solutions.
+    name: 'Piotr Trębacz',
+    position: 'Cloud Native DevOps Advisor',
+    content: `Piotr is a seasoned Cloud Native Devops and Platform Automation mentor with profound insights on original product development ranging across multiple diverse markets. Contributions he made are still alive in sectors of industry 4.0, banking, logistics, fuel, gambling and even air defense systems.
 <br/><br/>
-In his free time, he enjoys playing football, reading literature, and running.`,
-    photo: AlexandrosCharosPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/alex-charos/',
+In his 10+ years career he is aiming to make a positive impact on any business and person they engage with by using his passion for simplifying complex systems, sharing knowledge and leaving things in better shape than he approached it. What truly sets him apart is an extensive Second Brain, a Hawaiian shirts collection and a wide range of hobbies (running TTRPG, probability driven optimization for board games, playing harmonica, rapid-prototyping and manufacturing, vector and traditional graphics, motorcycle joyrides).`,
+    photo: PiotrTrebaczPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/pgtrebacz/',
     githubUrl: '',
-    communityUrl: '',
+    communityUrl: 'https://sessionize.com/pgtrebacz',
     instagramUrl: '',
     websiteUrl: '',
     time: '12:30',
-    title: 'CAPtivating architecture: Navigating Distributed Systems and Microservices',
+    title: 'Delete all Dockerfiles',
     duration: '30 min',
   },
   {
@@ -409,7 +408,7 @@ In his free time, he enjoys playing football, reading literature, and running.`,
     communityUrl: 'https://unikraft.org/',
     instagramUrl: '',
     websiteUrl: '',
-    time: '12:30',
+    time: '14:00',
     title: 'Headless Browsers in the Cloud',
     duration: '30 min',
   },
@@ -527,7 +526,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: 'https://pmig.at/',
     instagramUrl: '',
     websiteUrl: 'https://glasskube.dev/',
-    time: '14:00',
+    time: '14:45',
     title: 'Mastering Modern Software Distribution: On-Prem, Air-Gapped, and BYOC Challenges',
     duration: '30 min',
   },
@@ -583,7 +582,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '14:45',
+    time: '12:30',
     title: 'Migrating a production workload to another AWS account',
     duration: '30 min',
   },
@@ -598,7 +597,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '15:30',
+    time: '11:00',
     title: 'Kube Resource Orchestrator: Simplify Kubernetes Resource Optimization',
     duration: '30 min',
   },
@@ -644,7 +643,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: 'https://dejanu.github.io/',
     instagramUrl: 'https://www.instagram.com/dejanualex/',
     websiteUrl: 'https://systematic.com/en-gb/',
-    time: '15:30',
+    time: '16:15',
     title: 'Ops Conservation: The Total Amount of Operations in the Universe Remains Constant',
     duration: '30 min',
   },
@@ -659,7 +658,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '15:30',
+    time: '16:15',
     title: 'Ethical AI in Cloud Native: Building Trustworthy Applications',
     duration: '30 min',
   },
@@ -676,7 +675,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: 'https://blog.frankel.ch/',
     instagramUrl: '',
     websiteUrl: 'https://www.loft.sh/',
-    time: '15:30',
+    time: '16:15',
     title: 'End-to-End Pull Request Testing on Kubernetes: A Walkthrough',
     duration: '30 min',
   },
