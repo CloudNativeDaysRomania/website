@@ -10,7 +10,6 @@ import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AleodorTabarceaPhoto from './images/aleodor-tabarcea-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
-import AlexandrosCharosPhoto from './images/alexandros-charos-photo.jpg';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
@@ -28,6 +27,7 @@ import MariusIordachePhoto from './images/marius-iordache-photo.jpg';
 import MihaiVasilescuPhoto from './images/mihai-vasilescu-photo.jpg';
 import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
 import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
+import PiotrTrebaczPhoto from './images/piotr-trebacz-photo.jpg';
 import PlamenPetkovPhoto from './images/plamen-petkov-photo.jpg';
 import RaduGheorghePhoto from './images/radu-gheorghe-photo.jpg';
 import RalucaBicaPhoto from './images/raluca-bica-photo.jpg';
@@ -103,25 +103,20 @@ const ITEMS = [
   {
     id: '031',
     time: '11:00',
-    title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
+    title: 'Kube Resource Orchestrator: Simplify Kubernetes Resource Optimization',
     duration: '30 min',
     isKeynote: false,
     speakers: [
       {
-        id: '12',
-        name: 'Adrian Vladu',
-        company: 'Cloudbase Solutions',
-        photo: AdrianVladuPhoto,
-      },
-      {
-        id: '11',
-        name: 'Alessandro Pilotti',
-        company: 'Cloudbase Solutions',
-        photo: AlessandroPilottiPhoto,
+        id: '31',
+        name: 'Simona Botner',
+        company: 'Google Cloud',
+        photo: SimonaBotnerPhoto,
       },
     ],
     presentation:
-      "'A community Linux distribution designed for container workloads, with high security and low maintenance' - Flatcar Container Linux is the first Linux based operating system CNCF incubating project. In this presentation, we will go through what makes Flatcar Container Linux secure, easy to deploy and use in the cloud native context of containerization and Kubernetes.",
+      "This session provides a technical dive into Kube Resource Orchestrator, a groundbreaking tool for Kubernetes resource management. We'll explore its architecture, key components, and how it integrates with existing Kubernetes infrastructure. Learn how it leverages advanced algorithms and machine learning to automate resource optimization, improve cluster density, and reduce operational complexity. We'll also cover its API, configuration options, and best practices for deployment and management.",
+
     secondTrack: {
       id: '032',
       time: '11:00',
@@ -174,21 +169,26 @@ The live demo will highlight how vClusters simplify Kubernetes controller testin
     secondTrack: {
       id: '042',
       time: '11:45',
-      title: 'Vespa: A Fast Search/Vector DB with a Microservices Architecture',
+      title:
+        'Proactive Threat Mitigation with Threat Modeler: Securing APIs and Authentication in Azure',
       duration: '30 min',
       speakers: [
         {
-          id: '16',
-          name: 'Radu Gheorghe',
-          company: 'Vespa.ai',
-          photo: RaduGheorghePhoto,
+          id: '32',
+          name: 'Adelina Stanciu',
+          company: 'Finastra',
+          photo: AdelinaStanciuPhoto,
         },
       ],
-      presentation: `An architecture session, contrasting the layout of Vespa with that of more familiar search engines like Elasticsearch.
-<br/><br/>
-Explains how we can get a more stable and scalable cluster with massive query performance gains. And because there's no free lunch, the trade-offs in terms of complexity and write performance.
-<br/><br/>
-Contains an obligatory demo of running Vespa in Kubernetes.`,
+      presentation: `This in-depth session explores how to proactively identify and mitigate security threats in your cloud-native applications.
+      <br/><br/>
+      We will examine common security vulnerabilities such as Authentication Abuse, Malicious Insiders, and Insecure Interfaces and APIs in cloud environments, with a specific focus on Azure-native solutions.
+      <br/><br/>
+      You will learn best practices for securing APIs, including strong authentication, encryption, and API access control, to protect against unauthorized access and data breaches.
+      <br/><br/>
+      We will also highlight how Azure tools like Azure Key Vault and Azure API Management can help securely manage sensitive information and facilitate integration with external systems.
+      <br/><br/>
+      Through practical, real-world examples, we’ll explore how to leverage threat modeling techniques, identify vulnerable interfaces, and apply targeted security controls to defend against common attack vectors.`,
     },
     thirdTrack: {
       id: '043',
@@ -229,46 +229,38 @@ Contains an obligatory demo of running Vespa in Kubernetes.`,
     secondTrack: {
       id: '052',
       time: '12:30',
-      title: 'CAPtivating architecture: Navigating Distributed Systems and Microservices',
+      title: 'Delete all Dockerfiles',
       duration: '30 min',
       speakers: [
         {
           id: '19',
-          name: 'Alexandros Charos',
-          company: 'OPAP',
-          photo: AlexandrosCharosPhoto,
+          name: 'Piotr Trębacz',
+          company: 'Freelancer',
+          photo: PiotrTrebaczPhoto,
         },
       ],
-      presentation: `The goal of this presentation is to go through with the audience the various pitfalls and gotchas that distributed systems entail.
-We will go through a case study where a monolith was broken down to smaller services and the technical, business and organisational justifications for doing so.
+      presentation: `Writing a good Dockerfiles is hard enough, teaching others how to do it and keeping it maintained is even harder. So how can you possibly keep touch with multiple teams spinning dozens of projects each? Of course you abstract and metaprogram! But how to avoid NIH syndrome then?
 <br/><br/>
-We will evaluate our approaches in tackling some tough distributed systems problems as we analyse them in terms of communication (synchronous/asynchronous) and coordination (orchestration/choreography).
+This talk will be about pitfalls of independent fullstack teams dockerizing their applications and showcase the open source solution that's in line with Platform Engineering - Cloud Native Buildpacks.
 <br/><br/>
-Finally we will focus on the overlooked importance of proper timeout and retry policies as a means to increase your system's resilience and therefore stability.`,
+We will define what is a "Production Ready Container" for everybody and how to trigger its build with one command. I will show how easy it will be to add or expand the technology stacks that you maintain - so you won't need to hunt multiple repositories to change the Dockerfiles in each of them.`,
     },
 
     thirdTrack: {
       id: '053',
       time: '12:30',
-      title: 'Headless Browsers in the Cloud',
+      title: 'Migrating a production workload to another AWS account',
       duration: '30 min',
       speakers: [
         {
-          id: '20',
-          name: 'Razvan Deaconescu',
-          company: 'Unikraft / POLITEHNICA Bucharest',
-          photo: RazvanDeaconescuPhoto,
+          id: '30',
+          name: 'Andreea Olaru',
+          company: 'eMag',
+          photo: AndreeaOlaruPhoto,
         },
       ],
-      presentation: `With the advanced of AI agents, headless browsers are an increasingly important part in the cloud ecosystem. They are useful to scrape websites, create screenshots and export contents, while using the full power of modern browsers (Chromium, Firefox).
-<br/><br/>
-The cloud ecosystem presents several headless browser offerings, such as <a href='https://www.browserless.io/'><u>Browserless.io</u></a>, <a href='https://www.browserbase.com/'><u>Browserbase</u></a>, <a href='https://www.zenrows.com/'><u>Zenrows</u></a>, <a href='https://phantomjscloud.com/'><u>PhantomJS Cloud</u></a>. Yet, these solutions mostly still use containers and do not fully use a true serverless model.
-<br/><br/>
-Enter <a href='https://unikraft.cloud/'><u>Unikraft Cloud</u></a>, the True Serverless Platform. Unikraft Cloud is the platform of choice for intermitent and bursty workloads, such as those that include headless browsers.
-<br/><br/>
-At Unikraft Cloud we offer support for Playwright and Puppeteer frameworks, backed by Firefox, Chromium and WebKit browsers, all running in a true serverless manner, including scale-to-zero, auto-scale, and stateful millisecond (re)starts. Moreover, we are to provide singular instances running browsers with a WebSocket interface, decoupling the application logic from the browser service. All backed by efficient virtual machines and the millisecond Unikraft Cloud technology.
-<br/><br/>
-We will demo the deployment and use of headless browsers in Unikraft Cloud, we will show how you can create fleets of headless browser instances with minimum costs and millisecond semantics, and we will take a glimpse into the inner magic of the Unikraft Cloud platform.`,
+      presentation:
+        'Our journey of migrating our production workload to another AWS account with challenges and discoveries. Migration including aurora db(mysql), TBs of s3 data, route53 zone, elasticache and some other aws compute services.',
     },
   },
   {
@@ -330,35 +322,25 @@ We will demo the deployment and use of headless browsers in Unikraft Cloud, we w
     thirdTrack: {
       id: '063',
       time: '14:00',
-      title: 'Mastering Modern Software Distribution: On-Prem, Air-Gapped, and BYOC Challenges',
+      title: 'Headless Browsers in the Cloud',
       duration: '30 min',
       speakers: [
         {
-          id: '27',
-          name: 'Philip Miglinci',
-          company: 'Glasskube',
-          photo: PhilipMiglinciPhoto,
+          id: '20',
+          name: 'Razvan Deaconescu',
+          company: 'Unikraft / POLITEHNICA Bucharest',
+          photo: RazvanDeaconescuPhoto,
         },
       ],
-      presentation:
-        'Distributing software across diverse environments—on-premises, air-gapped systems, and bring-your-own-cloud (BYOC) setups—presents unique challenges that can overwhelm even experienced teams. Each deployment target introduces specific requirements for installation, configuration, updates, and lifecycle management, making it critical to design flexible yet reliable distribution strategies.' +
-        '<br/><br/>' +
-        `This talk provides a comprehensive look into the modern approaches and tools that can help streamline software delivery. Topics include:
-<br/>
-- Packaging Strategies: Best practices for semantic versioning, dependency management, and build automation to ensure consistency and ease of deployment.
-<br/>
-- Pre-Flight and Target Assessments: How to prepare your software for complex environments by including pre-flight checks, configuration validation, and packaging dependencies for air-gapped installations.
-<br/>
-- Deployment Methods: Comparing methods like binaries, Docker images, Helm charts, and other BYOC models, highlighting their strengths and use cases.
-<br/>
-- Security and Application Boundaries: Key considerations for securing software within Kubernetes clusters, including the decision between namespaced and cluster-scoped installations, and how to minimize risks while maintaining operational flexibility.
-<br/>
-- Lifecycle Management: Strategies for managing updates, monitoring licenses, and maintaining communication with distributed deployment teams post-installation.
-` +
-        '<br/><br/>' +
-        'The session will also dive into anonymized real-world examples, illustrating how successful organizations have navigated these challenges. You’ll learn actionable dos and don’ts, evaluate state-of-the-art tools, and discover new techniques to make your software easier to distribute, maintain, and upgrade across diverse environments.' +
-        '<br/><br/>' +
-        'Whether you’re dealing with air-gapped installations, multi-cloud configurations, or on-prem solutions, this talk will equip you with the knowledge and insights to take your software distribution processes to the next level.',
+      presentation: `With the advanced of AI agents, headless browsers are an increasingly important part in the cloud ecosystem. They are useful to scrape websites, create screenshots and export contents, while using the full power of modern browsers (Chromium, Firefox).
+      <br/><br/>
+      The cloud ecosystem presents several headless browser offerings, such as <a href='https://www.browserless.io/'><u>Browserless.io</u></a>, <a href='https://www.browserbase.com/'><u>Browserbase</u></a>, <a href='https://www.zenrows.com/'><u>Zenrows</u></a>, <a href='https://phantomjscloud.com/'><u>PhantomJS Cloud</u></a>. Yet, these solutions mostly still use containers and do not fully use a true serverless model.
+      <br/><br/>
+      Enter <a href='https://unikraft.cloud/'><u>Unikraft Cloud</u></a>, the True Serverless Platform. Unikraft Cloud is the platform of choice for intermitent and bursty workloads, such as those that include headless browsers.
+      <br/><br/>
+      At Unikraft Cloud we offer support for Playwright and Puppeteer frameworks, backed by Firefox, Chromium and WebKit browsers, all running in a true serverless manner, including scale-to-zero, auto-scale, and stateful millisecond (re)starts. Moreover, we are to provide singular instances running browsers with a WebSocket interface, decoupling the application logic from the browser service. All backed by efficient virtual machines and the millisecond Unikraft Cloud technology.
+      <br/><br/>
+      We will demo the deployment and use of headless browsers in Unikraft Cloud, we will show how you can create fleets of headless browser instances with minimum costs and millisecond semantics, and we will take a glimpse into the inner magic of the Unikraft Cloud platform.`,
     },
   },
   {
@@ -399,60 +381,77 @@ We will demo the deployment and use of headless browsers in Unikraft Cloud, we w
     thirdTrack: {
       id: '073',
       time: '14:45',
-      title: 'Migrating a production workload to another AWS account',
+      title: 'Mastering Modern Software Distribution: On-Prem, Air-Gapped, and BYOC Challenges',
       duration: '30 min',
       speakers: [
         {
-          id: '30',
-          name: 'Andreea Olaru',
-          company: 'eMag',
-          photo: AndreeaOlaruPhoto,
+          id: '27',
+          name: 'Philip Miglinci',
+          company: 'Glasskube',
+          photo: PhilipMiglinciPhoto,
         },
       ],
       presentation:
-        'Our journey of migrating our production workload to another AWS account with challenges and discoveries. Migration including aurora db(mysql), TBs of s3 data, route53 zone, elasticache and some other aws compute services.',
+        'Distributing software across diverse environments—on-premises, air-gapped systems, and bring-your-own-cloud (BYOC) setups—presents unique challenges that can overwhelm even experienced teams. Each deployment target introduces specific requirements for installation, configuration, updates, and lifecycle management, making it critical to design flexible yet reliable distribution strategies.' +
+        '<br/><br/>' +
+        `This talk provides a comprehensive look into the modern approaches and tools that can help streamline software delivery. Topics include:
+<br/>
+- Packaging Strategies: Best practices for semantic versioning, dependency management, and build automation to ensure consistency and ease of deployment.
+<br/>
+- Pre-Flight and Target Assessments: How to prepare your software for complex environments by including pre-flight checks, configuration validation, and packaging dependencies for air-gapped installations.
+<br/>
+- Deployment Methods: Comparing methods like binaries, Docker images, Helm charts, and other BYOC models, highlighting their strengths and use cases.
+<br/>
+- Security and Application Boundaries: Key considerations for securing software within Kubernetes clusters, including the decision between namespaced and cluster-scoped installations, and how to minimize risks while maintaining operational flexibility.
+<br/>
+- Lifecycle Management: Strategies for managing updates, monitoring licenses, and maintaining communication with distributed deployment teams post-installation.
+` +
+        '<br/><br/>' +
+        'The session will also dive into anonymized real-world examples, illustrating how successful organizations have navigated these challenges. You’ll learn actionable dos and don’ts, evaluate state-of-the-art tools, and discover new techniques to make your software easier to distribute, maintain, and upgrade across diverse environments.' +
+        '<br/><br/>' +
+        'Whether you’re dealing with air-gapped installations, multi-cloud configurations, or on-prem solutions, this talk will equip you with the knowledge and insights to take your software distribution processes to the next level.',
     },
   },
 
   {
     id: '081',
     time: '15:30',
-    title: 'Kube Resource Orchestrator: Simplify Kubernetes Resource Optimization',
+    title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
     duration: '30 min',
     speakers: [
       {
-        id: '31',
-        name: 'Simona Botner',
-        company: 'Google Cloud',
-        photo: SimonaBotnerPhoto,
+        id: '12',
+        name: 'Adrian Vladu',
+        company: 'Cloudbase Solutions',
+        photo: AdrianVladuPhoto,
+      },
+      {
+        id: '11',
+        name: 'Alessandro Pilotti',
+        company: 'Cloudbase Solutions',
+        photo: AlessandroPilottiPhoto,
       },
     ],
     presentation:
-      "This session provides a technical dive into Kube Resource Orchestrator, a groundbreaking tool for Kubernetes resource management. We'll explore its architecture, key components, and how it integrates with existing Kubernetes infrastructure. Learn how it leverages advanced algorithms and machine learning to automate resource optimization, improve cluster density, and reduce operational complexity. We'll also cover its API, configuration options, and best practices for deployment and management.",
-
+      "'A community Linux distribution designed for container workloads, with high security and low maintenance' - Flatcar Container Linux is the first Linux based operating system CNCF incubating project. In this presentation, we will go through what makes Flatcar Container Linux secure, easy to deploy and use in the cloud native context of containerization and Kubernetes.",
     secondTrack: {
       id: '082',
       time: '15:30',
-      title:
-        'Proactive Threat Mitigation with Threat Modeler: Securing APIs and Authentication in Azure',
+      title: 'Vespa: A Fast Search/Vector DB with a Microservices Architecture',
       duration: '30 min',
       speakers: [
         {
-          id: '32',
-          name: 'Adelina Stanciu',
-          company: 'Finastra',
-          photo: AdelinaStanciuPhoto,
+          id: '16',
+          name: 'Radu Gheorghe',
+          company: 'Vespa.ai',
+          photo: RaduGheorghePhoto,
         },
       ],
-      presentation: `This in-depth session explores how to proactively identify and mitigate security threats in your cloud-native applications.
+      presentation: `An architecture session, contrasting the layout of Vespa with that of more familiar search engines like Elasticsearch.
 <br/><br/>
-We will examine common security vulnerabilities such as Authentication Abuse, Malicious Insiders, and Insecure Interfaces and APIs in cloud environments, with a specific focus on Azure-native solutions.
+Explains how we can get a more stable and scalable cluster with massive query performance gains. And because there's no free lunch, the trade-offs in terms of complexity and write performance.
 <br/><br/>
-You will learn best practices for securing APIs, including strong authentication, encryption, and API access control, to protect against unauthorized access and data breaches.
-<br/><br/>
-We will also highlight how Azure tools like Azure Key Vault and Azure API Management can help securely manage sensitive information and facilitate integration with external systems.
-<br/><br/>
-Through practical, real-world examples, we’ll explore how to leverage threat modeling techniques, identify vulnerable interfaces, and apply targeted security controls to defend against common attack vectors.`,
+Contains an obligatory demo of running Vespa in Kubernetes.`,
     },
 
     thirdTrack: {
