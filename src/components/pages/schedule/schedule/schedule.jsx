@@ -125,7 +125,7 @@ const ITEMS = [
       speakers: [
         {
           id: '13',
-          name: 'Alessandro Vozza',
+          name: 'Alessandro Stefouli-Vozza',
           company: 'Microsoft',
           photo: AlessandroVozzaPhoto,
         },
