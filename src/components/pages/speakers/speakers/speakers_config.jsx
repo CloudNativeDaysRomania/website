@@ -286,7 +286,7 @@ Besides the coding time, his interests in the cloud domain are performance frame
   },
   {
     id: '13',
-    name: 'Alessandro Vozza',
+    name: 'Alessandro Stefouli-Vozza',
     position: 'Technical Specialist Application Innovation & AI @ Microsoft',
     content: `Community leader and CNCF ambassador, Alessandro has spent the last few years building cloud native infrastructures for Microsoft customers, animating the Dutch community, and training others to pass the CKx exams. He has passion for all things cloud native, he's been around open source for 25 years and recently moved to a new Developer Relations role.`,
     photo: AlessandroVozzaPhoto,
