@@ -6,6 +6,7 @@ import AwsCommunityDayRomania from './images/AwsCommunityDayRomania_reworked.png
 import AwsUserGroupTimisoara from './images/AwsUserGroupTimisoara.png';
 import AsociatiaBEST from './images/BEST_Bucharest.png';
 import BucharestDevOpsHackersMeetup from './images/BucharestDevOpsHackersMeetup.png';
+import CloudNativeTimisoara from './images/CloudNativeTimisoara.png';
 import KubeCareers from './images/kube-careers.png';
 import KubeEvents from './images/kubevents.png';
 import ROSEdu from './images/ROSEdu.png';
@@ -24,7 +25,7 @@ const ITEMS = [
   { icon: BucharestDevOpsHackersMeetup, url: 'https://www.meetup.com/devops_hackers/' },
   // { icon: CloudNativeBucharest, url: '' }, // No logo
   // { icon: CloudNativeCluj, url: '' }, // No logo
-  // { icon: CloudNativeTimisoara, url: '' }, // No logo
+  { icon: CloudNativeTimisoara, url: 'https://www.linkedin.com/company/cloud-native-timisoara/' },
   { icon: KubeCareers, url: 'https://kube.careers/' }, // Learnk8s
   { icon: KubeEvents, url: 'https://kube.events/' }, // Learnk8s
   {

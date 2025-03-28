@@ -9,6 +9,8 @@ import AWSIcon from 'icons/sponsors-2025/aws-logo.png';
 import CloudHero from 'icons/sponsors-2025/cloudhero-logo.png';
 import ControlPlane from 'icons/sponsors-2025/controlplane-logo.png';
 import CTSTradeIt from 'icons/sponsors-2025/ctstradeit-logo.png';
+import DatanetSystems from 'icons/sponsors-2025/datanetsystems-logo.png';
+import LifeInCloud from 'icons/sponsors-2025/lifeincloud-logo.png';
 import Metaminds from 'icons/sponsors-2025/metaminds-logo.png';
 import Oveit from 'icons/sponsors-2025/oveit-logo.png';
 import PureStorage from 'icons/sponsors-2025/purestorage-portworx-logo.png';
@@ -44,6 +46,7 @@ const ITEMS = [
         url: 'https://www.linkedin.com/company/27228337/admin/page-posts/published/',
       },
       { icon: Metaminds, url: 'https://www.linkedin.com/company/metaminds-romania/' },
+      { icon: DatanetSystems, url: 'https://www.linkedin.com/company/datanet-systems/' },
     ],
     cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
     iconClassname: 'max-w-[390px] sm:max-w-[350px]',
@@ -53,6 +56,7 @@ const ITEMS = [
     logos: [
       { icon: Systematic, url: 'https://www.linkedin.com/company/systematic/' },
       { icon: Zitec, url: 'https://www.linkedin.com/company/lifeatzitec/' },
+      { icon: LifeInCloud, url: 'https://www.linkedin.com/company/lifeincloud-global/' },
     ],
     cardClassname: 'min-w-[384px] min-h-[122px] sm:min-w-[320px] sm:min-h-[115px]',
     iconClassname: 'max-w-[330px] sm:min-w-[290px]',

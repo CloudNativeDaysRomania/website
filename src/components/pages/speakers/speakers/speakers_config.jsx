@@ -485,9 +485,9 @@ In his 10+ years career he is aiming to make a positive impact on any business a
     id: '25',
     name: 'Bogdan Trufanda',
     position: 'Threat Hunter, CrowdStrike',
-    content: `Bogdan Trufanda and Mihai Vasilescu are Threat Hunters in CrowdStrike's Cloud Runtime Security Team.<br/><br/>
-Bogdan is responsible for gathering actionable application and security intelligence for CrowdStrike products, specialising in gathering Threat Intelligence and researching exploitation techniques involving containers and the cloud space.<br/><br/>
-Mihai's expertise lies in gathering Threat Intelligence on recent botnets and network attack exploitation techniques, including malware analysis and botnet tracking.`,
+    content: `Bogdan Trufanda is a Threat Hunter in CrowdStrike's Cloud Runtime Security Team.
+<br/><br/>
+Bogdan is responsible for gathering actionable application and security intelligence for CrowdStrike products, specialising in gathering Threat Intelligence and researching exploitation techniques involving containers and the cloud space.`,
     photo: BogdanTrufandaPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/bogdan-trufanda-b31913130/',
     githubUrl: '',
@@ -605,7 +605,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     id: '32',
     name: 'Adelina Stanciu',
     position: 'Senior Engineering Manager at Finastra',
-    content: `Agile Tour Dublin, Various Tech Meetups, Trainer for 2 years at Tech Academy, Teaching Assistant for 1 year, Corporate Technical Trainer for 5 years(software architecture and development) (600 hours of training)`,
+    content: `Adelina is a seasoned technology leader with over 15 years of experience in agile software development across the full life cycle. Leading geographically dispersed teams across finance, e-commerce, and cybersecurity, Adelina has successfully designed, developed, and deployed complex, scalable applications. As an independent trainer in software architecture, Adelina is passionate about sharing knowledge through articles and thought leadership. With expertise in project planning, release management, and stakeholder coordination, Adelina consistently drives high-impact results while ensuring seamless execution across teams and projects.`,
     photo: AdelinaStanciuPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/adelinastanciu',
     githubUrl: '',
@@ -620,8 +620,8 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
   {
     id: '33',
     name: 'Diana Todea',
-    position: 'Senior Site Reliability Engineer at EQS Group',
-    content: `Diana is a Senior Site Reliability Engineer at EQS Group specialized in Observability. She is passionate about serverless, SecOps and machine learning. She is an OpenTelemetry contributor and supports women in tech.`,
+    position: 'Developer Advocate at Aircall',
+    content: `Diana is a Developer Advocate at Aircall. She has worked as a Senior Site Reliability Engineer focused on Observability. She is passionate about serverless, SecOps and machine learning. She is an active contributor to the OpenTelemetry open source project and supports women in tech.`,
     photo: DianaTodeaPhoto,
     linkedInUrl: 'https://www.linkedin.com/in/diana-todea-b2a79968',
     githubUrl: 'https://github.com/didiViking/Conferences_Talks',
