@@ -641,6 +641,7 @@ const Schedule = ({ location }) => {
                     'bg-lightGreen': title === 'Welcome',
                     'bg-lightYellow': title === 'Lunch',
                     'bg-lightOrange': title === 'Drinks / networking',
+                    'sm:hidden': isHeader, // Hide the header row on mobile
                   }
                 )}
                 key={index}
