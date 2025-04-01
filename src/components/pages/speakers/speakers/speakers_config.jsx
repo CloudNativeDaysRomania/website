@@ -124,7 +124,7 @@ Andrew has presented at international conferences including KubeCon, Velocity, S
     instagramUrl: '',
     websiteUrl: '',
     time: '17:30',
-    title: "Andrew Martin's Keynote - Pending Title",
+    title: 'Mind the Gap: Bridging Supply Chain Policy with Git-less GitOps',
     duration: '30 min',
   },
   {
