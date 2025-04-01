@@ -20,6 +20,7 @@ import DianaTodeaPhoto from './images/diana-todea-photo.jpg';
 import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
 import GeorgeHaberPhoto from './images/george-haber-photo.jpeg';
 import IrinaVerlanPhoto from './images/irina-verlan-photo.jpg';
+import IuliaFeroliPhoto from './images/iulia-feroli-photo.jpg';
 import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
 import LukaszHusarzPhoto from './images/lukasz-husarz-photo.jpg';
 import MarcinPaluszekPhoto from './images/marcin-paluszek-photo.jpeg';
@@ -27,7 +28,6 @@ import MariusIordachePhoto from './images/marius-iordache-photo.jpg';
 import MihaiVasilescuPhoto from './images/mihai-vasilescu-photo.jpg';
 import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
 import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
-import PiotrTrebaczPhoto from './images/piotr-trebacz-photo.jpg';
 import PlamenPetkovPhoto from './images/plamen-petkov-photo.jpg';
 import RaduGheorghePhoto from './images/radu-gheorghe-photo.jpg';
 import RalucaBicaPhoto from './images/raluca-bica-photo.jpg';
@@ -229,21 +229,21 @@ The live demo will highlight how vClusters simplify Kubernetes controller testin
     secondTrack: {
       id: '052',
       time: '12:30',
-      title: 'Delete all Dockerfiles',
+      title: 'Building my own (accurate!) Spotify Wrapped',
       duration: '30 min',
       speakers: [
         {
           id: '19',
-          name: 'Piotr Trębacz',
-          company: 'Freelancer',
-          photo: PiotrTrebaczPhoto,
+          name: 'Iulia Feroli',
+          company: 'Elastic',
+          photo: IuliaFeroliPhoto,
         },
       ],
-      presentation: `Writing a good Dockerfiles is hard enough, teaching others how to do it and keeping it maintained is even harder. So how can you possibly keep touch with multiple teams spinning dozens of projects each? Of course you abstract and metaprogram! But how to avoid NIH syndrome then?
-<br/><br/>
-This talk will be about pitfalls of independent fullstack teams dockerizing their applications and showcase the open source solution that's in line with Platform Engineering - Cloud Native Buildpacks.
-<br/><br/>
-We will define what is a "Production Ready Container" for everybody and how to trigger its build with one command. I will show how easy it will be to add or expand the technology stacks that you maintain - so you won't need to hunt multiple repositories to change the Dockerfiles in each of them.`,
+      presentation: `Wrapped has become one of the most widely anticipated data analytics dashboards of the year. But what happens when the results aren't as complex (or accurate) as people were expecting? Data scientists come in to save the day!
+      <br/><br/>
+Using elasticsearch and kibana I will be creating my own musical trends and insights using the user generated data - that you can also download and follow along with!
+      <br/><br/>
+From queries, filters, and aggregations to visualizations, time series analysis, and brat summer - we will explore how search analytics can be used for every day cases.`,
     },
 
     thirdTrack: {
@@ -551,7 +551,7 @@ We’ll explore how to:
   {
     id: '111',
     time: '17:30',
-    title: "Andrew Martin's Closing Keynote",
+    title: 'Mind the Gap: Bridging Supply Chain Policy with Git-less GitOps',
     duration: '30 min',
     isKeynote: true,
     speakers: [

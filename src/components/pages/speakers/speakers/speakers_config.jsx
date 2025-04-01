@@ -16,6 +16,7 @@ import DianaTodeaPhoto from './images/diana-todea-photo.jpg';
 // import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
 import GeorgeHaberPhoto from './images/george-haber-photo.jpeg';
 import IrinaVerlanPhoto from './images/irina-verlan-photo.jpg';
+import IuliaFeroliPhoto from './images/iulia-feroli-photo.jpg';
 import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
 import LukaszHusarzPhoto from './images/lukasz-husarz-photo.jpg';
 import MarcinPaluszekPhoto from './images/marcin-paluszek-photo.jpeg';
@@ -25,7 +26,6 @@ import MihaiVasilescuPhoto from './images/mihai-vasilescu-photo.jpg';
 import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
 import PatrickDeKruijfPhoto from './images/patrick-de-kruijf.jpg';
 import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
-import PiotrTrebaczPhoto from './images/piotr-trebacz-photo.jpg';
 import PlamenPetkovPhoto from './images/plamen-petkov-photo.jpg';
 import RaduDobrinescuPhoto from './images/radu-dobrinescu.png';
 import RaduGheorghePhoto from './images/radu-gheorghe-photo.jpg';
@@ -382,19 +382,17 @@ Member of the organizing team for KCD Netherlands, he is a community oriented pe
   },
   {
     id: '19',
-    name: 'Piotr Trębacz',
-    position: 'Cloud Native DevOps Advisor',
-    content: `Piotr is a seasoned Cloud Native Devops and Platform Automation mentor with profound insights on original product development ranging across multiple diverse markets. Contributions he made are still alive in sectors of industry 4.0, banking, logistics, fuel, gambling and even air defense systems.
-<br/><br/>
-In his 10+ years career he is aiming to make a positive impact on any business and person they engage with by using his passion for simplifying complex systems, sharing knowledge and leaving things in better shape than he approached it. What truly sets him apart is an extensive Second Brain, a Hawaiian shirts collection and a wide range of hobbies (running TTRPG, probability driven optimization for board games, playing harmonica, rapid-prototyping and manufacturing, vector and traditional graphics, motorcycle joyrides).`,
-    photo: PiotrTrebaczPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/pgtrebacz/',
+    name: 'Iulia Feroli',
+    position: 'Senior Developer Advocate @Elastic',
+    content: `After working on many sides of tech (as a cloud architect at MSFT, a sales engineer and PMM at Dataiku) I’ve finally found my perfect match as a developer advocate at Elastic - focusing on creating content for, and learning from the tech community. I specialise in data science & AI solutions and love creating videos, blogs, demos and sessions to get people excited about the possibilities of tech. I love to talk about anything NLP, cloud, data science 101, MLOPs, generative AI, and more.`,
+    photo: IuliaFeroliPhoto,
+    linkedInUrl: 'https://www.linkedin.com/in/iuliaferoli/',
     githubUrl: '',
-    communityUrl: 'https://sessionize.com/pgtrebacz',
+    communityUrl: 'https://sessionize.com/iulia-feroli',
     instagramUrl: '',
-    websiteUrl: '',
+    websiteUrl: 'https://www.elastic.co/',
     time: '12:30',
-    title: 'Delete all Dockerfiles',
+    title: 'Building my own (accurate!) Spotify Wrapped',
     duration: '30 min',
   },
   {
