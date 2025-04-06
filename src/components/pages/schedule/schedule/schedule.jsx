@@ -463,7 +463,7 @@ Contains an obligatory demo of running Vespa in Kubernetes.`,
         {
           id: '33',
           name: 'Diana Todea',
-          company: 'EQS Group',
+          company: 'Aircall',
           photo: DianaTodeaPhoto,
         },
       ],
