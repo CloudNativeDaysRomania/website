@@ -14,7 +14,6 @@ import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
 import AndrewMartinPhoto from './images/andrew-martin-photo.jpeg';
-import BogdanTrufandaPhoto from './images/bogdan-trufanda-photo.jpg';
 import CarlosMestrePhoto from './images/carlos-mestre-del-pino-photo.jpg';
 import DianaTodeaPhoto from './images/diana-todea-photo.jpg';
 import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
@@ -25,7 +24,6 @@ import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
 import LukaszHusarzPhoto from './images/lukasz-husarz-photo.jpg';
 import MarcinPaluszekPhoto from './images/marcin-paluszek-photo.jpeg';
 import MariusIordachePhoto from './images/marius-iordache-photo.jpg';
-import MihaiVasilescuPhoto from './images/mihai-vasilescu-photo.jpg';
 import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
 import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
 import PlamenPetkovPhoto from './images/plamen-petkov-photo.jpg';
@@ -295,30 +293,11 @@ From queries, filters, and aggregations to visualizations, time series analysis,
     secondTrack: {
       id: '062',
       time: '14:00',
-      title: 'Containing the Threat: Analyzing cryptomining campaigns',
+      title: 'TBD',
       duration: '30 min',
-      speakers: [
-        {
-          id: '25',
-          name: 'Bogdan Trufanda',
-          company: 'CrowdStrike',
-          photo: BogdanTrufandaPhoto,
-        },
-        {
-          id: '26',
-          name: 'Mihai Vasilescu',
-          company: 'CrowdStrike',
-          photo: MihaiVasilescuPhoto,
-        },
-      ],
-      presentation:
-        'According to OWASP, insecure workload configuration is the top security problem in Kubernetes. With the shift to Platform engineering, minimizing the attack surface of our Kubernetes clusters becomes even more critical.' +
-        '<br/><br/>' +
-        "This talk will cover the Principle of Least Privilege and how it can be applied to balance robust security and a good experience for users and administrators. Moreover, we'll see how to use Falco to observe if we did well and detect suspicious events that may happen in our clusters anyway." +
-        '<br/><br/>' +
-        'Join us to discover how the Principle of Least Privilege, Falco and observability empower you to safeguard your Kubernetes ecosystem without making yourself and your users suffer.',
+      speakers: [],
+      presentation: 'N/A',
     },
-
     thirdTrack: {
       id: '063',
       time: '14:00',

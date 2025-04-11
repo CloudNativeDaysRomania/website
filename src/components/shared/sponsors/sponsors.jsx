@@ -5,13 +5,17 @@ import React from 'react';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links';
 import AdoreMe from 'icons/sponsors-2025/adoreme-logo.png';
+import Alchemy from 'icons/sponsors-2025/alchemy-logo.png';
 import AWSIcon from 'icons/sponsors-2025/aws-logo.png';
 import CloudHero from 'icons/sponsors-2025/cloudhero-logo.png';
+import CNCF from 'icons/sponsors-2025/cncf-logo.svg';
 import ControlPlane from 'icons/sponsors-2025/controlplane-logo.png';
 import CTSTradeIt from 'icons/sponsors-2025/ctstradeit-logo.png';
 import DatanetSystems from 'icons/sponsors-2025/datanetsystems-logo.png';
+import GoogleCloud from 'icons/sponsors-2025/googlecloud-logo.png';
 import LifeInCloud from 'icons/sponsors-2025/lifeincloud-logo.png';
 import Metaminds from 'icons/sponsors-2025/metaminds-logo.png';
+import Orange from 'icons/sponsors-2025/orange-logo.png';
 import Oveit from 'icons/sponsors-2025/oveit-logo.png';
 import PureStorage from 'icons/sponsors-2025/purestorage-portworx-logo.png';
 import Stripe from 'icons/sponsors-2025/stripe-logo.png';
@@ -25,15 +29,15 @@ const TITLE = 'Sponsors';
 const ITEMS = [
   {
     title: 'Diamond',
-    logos: [{ icon: Stripe, url: 'https://stripe.com/' }],
+    logos: [{ icon: Stripe, url: 'https://www.linkedin.com/company/stripe/' }],
     cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
     iconClassname: 'max-w-[390px] sm:max-w-[350px]',
   },
   {
     title: 'Platinum',
     logos: [
-      { icon: PureStorage, url: 'https://www.linkedin.com/company/6578150/admin/dashboard/' },
-      // { icon: Orange, url: 'https://www.google.com/' }
+      { icon: PureStorage, url: 'https://www.linkedin.com/company/portworx/' },
+      { icon: Orange, url: 'https://www.linkedin.com/company/orange/' },
     ],
     cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
     iconClassname: 'max-w-[390px] sm:max-w-[350px]',
@@ -47,6 +51,7 @@ const ITEMS = [
       },
       { icon: Metaminds, url: 'https://www.linkedin.com/company/metaminds-romania/' },
       { icon: DatanetSystems, url: 'https://www.linkedin.com/company/datanet-systems/' },
+      { icon: GoogleCloud, url: 'https://www.linkedin.com/showcase/google-cloud/' },
     ],
     cardClassname: 'min-w-[488px] max-w-[330px] min-h-[152px] sm:min-w-[350px] sm:min-h-[130px]',
     iconClassname: 'max-w-[390px] sm:max-w-[350px]',
@@ -57,6 +62,7 @@ const ITEMS = [
       { icon: Systematic, url: 'https://www.linkedin.com/company/systematic/' },
       { icon: Zitec, url: 'https://www.linkedin.com/company/lifeatzitec/' },
       { icon: LifeInCloud, url: 'https://www.linkedin.com/company/lifeincloud-global/' },
+      { icon: Alchemy, url: 'https://www.linkedin.com/company/alchemyinc/' },
     ],
     cardClassname: 'min-w-[384px] min-h-[122px] sm:min-w-[320px] sm:min-h-[115px]',
     iconClassname: 'max-w-[330px] sm:min-w-[290px]',
@@ -81,6 +87,14 @@ const ITEMS = [
   {
     title: 'Coffee Sponsor',
     logos: [{ icon: CloudHero, url: 'https://www.linkedin.com/company/cloud-hero' }],
+    cardClassname: 'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:min-h-[94px]',
+    iconClassname: 'max-w-[330px] sm:min-w-[290px]',
+  },
+  {
+    title: 'After Party',
+    logos: [
+      { icon: CNCF, url: 'https://www.linkedin.com/company/cloud-native-computing-foundation' },
+    ],
     cardClassname: 'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:min-h-[94px]',
     iconClassname: 'max-w-[330px] sm:min-w-[290px]',
   },
