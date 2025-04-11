@@ -471,7 +471,7 @@ In his 10+ years career he is aiming to make a positive impact on any business a
     position: 'Site Reliability Engineer at Fastmarkets',
     content: `Plamen Petkov is a Site Reliability Engineer and Kubernetes & Cloud-Native Solutions Architect with extensive experience in building resilient, secure, and highly automated systems. Currently based in Sofia, Bulgaria, he holds all three key Kubernetes certifications (CKA, CKD, and CKS) and specializes in GitOps, security automation, and scalable platform solutions. His recent work includes developing enterprise-grade Kubernetes platforms, cross-region logging systems, and comprehensive observability solutions. With a background that spans from early website development to modern cloud architecture, Plamen brings practical, hands-on experience in implementing production-grade cloud-native solutions that enable teams to work more efficiently.`,
     photo: PlamenPetkovPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/marcin-paluszek-1b3a63130/',
+    linkedInUrl: 'https://www.linkedin.com/in/plamenonline/',
     githubUrl: '',
     communityUrl: 'https://sessionize.com/plamen-petkov',
     instagramUrl: '',
