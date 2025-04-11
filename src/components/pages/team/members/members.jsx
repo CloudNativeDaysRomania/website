@@ -4,6 +4,7 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
+import AndreeaChebacPhoto from './images/andreea-chebac-photo.jpg';
 import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
 import AndreiPietricicaPhoto from './images/andrei-pietricica-photo.png';
 import BettyHalaszPhoto from './images/betty-halasz-photo.jpg';
@@ -103,6 +104,12 @@ const ORGANIZERS = [
     position: 'Software Engineer at dvloper.io',
     photo: GeorgeTudureanPhoto,
     url: 'https://www.linkedin.com/in/george-alexandru-t-17772113a/',
+  },
+  {
+    name: 'Andreea Chebac',
+    position: 'Public Relations and Communications Professional',
+    photo: AndreeaChebacPhoto,
+    url: 'https://www.linkedin.com/in/andreea-chebac-8317b323/',
   },
 ];
 
