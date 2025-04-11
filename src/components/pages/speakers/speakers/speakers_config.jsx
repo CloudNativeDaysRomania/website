@@ -9,7 +9,6 @@ import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
 import AndrewMartinPhoto from './images/andrew-martin-photo.jpeg';
-import BogdanTrufandaPhoto from './images/bogdan-trufanda-photo.jpg';
 import CarlosMestrePhoto from './images/carlos-mestre-del-pino-photo.jpg';
 import ClaudiuSonelPhoto from './images/claudiu-sonel.jpg';
 import DianaTodeaPhoto from './images/diana-todea-photo.jpg';
@@ -21,7 +20,6 @@ import LukaszHusarzPhoto from './images/lukasz-husarz-photo.jpg';
 import MarcinPaluszekPhoto from './images/marcin-paluszek-photo.jpeg';
 import MariusIordachePhoto from './images/marius-iordache-photo.jpg';
 import MarkSagiKazarPhoto from './images/mark-sagi-kazar-photo.jpg';
-import MihaiVasilescuPhoto from './images/mihai-vasilescu-photo.jpg';
 import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
 import PatrickDeKruijfPhoto from './images/patrick-de-kruijf.jpg';
 import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
@@ -479,38 +477,6 @@ In his 10+ years career he is aiming to make a positive impact on any business a
     time: '14:00',
     title:
       'Fleet Commander: Building a Scalable Hub-and-Spoke Architecture for Kubernetes Clusters',
-    duration: '30 min',
-  },
-  {
-    id: '25',
-    name: 'Bogdan Trufanda',
-    position: 'Threat Hunter, CrowdStrike',
-    content: `Bogdan Trufanda is a Threat Hunter in CrowdStrike's Cloud Runtime Security Team.
-<br/><br/>
-Bogdan is responsible for gathering actionable application and security intelligence for CrowdStrike products, specialising in gathering Threat Intelligence and researching exploitation techniques involving containers and the cloud space.`,
-    photo: BogdanTrufandaPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/bogdan-trufanda-b31913130/',
-    githubUrl: '',
-    communityUrl: 'https://sessionize.com/bogdanT',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '14:00',
-    title: 'Containing the Threat: Analyzing cryptomining campaigns',
-    duration: '30 min',
-  },
-  {
-    id: '26',
-    name: 'Mihai Vasilescu',
-    position: 'Threat Hunter, CrowdStrike',
-    content: `Mihai Vasilescu is a Threat Hunters in CrowdStrike's Cloud Runtime Security Team. Mihai's expertise lies in gathering Threat Intelligence on recent botnets and network attack exploitation techniques, including malware analysis and botnet tracking.`,
-    photo: MihaiVasilescuPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/mihai-v-38a1baa8/',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '14:00',
-    title: 'Containing the Threat: Analyzing cryptomining campaigns',
     duration: '30 min',
   },
   {
