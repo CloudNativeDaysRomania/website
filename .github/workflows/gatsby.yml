@@ -78,7 +78,7 @@ jobs:
       - name: Build with Gatsby
         env:
           PREFIX_PATHS: 'true'
-          GATSBY_DEFAULT_SITE_URL: https://kcdromania.github.io
+          GATSBY_DEFAULT_SITE_URL: ${{ steps.deployment.outputs.page_url }}
           GATSBY_DEV_SSR: false
 
         run: ${{ steps.detect-package-manager.outputs.manager }} run build

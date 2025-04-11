@@ -9,6 +9,7 @@ import Speakers from 'components/pages/home/speakers';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import Sponsors from 'components/shared/sponsors';
+import SEO_DATA from 'constants/seo-data';
 
 const HomePage = () => (
   <Layout homepage>
@@ -23,4 +24,4 @@ const HomePage = () => (
 
 export default HomePage;
 
-export const Head = ({ location: { pathname } }) => <SEO pathname={pathname} />;
+export const Head = ({ location: { pathname } }) => <SEO {...SEO_DATA.index} pathname={pathname} />;
