@@ -15,6 +15,7 @@ const styles = {
   },
   theme: {
     blue: 'bg-blue-1 text-white hover:bg-blue-2',
+    green: 'bg-green-1 text-white hover:bg-green-2',
     primary:
       'bg-none text-primary-1 border-2 border-primary-1 hover:bg-primary-1 hover:bg-opacity-10',
     'link-primary':
