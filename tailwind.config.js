@@ -38,6 +38,10 @@ module.exports = {
       white: '#ffffff',
       yellow: '#FFEA7D',
       blue: { 1: '#3333FF', 2: '#2929FF' },
+      green: {
+        1: '#059669',
+        2: '#047857',
+      },
       primary: {
         1: '#262F59',
         2: 'rgba(38, 47, 89, 0.1)',
