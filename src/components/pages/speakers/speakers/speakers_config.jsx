@@ -4,6 +4,7 @@ import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AleodorTabarceaPhoto from './images/aleodor-tabarcea-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
+import AlexandruCozmaPhoto from './images/alexandru-cozma.png';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
@@ -32,6 +33,7 @@ import RazvanDeaconescuPhoto from './images/razvan-deaconescu-photo.jpg';
 import RazvanValceanuPhoto from './images/razvan-valceanu.jpg';
 import SimonaBotnerPhoto from './images/simona-botner-photo.jpg';
 import StefanProdanPhoto from './images/stefan-prodan-photo.jpeg';
+import TiberiusHodoroabaPhoto from './images/tiberius-hodoroaba.jpg';
 import ViorelAnghelPhoto from './images/viorel-anghel.jpg';
 import VladMocanuPhoto from './images/vlad-mocanu.jpg';
 import VladOnetiuPhoto from './images/vlad-onetiu-photo.jpg';
@@ -50,7 +52,7 @@ const SPEAKERS = [
     websiteUrl: '',
     time: '09:45',
     title: 'Unlocking Innovation: Start Thinking Like a Scientist',
-    duration: '30 min',
+    duration: '25 min',
   },
   {
     id: '2',
@@ -86,9 +88,9 @@ BitDefender.`,
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '10:15',
+    time: '10:10',
     title: ' AI or Not AI, That Is the Question',
-    duration: '30 min',
+    duration: '25 min',
   },
   {
     id: '3',
@@ -104,9 +106,9 @@ Beyond his professional work, Aleodor actively engages with developer communitie
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '17:00',
+    time: '10:35',
     title: 'Evolving to a Human-Centric Cloud Computing',
-    duration: '30 min',
+    duration: '25 min',
   },
   {
     id: '4',
@@ -121,9 +123,9 @@ Andrew has presented at international conferences including KubeCon, Velocity, S
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '17:30',
+    time: '11:00',
     title: 'Mind the Gap: Bridging Supply Chain Policy with Git-less GitOps',
-    duration: '30 min',
+    duration: '25 min',
   },
   {
     id: '5',
@@ -256,9 +258,9 @@ Andrew has presented at international conferences including KubeCon, Velocity, S
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: 'https://cloudbase.it/blog',
-    time: '15:30',
+    time: '11:45',
     title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
-    duration: '60 min',
+    duration: '30 min',
   },
   {
     id: '12',
@@ -278,9 +280,9 @@ Besides the coding time, his interests in the cloud domain are performance frame
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: 'https://sessionize.com/adrian-vladu',
-    time: '15:30',
+    time: '11:45',
     title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
-    duration: '60 min',
+    duration: '30 min',
   },
   {
     id: '13',
@@ -293,7 +295,7 @@ Besides the coding time, his interests in the cloud domain are performance frame
     communityUrl: '',
     instagramUrl: 'https://www.instagram.com/cloudnativeams/',
     websiteUrl: 'https://dev.to/ams0',
-    time: '11:00',
+    time: '11:45',
     title: 'The Way of Cloud Native AI',
     duration: '30 min',
   },
@@ -310,7 +312,7 @@ Involved in networks evolution activities and principles, author or co-author of
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '11:00',
+    time: '11:45',
     title: 'Cloud Native Telco Transformation: From Legacy to Agility',
     duration: '30 min',
   },
@@ -327,7 +329,7 @@ Iulian’s dedication to advancing his field is evident through his continuous i
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: 'https://sessionize.com/iulian-taiatu',
-    time: '11:45',
+    time: '12:30',
     title: 'Nested Worlds: Unleash the Power of vClusters for Accelerated CI Workflows and Testing',
     duration: '30 min',
   },
@@ -342,7 +344,7 @@ Iulian’s dedication to advancing his field is evident through his continuous i
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '15:30',
+    time: '16:15',
     title: 'Vespa: A Fast Search/Vector DB with a Microservices Architecture',
     duration: '30 min',
   },
@@ -357,7 +359,7 @@ Iulian’s dedication to advancing his field is evident through his continuous i
     communityUrl: 'https://tensquaregames.com',
     instagramUrl: '',
     websiteUrl: 'https://sessionize.com/lukasz-husarz',
-    time: '11:45',
+    time: '12:30',
     title: 'Zero Downtime, Maximum Play: Evolving Game Servers from Bare Metal to K3s',
     duration: '30 min',
   },
@@ -374,7 +376,7 @@ Member of the organizing team for KCD Netherlands, he is a community oriented pe
     communityUrl: 'https://www.mestredelpino.com',
     instagramUrl: 'https://twitter.com/mestredelpino',
     websiteUrl: 'https://sessionize.com/mestredelpino',
-    time: '12:30',
+    time: '14:00',
     title: 'The Infinite Hotel: Scaling Multi-Tenant Platforms through a Unified API',
     duration: '30 min',
   },
@@ -389,7 +391,7 @@ Member of the organizing team for KCD Netherlands, he is a community oriented pe
     communityUrl: 'https://sessionize.com/iulia-feroli',
     instagramUrl: '',
     websiteUrl: 'https://www.elastic.co/',
-    time: '12:30',
+    time: '14:00',
     title: 'Building my own (accurate!) Spotify Wrapped',
     duration: '30 min',
   },
@@ -404,7 +406,7 @@ Member of the organizing team for KCD Netherlands, he is a community oriented pe
     communityUrl: 'https://unikraft.org/',
     instagramUrl: '',
     websiteUrl: '',
-    time: '14:00',
+    time: '14:45',
     title: 'Headless Browsers in the Cloud',
     duration: '30 min',
   },
@@ -457,7 +459,7 @@ Member of the organizing team for KCD Netherlands, he is a community oriented pe
     communityUrl: 'https://sessionize.com/marcin-paluszek',
     instagramUrl: '',
     websiteUrl: 'https://tensquaregames.com/',
-    time: '11:45',
+    time: '12:30',
     title: 'Zero Downtime, Maximum Play: Evolving Game Servers from Bare Metal to K3s',
     duration: '30 min',
   },
@@ -472,13 +474,13 @@ Member of the organizing team for KCD Netherlands, he is a community oriented pe
     communityUrl: 'https://sessionize.com/plamen-petkov',
     instagramUrl: '',
     websiteUrl: '',
-    time: '14:00',
+    time: '14:45',
     title:
       'Fleet Commander: Building a Scalable Hub-and-Spoke Architecture for Kubernetes Clusters',
     duration: '30 min',
   },
   {
-    id: '27',
+    id: '25',
     name: 'Philip Miglinci',
     position: 'Co-Founder Glasskube',
     content: `Philip holds a Bachelor's degree in computer science and economics from the Vienna University of Technology and a Master's degree in Biomedical Engineering.<br/><br/>
@@ -490,12 +492,12 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: 'https://pmig.at/',
     instagramUrl: '',
     websiteUrl: 'https://glasskube.dev/',
-    time: '14:45',
+    time: '15:30',
     title: 'Mastering Modern Software Distribution: On-Prem, Air-Gapped, and BYOC Challenges',
     duration: '30 min',
   },
   {
-    id: '28',
+    id: '26',
     name: 'Vlad Onetiu',
     position: 'DataIceberg, DevSecOps Engineer',
     content: `Vlad Onetiu, a DevSecOps and Software Automation Engineer from Cluj-Napoca, Romania, is renowned for his expertise in cloud technology, cybersecurity, and software automation. Since embarking on his career in 2018, he has been instrumental in conducting security research for Romania's major banks, significantly bolstering their cybersecurity measures. 
@@ -509,13 +511,13 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: 'https://dataiceberg.com/blog',
     instagramUrl: '',
     websiteUrl: 'https://dataiceberg.com/blog/',
-    time: '14:45',
+    time: '15:30',
     title:
       'Architecting Seismic Intelligence with a High-Performance Serverless Earthquake Alert System',
     duration: '30 min',
   },
   {
-    id: '29',
+    id: '27',
     name: 'Raluca Bica',
     position: 'Ericsson, Integration engineer',
     content: `I have over a decade of experience working in the telecom industry, with the last five years focused on Kubernetes. During this time, I’ve developed a deep understanding of container orchestration and cloud-native technologies. I’m proud to be one of the six Kubestronauts from Romania and the first Kubestronaut woman from my country—a milestone that motivates me to inspire and support others in the Kubernetes community.
@@ -528,12 +530,12 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '14:45',
+    time: '15:30',
     title: 'Never Trust, Always Verify: Principles of Zero-Trust Security in Kubernetes',
     duration: '30 min',
   },
   {
-    id: '30',
+    id: '28',
     name: 'Andreea Olaru',
     position: 'eMag, Nodejs Developer',
     content: `8 years of experience <br/>
@@ -546,12 +548,12 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '12:30',
+    time: '14:00',
     title: 'Migrating a production workload to another AWS account',
     duration: '30 min',
   },
   {
-    id: '31',
+    id: '29',
     name: 'Simona Botner',
     position: 'Google Cloud, Customer Engineer',
     content: `Customer Engineer at Google Cloud, specializing in helping organizations leverage cloud technologies for improved service delivery. With over 15 years of experience in IT, Project Management and Regulations. Empowering customers to adopt secure and transformative cloud solutions, unlocking new possibilities for their missions.`,
@@ -561,12 +563,12 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '11:00',
+    time: '16:15',
     title: 'Kube Resource Orchestrator: Simplify Kubernetes Resource Optimization',
     duration: '30 min',
   },
   {
-    id: '32',
+    id: '30',
     name: 'Adelina Stanciu',
     position: 'Senior Engineering Manager at Finastra',
     content: `Adelina is a seasoned technology leader with over 15 years of experience in agile software development across the full life cycle. Leading geographically dispersed teams across finance, e-commerce, and cybersecurity, Adelina has successfully designed, developed, and deployed complex, scalable applications. As an independent trainer in software architecture, Adelina is passionate about sharing knowledge through articles and thought leadership. With expertise in project planning, release management, and stakeholder coordination, Adelina consistently drives high-impact results while ensuring seamless execution across teams and projects.`,
@@ -576,13 +578,13 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '15:30',
+    time: '12:30',
     title:
       'Proactive Threat Mitigation with Threat Modeler: Securing APIs and Authentication in Azure',
     duration: '30 min',
   },
   {
-    id: '33',
+    id: '31',
     name: 'Diana Todea',
     position: 'Developer Advocate at Aircall',
     content: `Diana is a Developer Advocate at Aircall. She has worked as a Senior Site Reliability Engineer focused on Observability. She is passionate about serverless, SecOps and machine learning. She is an active contributor to the OpenTelemetry open source project and supports women in tech.`,
@@ -592,12 +594,12 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: 'https://sessionize.com/diana-todea',
     instagramUrl: '',
     websiteUrl: '',
-    time: '15:30',
+    time: '16:15',
     title: 'From zero to developer: my one year serendipity journey with OpenTelemetry',
     duration: '30 min',
   },
   {
-    id: '34',
+    id: '32',
     name: 'Alexandru Dejanu',
     position: 'SRE @ Systematic: Software engineer doing operations',
     content: `Jack of all trades master of None. Alexandru Dejanu is a SRE @ Systematic with a strong passion for cloud-native landscape. Opinionated and tech agnostic loves helping others and sharing knowledge be it on tech stages, or StackOverflow and Medium.`,
@@ -607,12 +609,12 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: 'https://dejanu.github.io/',
     instagramUrl: 'https://www.instagram.com/dejanualex/',
     websiteUrl: 'https://systematic.com/en-gb/',
-    time: '16:15',
+    time: '17:00',
     title: 'Ops Conservation: The Total Amount of Operations in the Universe Remains Constant',
     duration: '30 min',
   },
   {
-    id: '35',
+    id: '33',
     name: 'Irina Verlan',
     position: 'AI Ethics Advocate | Cloud Marketing Expert',
     content: `Irina is a cloud marketing professional, specializing in scalable strategies and AI Ethics advocate. With expertise in cloud-native technologies and AI-driven solutions, she delivers impactful marketing projects across 33 countries. An Executive MBA student and speaker, she bridges technical innovation with responsible AI practices to drive sustainable growth.`,
@@ -622,12 +624,12 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '16:15',
+    time: '14:45',
     title: 'Ethical AI in Cloud Native: Building Trustworthy Applications',
     duration: '30 min',
   },
   {
-    id: '36',
+    id: '34',
     name: 'Nicolas Fränkel',
     position: 'Developer Advocate for Loft Labs',
     content: `Nicolas Fränkel is a technologist focusing on cloud-native technologies, DevOps, CI/CD pipelines, and system observability. His focus revolves around creating technical content, delivering talks, and engaging with developer communities to promote the adoption of modern software practices. 
@@ -639,12 +641,12 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     communityUrl: 'https://blog.frankel.ch/',
     instagramUrl: '',
     websiteUrl: 'https://www.loft.sh/',
-    time: '16:15',
+    time: '17:00',
     title: 'End-to-End Pull Request Testing on Kubernetes: A Walkthrough',
     duration: '30 min',
   },
   {
-    id: '37',
+    id: '35',
     name: 'Vlad Mocanu',
     position: 'Senior Platform Engineer at Metaminds',
     content:
@@ -663,7 +665,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     duration: '90 min',
   },
   {
-    id: '38',
+    id: '36',
     name: 'Razvan Valceanu',
     position: 'Senior DevOps at Metaminds',
     content: 'Automation enthusiast and Open Source believer.',
@@ -677,6 +679,40 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     time: '09:30',
     title: 'Workshop: Escape from Certificate Hell: Managing Trust in Your Kubernetes Cluster',
     duration: '90 min',
+  },
+  {
+    id: '37',
+    name: 'Alexandru Cozma',
+    position: 'Lenovo, Master Inventor, Principal Engineer',
+    content:
+      'With a passion for Lego Star Wars sets, Alex began their career at IBM 11 years ago, eventually transitioning to Lenovo through the acquisition of the DataCenter business. Over the years, Alex has specialized in large-scale system management, datacenter security, and cloud, hybrid, and private applications. Currently, Alex is focused on developing a competitive solution for Lenovo that enables cloud-hybrid datacenter management, turning the once-taboo concept of managing servers from the cloud into a reality. Recently, Alex has achieved significant milestones, becoming one of the youngest Principal Engineers and earning the title of Master Inventor.',
+    photo: AlexandruCozmaPhoto,
+    twitterUrl: '',
+    linkedInUrl: 'https://www.linkedin.com/in/alexandru-cozma/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '17:00',
+    title: 'Attack of the Scans: Early Security in Cloud Native Development',
+    duration: '30 min',
+  },
+  {
+    id: '38',
+    name: 'Tiberius Hodoroabă',
+    position: 'Advisory Software Engineer @Lenovo',
+    content:
+      'Cybersecurity Engineer, ex-Mathematics and Computer Science teacher, both in the Romanian and international system, oscillating between the city and the countryside since 1992. Chronic astrophile (a „disease” cured solely by stars and galaxies), on-demand chef, photographer’s assistant when necessary, tornado hunter in an alternate existence. Avid science-fiction reader, lover of classical music, black tea and van travels. One day, I would love to ride the Transsiberian, but I’m OK with any steam train journey, as well.',
+    photo: TiberiusHodoroabaPhoto,
+    twitterUrl: '',
+    linkedInUrl: 'https://www.linkedin.com/in/tiberius-hodoroaba/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '17:00',
+    title: 'Attack of the Scans: Early Security in Cloud Native Development',
+    duration: '30 min',
   },
 ];
 

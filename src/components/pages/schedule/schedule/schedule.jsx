@@ -10,6 +10,7 @@ import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AleodorTabarceaPhoto from './images/aleodor-tabarcea-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
+import AlexandruCozmaPhoto from './images/alexandru-cozma.png';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
@@ -31,19 +32,20 @@ import RaduGheorghePhoto from './images/radu-gheorghe-photo.jpg';
 import RalucaBicaPhoto from './images/raluca-bica-photo.jpg';
 import RazvanDeaconescuPhoto from './images/razvan-deaconescu-photo.jpg';
 import SimonaBotnerPhoto from './images/simona-botner-photo.jpg';
+import TiberiusHodoroabaPhoto from './images/tiberius-hodoroaba.jpg';
 import VladOnetiuPhoto from './images/vlad-onetiu-photo.jpg';
 
 // GenericSpeakerPhoto is default when no speaker picture is present
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
-    title: 'Room 1',
+    title: 'Atlas 1',
     isHeader: true,
     secondTrack: {
-      title: 'Room 2',
+      title: 'Atlas 2',
     },
     thirdTrack: {
-      title: 'Room 3',
+      title: 'Merope',
     },
   },
   {
@@ -53,7 +55,7 @@ const ITEMS = [
   },
   {
     time: '8:30',
-    title: 'Welcome coffee',
+    title: 'Welcome coffee and snack',
     duration: '60 min',
   },
   {
@@ -65,7 +67,7 @@ const ITEMS = [
     id: '01',
     time: '9:45',
     title: 'Unlocking Innovation: Start Thinking Like a Scientist',
-    duration: '30 min',
+    duration: '25 min',
     isKeynote: true,
     speakers: [
       {
@@ -79,9 +81,9 @@ const ITEMS = [
   },
   {
     id: '02',
-    time: '10:15',
+    time: '10:10',
     title: ' AI or Not AI, That Is the Question',
-    duration: '30 min',
+    duration: '25 min',
     isKeynote: true,
     speakers: [
       {
@@ -94,30 +96,68 @@ const ITEMS = [
     presentation: `With a distinguished career in AI, tech innovation, and entrepreneurship, George will dive into the future of technology and business in his keynote.`,
   },
   {
-    time: '10:45',
-    title: 'Break/Split Room',
-    duration: '15 min',
-  },
-  {
-    id: '031',
-    time: '11:00',
-    title: 'Kube Resource Orchestrator: Simplify Kubernetes Resource Optimization',
-    duration: '30 min',
-    isKeynote: false,
+    id: '101',
+    time: '10:35',
+    title: 'Evolving to a Human-Centric Cloud Computing',
+    duration: '25 min',
+    isKeynote: true,
     speakers: [
       {
-        id: '31',
-        name: 'Simona Botner',
-        company: 'Google Cloud',
-        photo: SimonaBotnerPhoto,
+        id: '3',
+        name: 'Aleodor Tabarcea',
+        company: 'Stripe',
+        photo: AleodorTabarceaPhoto,
       },
     ],
     presentation:
-      "This session provides a technical dive into Kube Resource Orchestrator, a groundbreaking tool for Kubernetes resource management. We'll explore its architecture, key components, and how it integrates with existing Kubernetes infrastructure. Learn how it leverages advanced algorithms and machine learning to automate resource optimization, improve cluster density, and reduce operational complexity. We'll also cover its API, configuration options, and best practices for deployment and management.",
-
+      'Aleodor Tabarcea, Engineering Manager at Stripe, will explore how AI and natural language interfaces are revolutionizing cloud-native systems in his keynote.',
+  },
+  {
+    id: '111',
+    time: '11:00',
+    title: 'Mind the Gap: Bridging Supply Chain Policy with Git-less GitOps',
+    duration: '25 min',
+    isKeynote: true,
+    speakers: [
+      {
+        id: '4',
+        name: 'Andrew Martin',
+        company: 'CEO of ControlPlane',
+        photo: AndrewMartinPhoto,
+      },
+    ],
+    presentation:
+      'Andrew Martin, CEO of ControlPlane, will share his insights from a wealth of experience in security engineering, systems development, and containerized solutions.',
+  },
+  {
+    time: '11:25',
+    title: 'Break/Split Room',
+    duration: '20 min',
+  },
+  {
+    id: '031',
+    time: '11:45',
+    title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
+    duration: '30 min',
+    speakers: [
+      {
+        id: '12',
+        name: 'Adrian Vladu',
+        company: 'Cloudbase Solutions',
+        photo: AdrianVladuPhoto,
+      },
+      {
+        id: '11',
+        name: 'Alessandro Pilotti',
+        company: 'Cloudbase Solutions',
+        photo: AlessandroPilottiPhoto,
+      },
+    ],
+    presentation:
+      "'A community Linux distribution designed for container workloads, with high security and low maintenance' - Flatcar Container Linux is the first Linux based operating system CNCF incubating project. In this presentation, we will go through what makes Flatcar Container Linux secure, easy to deploy and use in the cloud native context of containerization and Kubernetes.",
     secondTrack: {
       id: '032',
-      time: '11:00',
+      time: '11:45',
       title: 'The Way of Cloud Native AI',
       duration: '30 min',
       speakers: [
@@ -132,7 +172,7 @@ const ITEMS = [
     },
     thirdTrack: {
       id: '033',
-      time: '11:00',
+      time: '11:45',
       title: 'Cloud Native Telco Transformation: From Legacy to Agility',
       duration: '30 min',
       speakers: [
@@ -148,7 +188,7 @@ const ITEMS = [
   },
   {
     id: '041',
-    time: '11:45',
+    time: '12:30',
     title: 'Nested Worlds: Unleash the Power of vClusters for Accelerated CI Workflows and Testing',
     duration: '30 min',
     speakers: [
@@ -166,13 +206,13 @@ This session provides a comprehensive exploration of the architecture and operat
 The live demo will highlight how vClusters simplify Kubernetes controller testing by creating isolated environments that integrate seamlessly with existing AWS Roles & Policies. Attendees will observe an end-to-end workflow, from provisioning vClusters to executing Pull Request tests, showcasing how this approach minimizes configuration overhead, optimizes CI pipelines, and supports scalable, efficient Kubernetes development practices.`,
     secondTrack: {
       id: '042',
-      time: '11:45',
+      time: '12:30',
       title:
         'Proactive Threat Mitigation with Threat Modeler: Securing APIs and Authentication in Azure',
       duration: '30 min',
       speakers: [
         {
-          id: '32',
+          id: '30',
           name: 'Adelina Stanciu',
           company: 'Finastra',
           photo: AdelinaStanciuPhoto,
@@ -190,7 +230,7 @@ The live demo will highlight how vClusters simplify Kubernetes controller testin
     },
     thirdTrack: {
       id: '043',
-      time: '11:45',
+      time: '12:30',
       title: 'Zero Downtime, Maximum Play: Evolving Game Servers from Bare Metal to K3s',
       duration: '30 min',
       speakers: [
@@ -211,8 +251,13 @@ The live demo will highlight how vClusters simplify Kubernetes controller testin
     },
   },
   {
+    time: '13:00',
+    title: 'Lunch Break',
+    duration: '1 hour',
+  },
+  {
     id: '051',
-    time: '12:30',
+    time: '14:00',
     title: 'The Infinite Hotel: Scaling Multi-Tenant Platforms through a Unified API',
     duration: '30 min',
     speakers: [
@@ -226,7 +271,7 @@ The live demo will highlight how vClusters simplify Kubernetes controller testin
     presentation: `As platform teams evolve, platforms extend beyond infrastructure to application services, cloud resource management, and middleware orchestration. Managing these distributed components across clusters and teams demands a unified, scalable approach. This session shows how to manage infrastructure, tenants, and application services entirely through Kubernetes by building a modular, multi-tenant, multi-control-plane platform. Attendees will learn to extend the Kubernetes API with Control Planes for distributed, tenant-aware infrastructure management. We’ll explore CNCF projects to create abstractions and automation, enabling platform teams to offer consistent services and self-service capabilities. Topics include multi-tenancy with in- and out-of-cluster isolation, unified APIs for control-plane orchestration, and avoiding common pitfalls in multi-control-plane management. By the end, attendees will have a roadmap for scalable platforms supporting centralized and tenant-managed services.`,
     secondTrack: {
       id: '052',
-      time: '12:30',
+      time: '14:00',
       title: 'Building my own (accurate!) Spotify Wrapped',
       duration: '30 min',
       speakers: [
@@ -246,12 +291,12 @@ From queries, filters, and aggregations to visualizations, time series analysis,
 
     thirdTrack: {
       id: '053',
-      time: '12:30',
+      time: '14:00',
       title: 'Migrating a production workload to another AWS account',
       duration: '30 min',
       speakers: [
         {
-          id: '30',
+          id: '28',
           name: 'Andreea Olaru',
           company: 'eMag',
           photo: AndreeaOlaruPhoto,
@@ -262,13 +307,8 @@ From queries, filters, and aggregations to visualizations, time series analysis,
     },
   },
   {
-    time: '13:00',
-    title: ' Lunch Break',
-    duration: '1 hour',
-  },
-  {
     id: '061',
-    time: '14:00',
+    time: '14:45',
     title:
       'Fleet Commander: Building a Scalable Hub-and-Spoke Architecture for Kubernetes Clusters',
     duration: '30 min',
@@ -292,15 +332,22 @@ From queries, filters, and aggregations to visualizations, time series analysis,
       'This talk is aimed at DevOps engineers, SREs, and platform engineers who manage multiple Kubernetes clusters and are looking for practical, transparent solutions to cluster management and observability challenges. Basic familiarity with Kubernetes concepts and GitOps principles is helpful but not required.',
     secondTrack: {
       id: '062',
-      time: '14:00',
-      title: 'TBD',
+      time: '14:45',
+      title: 'Ethical AI in Cloud Native: Building Trustworthy Applications',
       duration: '30 min',
-      speakers: [],
-      presentation: 'N/A',
+      speakers: [
+        {
+          id: '33',
+          name: 'Irina Verlan',
+          company: 'Google',
+          photo: IrinaVerlanPhoto,
+        },
+      ],
+      presentation: `As AI becomes an integral part of cloud-native technologies, the need for ethical considerations has never been greater. This workshop explores the critical frameworks and practices for ensuring AI applications are trustworthy, transparent, and fair. Attendees will learn how to address challenges like data privacy, algorithmic bias, and ethical decision-making within cloud-native environments. Through real-world case studies and hands-on exercises, participants will gain practical tools to assess and mitigate ethical risks in AI pipelines. Join us to discover how to build AI-driven solutions that not only perform but also align with responsible technology practices.`,
     },
     thirdTrack: {
       id: '063',
-      time: '14:00',
+      time: '14:45',
       title: 'Headless Browsers in the Cloud',
       duration: '30 min',
       speakers: [
@@ -323,14 +370,19 @@ From queries, filters, and aggregations to visualizations, time series analysis,
     },
   },
   {
+    time: '15:15',
+    title: 'Coffee Break',
+    duration: '15 min',
+  },
+  {
     id: '071',
-    time: '14:45',
+    time: '15:30',
     title:
       'Architecting Seismic Intelligence with a High-Performance Serverless Earthquake Alert System',
     duration: '30 min',
     speakers: [
       {
-        id: '28',
+        id: '26',
         name: 'Vlad Onetiu',
         company: 'DataIceberg',
         photo: VladOnetiuPhoto,
@@ -342,12 +394,12 @@ From queries, filters, and aggregations to visualizations, time series analysis,
 
     secondTrack: {
       id: '072',
-      time: '14:45',
+      time: '15:30',
       title: 'Never Trust, Always Verify: Principles of Zero-Trust Security in Kubernetes',
       duration: '30 min',
       speakers: [
         {
-          id: '29',
+          id: '27',
           name: 'Raluca Bica',
           company: 'Ericsson',
           photo: RalucaBicaPhoto,
@@ -359,12 +411,12 @@ From queries, filters, and aggregations to visualizations, time series analysis,
 
     thirdTrack: {
       id: '073',
-      time: '14:45',
+      time: '15:30',
       title: 'Mastering Modern Software Distribution: On-Prem, Air-Gapped, and BYOC Challenges',
       duration: '30 min',
       speakers: [
         {
-          id: '27',
+          id: '25',
           name: 'Philip Miglinci',
           company: 'Glasskube',
           photo: PhilipMiglinciPhoto,
@@ -394,28 +446,23 @@ From queries, filters, and aggregations to visualizations, time series analysis,
 
   {
     id: '081',
-    time: '15:30',
-    title: 'The first CNCF / Linux Foundation Operating System - Flatcar Container Linux',
+    time: '16:15',
+    title: 'Kube Resource Orchestrator: Simplify Kubernetes Resource Optimization',
     duration: '30 min',
+    isKeynote: false,
     speakers: [
       {
-        id: '12',
-        name: 'Adrian Vladu',
-        company: 'Cloudbase Solutions',
-        photo: AdrianVladuPhoto,
-      },
-      {
-        id: '11',
-        name: 'Alessandro Pilotti',
-        company: 'Cloudbase Solutions',
-        photo: AlessandroPilottiPhoto,
+        id: '29',
+        name: 'Simona Botner',
+        company: 'Google Cloud',
+        photo: SimonaBotnerPhoto,
       },
     ],
     presentation:
-      "'A community Linux distribution designed for container workloads, with high security and low maintenance' - Flatcar Container Linux is the first Linux based operating system CNCF incubating project. In this presentation, we will go through what makes Flatcar Container Linux secure, easy to deploy and use in the cloud native context of containerization and Kubernetes.",
+      "This session provides a technical dive into Kube Resource Orchestrator, a groundbreaking tool for Kubernetes resource management. We'll explore its architecture, key components, and how it integrates with existing Kubernetes infrastructure. Learn how it leverages advanced algorithms and machine learning to automate resource optimization, improve cluster density, and reduce operational complexity. We'll also cover its API, configuration options, and best practices for deployment and management.",
     secondTrack: {
       id: '082',
-      time: '15:30',
+      time: '16:15',
       title: 'Vespa: A Fast Search/Vector DB with a Microservices Architecture',
       duration: '30 min',
       speakers: [
@@ -435,12 +482,12 @@ Contains an obligatory demo of running Vespa in Kubernetes.`,
 
     thirdTrack: {
       id: '083',
-      time: '15:30',
+      time: '16:15',
       title: 'From zero to developer: my one year serendipity journey with OpenTelemetry',
       duration: '30 min',
       speakers: [
         {
-          id: '33',
+          id: '31',
           name: 'Diana Todea',
           company: 'Aircall',
           photo: DianaTodeaPhoto,
@@ -452,12 +499,12 @@ Contains an obligatory demo of running Vespa in Kubernetes.`,
   },
   {
     id: '091',
-    time: '16:15',
+    time: '17:00',
     title: 'Ops Conservation: The Total Amount of Operations in the Universe Remains Constant',
     duration: '30 min',
     speakers: [
       {
-        id: '34',
+        id: '32',
         name: 'Alexandru Dejanu',
         company: 'Systematic',
         photo: AlexandruDejanuPhoto,
@@ -468,28 +515,37 @@ Contains an obligatory demo of running Vespa in Kubernetes.`,
 
     secondTrack: {
       id: '092',
-      time: '16:15',
-      title: 'Ethical AI in Cloud Native: Building Trustworthy Applications',
+      time: '17:00',
+      title: 'Attack of the Scans: Early Security in Cloud Native Development',
       duration: '30 min',
       speakers: [
         {
-          id: '35',
-          name: 'Irina Verlan',
-          company: 'Google',
-          photo: IrinaVerlanPhoto,
+          id: '37',
+          name: 'Alexandru Cozma',
+          company: 'Lenovo',
+          photo: AlexandruCozmaPhoto,
+        },
+        {
+          id: '38',
+          name: 'Tiberius Hodoroabă',
+          company: 'Lenovo',
+          photo: TiberiusHodoroabaPhoto,
         },
       ],
-      presentation: `As AI becomes an integral part of cloud-native technologies, the need for ethical considerations has never been greater. This workshop explores the critical frameworks and practices for ensuring AI applications are trustworthy, transparent, and fair. Attendees will learn how to address challenges like data privacy, algorithmic bias, and ethical decision-making within cloud-native environments. Through real-world case studies and hands-on exercises, participants will gain practical tools to assess and mitigate ethical risks in AI pipelines. Join us to discover how to build AI-driven solutions that not only perform but also align with responsible technology practices.`,
+      presentation:
+        'In the dynamic realm of cloud-native development, embedding security early in the software development lifecycle is crucial. This presentation will explore the imperative of "shifting left" by integrating security scans at the earliest stages of development. Using tools such as Bandit, Dependency Check, and others, developers can proactively identify and address vulnerabilities before propagating to production environments. This approach not only fortifies the security posture but also minimizes remediation costs and accelerates deployment timelines.' +
+        '<br/><br/>' +
+        'Attendees will gain a comprehensive understanding of the efficacy of various scanning tools, the criticality of early vulnerability detection, and best practices for implementing shift-left security in cloud-native projects. Join us to discover how early security integration can revolutionize your development workflow and safeguard your applications against evolving threats.',
     },
 
     thirdTrack: {
       id: '093',
-      time: '16:15',
+      time: '17:00',
       title: 'End-to-End Pull Request Testing on Kubernetes: A Walkthrough',
       duration: '30 min',
       speakers: [
         {
-          id: '36',
+          id: '34',
           name: 'Nicolas Fränkel',
           company: 'Loft Labs',
           photo: NicolasFrankelPhoto,
@@ -506,48 +562,14 @@ We’ll explore how to:
     },
   },
   {
-    time: '16:45',
-    title: 'Break/Split room revert',
-    duration: '15 min',
-  },
-  {
-    id: '101',
-    time: '17:00',
-    title: 'Evolving to a Human-Centric Cloud Computing',
-    duration: '30 min',
-    isKeynote: true,
-    speakers: [
-      {
-        id: '3',
-        name: 'Aleodor Tabarcea',
-        company: 'Stripe',
-        photo: AleodorTabarceaPhoto,
-      },
-    ],
-    presentation:
-      'Aleodor Tabarcea, Engineering Manager at Stripe, will explore how AI and natural language interfaces are revolutionizing cloud-native systems in his keynote.',
-  },
-  {
-    id: '111',
     time: '17:30',
-    title: 'Mind the Gap: Bridging Supply Chain Policy with Git-less GitOps',
+    title: 'Closing Remarks from the Organizers',
     duration: '30 min',
-    isKeynote: true,
-    speakers: [
-      {
-        id: '4',
-        name: 'Andrew Martin',
-        company: 'CEO of ControlPlane',
-        photo: AndrewMartinPhoto,
-      },
-    ],
-    presentation:
-      'Andrew Martin, CEO of ControlPlane, will share his insights from a wealth of experience in security engineering, systems development, and containerized solutions.',
   },
   {
-    time: '18:00',
-    title: 'Mingle and Networking',
-    duration: '60 min',
+    time: '19:00',
+    title: 'After Party',
+    duration: '180 min',
   },
 ];
 

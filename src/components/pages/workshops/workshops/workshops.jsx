@@ -79,13 +79,13 @@ const ITEMS = [
       duration: '90 min',
       speakers: [
         {
-          id: '37',
+          id: '35',
           name: 'Vlad Mocanu',
           company: 'Metaminds',
           photo: VladMocanuPhoto,
         },
         {
-          id: '38',
+          id: '36',
           name: 'Razvan Valceanu',
           company: 'Metaminds',
           photo: RazvanValceanuPhoto,

@@ -8,11 +8,12 @@ import AdoreMe from 'icons/sponsors-2025/adoreme-logo.png';
 import Alchemy from 'icons/sponsors-2025/alchemy-logo.png';
 import AWSIcon from 'icons/sponsors-2025/aws-logo.png';
 import CloudHero from 'icons/sponsors-2025/cloudhero-logo.png';
-import CNCF from 'icons/sponsors-2025/cncf-logo.svg';
+import CNCF from 'icons/sponsors-2025/cncf-logo.png';
 import ControlPlane from 'icons/sponsors-2025/controlplane-logo.png';
 import CTSTradeIt from 'icons/sponsors-2025/ctstradeit-logo.png';
 import DatanetSystems from 'icons/sponsors-2025/datanetsystems-logo.png';
 import GoogleCloud from 'icons/sponsors-2025/googlecloud-logo.png';
+import HaufeGroup from 'icons/sponsors-2025/haufegroup-logo.png';
 import LifeInCloud from 'icons/sponsors-2025/lifeincloud-logo.png';
 import Metaminds from 'icons/sponsors-2025/metaminds-logo.png';
 import Orange from 'icons/sponsors-2025/orange-logo.png';
@@ -79,6 +80,10 @@ const ITEMS = [
       {
         icon: AWSIcon,
         url: 'https://www.linkedin.com/company/amazon-web-services/',
+      },
+      {
+        icon: HaufeGroup,
+        url: 'https://www.linkedin.com/company/haufe-group/',
       },
     ],
     cardClassname: 'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:min-h-[94px]',
