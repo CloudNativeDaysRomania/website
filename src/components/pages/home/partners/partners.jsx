@@ -2,15 +2,18 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
+import AlexBusoiceanu from './images/AlexBusoiceanu.png';
 import AwsCommunityDayRomania from './images/AwsCommunityDayRomania_reworked.png';
 import AwsUserGroupTimisoara from './images/AwsUserGroupTimisoara.png';
 import AsociatiaBEST from './images/BEST_Bucharest.png';
 import BucharestDevOpsHackersMeetup from './images/BucharestDevOpsHackersMeetup.png';
 import CloudNativeTimisoara from './images/CloudNativeTimisoara.png';
 import CloudNativeCluj from './images/CNCFCluj.png';
+import Etti from './images/ETTI.png';
 import KubeCareers from './images/kube-careers.png';
 import KubeEvents from './images/kubevents.png';
 import ROSEdu from './images/ROSEdu.png';
+import StoriesOfTheWeb from './images/StoriesOfTheWeb.png';
 
 const TITLE = 'Community & Media Partners';
 
@@ -36,6 +39,12 @@ const ITEMS = [
   // { icon: StagiiPeBune, url: '' }, // No logo
   // { icon: AwsTransylvaniaCloud, url: '' }, // No logo
   { icon: AsociatiaBEST, url: 'https://bestbucharest.ro/' },
+  { icon: Etti, url: 'https://etti.upb.ro/' },
+  { icon: AlexBusoiceanu, url: 'https://alexbusuioceanu.ro/' },
+  {
+    icon: StoriesOfTheWeb,
+    url: 'https://www.linkedin.com/company/stories-of-the-web/posts/?feedView=all',
+  },
 ];
 
 const Partners = () => (
