@@ -95,7 +95,7 @@ const ORGANIZERS = [
   },
   {
     name: 'Radu Zamfir',
-    position: 'DevOps Consultant',
+    position: 'Software Engineer at Oracle',
     photo: RaduZamfirPhoto,
     url: 'https://www.linkedin.com/in/zsradu/',
   },

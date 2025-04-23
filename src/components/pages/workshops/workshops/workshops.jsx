@@ -21,13 +21,13 @@ import VladMocanuPhoto from './images/vlad-mocanu.jpg';
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
-    title: 'Workshop Room 1',
+    title: 'Merope 1',
     isHeader: true,
     secondTrack: {
-      title: 'Workshop Room 2',
+      title: 'Merope 2',
     },
     thirdTrack: {
-      title: 'Workshop Room 3',
+      title: 'Electra',
     },
   },
   {
@@ -79,13 +79,13 @@ const ITEMS = [
       duration: '90 min',
       speakers: [
         {
-          id: '35',
+          id: '34',
           name: 'Vlad Mocanu',
           company: 'Metaminds',
           photo: VladMocanuPhoto,
         },
         {
-          id: '36',
+          id: '35',
           name: 'Razvan Valceanu',
           company: 'Metaminds',
           photo: RazvanValceanuPhoto,

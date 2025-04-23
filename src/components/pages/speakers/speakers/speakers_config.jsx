@@ -22,7 +22,6 @@ import LukaszHusarzPhoto from './images/lukasz-husarz-photo.jpg';
 import MarcinPaluszekPhoto from './images/marcin-paluszek-photo.jpeg';
 import MariusIordachePhoto from './images/marius-iordache-photo.jpg';
 import MarkSagiKazarPhoto from './images/mark-sagi-kazar-photo.jpg';
-import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
 import PatrickDeKruijfPhoto from './images/patrick-de-kruijf.jpg';
 import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
 import PlamenPetkovPhoto from './images/plamen-petkov-photo.jpg';
@@ -630,23 +629,6 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
   },
   {
     id: '34',
-    name: 'Nicolas Fränkel',
-    position: 'Developer Advocate for Loft Labs',
-    content: `Nicolas Fränkel is a technologist focusing on cloud-native technologies, DevOps, CI/CD pipelines, and system observability. His focus revolves around creating technical content, delivering talks, and engaging with developer communities to promote the adoption of modern software practices. 
-    <br/><br/>
-    With a strong background in software, he has worked extensively with the JVM, applying his expertise across various industries. In addition to his technical work, he is the author of several books and regularly shares insights through his blog and open-source contributions.`,
-    photo: NicolasFrankelPhoto,
-    linkedInUrl: 'https://www.linkedin.com/in/nicolasfrankel/',
-    githubUrl: '',
-    communityUrl: 'https://blog.frankel.ch/',
-    instagramUrl: '',
-    websiteUrl: 'https://www.loft.sh/',
-    time: '17:00',
-    title: 'End-to-End Pull Request Testing on Kubernetes: A Walkthrough',
-    duration: '30 min',
-  },
-  {
-    id: '35',
     name: 'Vlad Mocanu',
     position: 'Senior Platform Engineer at Metaminds',
     content:
@@ -665,7 +647,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     duration: '90 min',
   },
   {
-    id: '36',
+    id: '35',
     name: 'Razvan Valceanu',
     position: 'Senior DevOps at Metaminds',
     content: 'Automation enthusiast and Open Source believer.',
@@ -681,7 +663,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     duration: '90 min',
   },
   {
-    id: '37',
+    id: '36',
     name: 'Alexandru Cozma',
     position: 'Lenovo, Master Inventor, Principal Engineer',
     content:
@@ -698,7 +680,7 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     duration: '30 min',
   },
   {
-    id: '38',
+    id: '37',
     name: 'Tiberius Hodoroabă',
     position: 'Advisory Software Engineer @Lenovo',
     content:

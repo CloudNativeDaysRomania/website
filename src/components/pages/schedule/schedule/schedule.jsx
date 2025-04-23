@@ -25,7 +25,6 @@ import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
 import LukaszHusarzPhoto from './images/lukasz-husarz-photo.jpg';
 import MarcinPaluszekPhoto from './images/marcin-paluszek-photo.jpeg';
 import MariusIordachePhoto from './images/marius-iordache-photo.jpg';
-import NicolasFrankelPhoto from './images/nicolas-frankel-photo.jpg';
 import PhilipMiglinciPhoto from './images/philip-miglinci-photo.jpg';
 import PlamenPetkovPhoto from './images/plamen-petkov-photo.jpg';
 import RaduGheorghePhoto from './images/radu-gheorghe-photo.jpg';
@@ -520,13 +519,13 @@ Contains an obligatory demo of running Vespa in Kubernetes.`,
       duration: '30 min',
       speakers: [
         {
-          id: '37',
+          id: '36',
           name: 'Alexandru Cozma',
           company: 'Lenovo',
           photo: AlexandruCozmaPhoto,
         },
         {
-          id: '38',
+          id: '37',
           name: 'Tiberius Hodoroabă',
           company: 'Lenovo',
           photo: TiberiusHodoroabaPhoto,
@@ -541,24 +540,10 @@ Contains an obligatory demo of running Vespa in Kubernetes.`,
     thirdTrack: {
       id: '093',
       time: '17:00',
-      title: 'End-to-End Pull Request Testing on Kubernetes: A Walkthrough',
+      title: 'TBD',
       duration: '30 min',
-      speakers: [
-        {
-          id: '34',
-          name: 'Nicolas Fränkel',
-          company: 'Loft Labs',
-          photo: NicolasFrankelPhoto,
-        },
-      ],
-      presentation: `As applications increasingly rely on Kubernetes for deployment, ensuring seamless integration and end-to-end testing during pull requests is crucial. This talk dives into the practical steps of building a robust CI/CD pipeline that mirrors production environments, enabling reliable and efficient testing within your Kubernetes ecosystem.
-<br/><br/>
-We’ll explore how to:
-<br/>
-- Set up foundational unit and integration tests using modern tools like Testcontainers and GitHub Workflows.<br/>
-- Integrate Google Kubernetes Engine (GKE) to emulate a production-grade cluster for testing.<br/>
-- Leverage vCluster to isolate test environments, ensuring parallel runs and minimizing interference.<br/>
-- Attendees will gain actionable insights to create scalable and maintainable testing pipelines via an existing working example.`,
+      speakers: [],
+      presentation: `TBD`,
     },
   },
   {
