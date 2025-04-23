@@ -10,9 +10,6 @@ const TITLE = 'Cloud Native Days Romania';
 const DESCRIPTION =
   'The Kubernetes & Cloud Native community will gather at the Radisson Blu in Bucharest, Romania. Join us for one day technical event loaded with exciting talks and networking opportunities. Cloud Native Days Romania is aimed at developers, platform people, and other IT professionals with an interest in cloud native technologies.';
 
-const SCHOLARS_DESCRIPTION =
-  'The Cloud Native Scholars programme offers an exclusive opportunity for students to win free tickets to Cloud Native Days Romania 2025. This initiative aims to support the next generation of cloud native professionals and foster diversity in the community.';
-
 const Hero = () => (
   /*
     const cloudsBack = {
@@ -45,7 +42,7 @@ const Hero = () => (
           {DESCRIPTION}
         </p>
 
-        <div className="relative flex flex-wrap gap-4 pb-4 md:justify-center">
+        <div className="relative flex flex-wrap gap-4 pb-16 md:justify-center">
           <Button
             className="mt-7 text-white shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
             theme="blue"
@@ -64,7 +61,7 @@ const Hero = () => (
           </Button>
         </div>
 
-        <div className="bg-gray-50 mt-5 max-w-[500px] rounded-lg px-0 py-4 pb-16 text-lg leading-normal text-primary-1 lg:max-w-[500px]">
+        {/* <div className="bg-gray-50 mt-5 max-w-[500px] rounded-lg px-0 py-4 pb-16 text-lg leading-normal text-primary-1 lg:max-w-[500px]">
           <h3 className="mb-2 text-xl font-bold text-blue-1">Cloud Native Scholars</h3>
           <p>{SCHOLARS_DESCRIPTION}</p>
           <Button
@@ -75,7 +72,7 @@ const Hero = () => (
           >
             Apply for Cloud Native Scholars
           </Button>
-        </div>
+        </div> */}
       </div>
       <div className="mt-40 flex w-1/2 items-start justify-center md:mt-0 md:w-full md:items-center md:text-center">
         <img

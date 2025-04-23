@@ -24,14 +24,14 @@ const SchedulePage = ({ location }) => (
         >
           Get your tickets now
         </Button>
-        <Button
+        {/* <Button
           className="text-white shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
           theme="green"
           size="lg"
           {...LINKS.scholarsProgramme}
         >
           Apply for Cloud Native Scholars
-        </Button>
+        </Button> */}
       </div>
     </div>
     <Sponsors />
