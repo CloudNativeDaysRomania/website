@@ -51,14 +51,6 @@ const Hero = () => (
           >
             Get your tickets now
           </Button>
-          <Button
-            className="mt-7 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
-            theme="primary"
-            size="lg"
-            {...LINKS.sponsorProspectus}
-          >
-            Sponsor prospectus
-          </Button>
         </div>
 
         {/* <div className="bg-gray-50 mt-5 max-w-[500px] rounded-lg px-0 py-4 pb-16 text-lg leading-normal text-primary-1 lg:max-w-[500px]">
