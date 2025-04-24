@@ -552,9 +552,9 @@ Contains an obligatory demo of running Vespa in Kubernetes.`,
     duration: '30 min',
   },
   {
-    time: '19:00',
-    title: 'After Party',
-    duration: '180 min',
+    time: '18:30',
+    title: 'After Party @ Linea',
+    duration: '360 min',
   },
 ];
 
