@@ -17,7 +17,7 @@ import HaufeGroup from 'icons/sponsors-2025/haufegroup-logo.png';
 import LifeInCloud from 'icons/sponsors-2025/lifeincloud-logo.png';
 import Metaminds from 'icons/sponsors-2025/metaminds-logo.png';
 import Orange from 'icons/sponsors-2025/orange-logo.png';
-import Oveit from 'icons/sponsors-2025/oveit-logo.png';
+import Oveit from 'icons/sponsors-2025/oveit-logo-short.png';
 import PureStorage from 'icons/sponsors-2025/purestorage-portworx-logo.png';
 import Stripe from 'icons/sponsors-2025/stripe-logo.png';
 import Systematic from 'icons/sponsors-2025/systematic-logo.png';
@@ -62,7 +62,6 @@ const ITEMS = [
     logos: [
       { icon: Systematic, url: 'https://www.linkedin.com/company/systematic/' },
       { icon: Zitec, url: 'https://www.linkedin.com/company/lifeatzitec/' },
-      { icon: LifeInCloud, url: 'https://www.linkedin.com/company/lifeincloud-global/' },
       { icon: Alchemy, url: 'https://www.linkedin.com/company/alchemyinc/' },
     ],
     cardClassname: 'min-w-[384px] min-h-[122px] sm:min-w-[320px] sm:min-h-[115px]',
@@ -85,8 +84,12 @@ const ITEMS = [
         icon: HaufeGroup,
         url: 'https://www.linkedin.com/company/haufe-group/',
       },
+      {
+        icon: LifeInCloud,
+        url: 'https://www.linkedin.com/company/lifeincloud-global/',
+      },
     ],
-    cardClassname: 'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:min-h-[94px]',
+    cardClassname: 'min-w-[384px] min-h-[152px] sm:min-w-[320px] sm:min-h-[115px]',
     iconClassname: 'max-w-[330px] sm:min-w-[290px]',
   },
   {

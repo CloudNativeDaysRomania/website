@@ -9,6 +9,7 @@ import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
+import AndreiStefaniePhoto from './images/andrei-stefanie-photo.jpg';
 import AndrewMartinPhoto from './images/andrew-martin-photo.jpeg';
 import CarlosMestrePhoto from './images/carlos-mestre-del-pino-photo.jpg';
 import ClaudiuSonelPhoto from './images/claudiu-sonel.jpg';
@@ -158,9 +159,9 @@ Andrew has presented at international conferences including KubeCon, Velocity, S
     communityUrl: 'https://sagikazarmark.hu',
     instagramUrl: '',
     websiteUrl: '',
-    time: '11:30',
+    time: '14:00',
     title: 'Workshop: Accelerate Your Development and CI/CD Pipelines with Dagger',
-    duration: '90 min',
+    duration: '120 min',
   },
   {
     id: '7',
@@ -239,7 +240,7 @@ Andrew has presented at international conferences including KubeCon, Velocity, S
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: 'https://sessionize.com/claudiusonel',
-    time: '14:00',
+    time: '11:30',
     title: 'Workshop: Amazon EKS Autoscaling',
     duration: '90 min',
   },
@@ -694,6 +695,22 @@ Before working on Glasskube, Philip helped build up the alerting infrastructure 
     websiteUrl: '',
     time: '17:00',
     title: 'Attack of the Scans: Early Security in Cloud Native Development',
+    duration: '30 min',
+  },
+  {
+    id: '38',
+    name: 'Andrei Stefanie',
+    position: 'Cloud Engineer @ Aikido Security',
+    content: `I've been part of the cloud security startup ecosystem for the past four years, recently joining Aikido to help organizations secure their entire stack, from code to cloud.I'm passionate about startups, cloud, and AI (once I got past the hype). I'm also an AWS Community Builder and authorized instructor, a university lecturer, and a big fan of food and sports.`,
+    photo: AndreiStefaniePhoto,
+    twitterUrl: '',
+    linkedInUrl: 'https://www.linkedin.com/in/andreistefanie/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: '',
+    time: '17:00',
+    title: 'How Bad Actors (Ab)Use LLMs',
     duration: '30 min',
   },
 ];

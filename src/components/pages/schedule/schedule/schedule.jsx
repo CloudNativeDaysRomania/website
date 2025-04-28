@@ -14,6 +14,7 @@ import AlexandruCozmaPhoto from './images/alexandru-cozma.png';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndreeaOlaruPhoto from './images/andreea-olaru-photo.jpg';
+import AndreiStefaniePhoto from './images/andrei-stefanie-photo.jpg';
 import AndrewMartinPhoto from './images/andrew-martin-photo.jpeg';
 import CarlosMestrePhoto from './images/carlos-mestre-del-pino-photo.jpg';
 import DianaTodeaPhoto from './images/diana-todea-photo.jpg';
@@ -540,10 +541,21 @@ Contains an obligatory demo of running Vespa in Kubernetes.`,
     thirdTrack: {
       id: '093',
       time: '17:00',
-      title: 'TBD',
+      title: 'How Bad Actors (Ab)Use LLMs',
       duration: '30 min',
-      speakers: [],
-      presentation: `TBD`,
+      speakers: [
+        {
+          id: '38',
+          name: 'Andrei Stefanie',
+          company: 'Aikido Security',
+          photo: AndreiStefaniePhoto,
+        },
+      ],
+      presentation: `We’ll dive into how malicious actors exploit GenAI, from prompt injections to hallucination-driven supply chain attacks. We'll explore why LLMs are vulnerable, how real-world apps like ChatGPT and Azure OpenAI are at risk, and how to defend them with strategies such as prompt hardening, least privilege, and smart model choices.
+<br/><br/>
+We'll also share real-world lessons from Aikido Security, where GenAI powers auto-triage and text-to-SQL, and how we keep those features safe.
+<br/><br/>
+You will also get a ton of links if you want to learn more.`,
     },
   },
   {
