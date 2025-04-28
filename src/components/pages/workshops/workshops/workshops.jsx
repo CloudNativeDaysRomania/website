@@ -142,40 +142,44 @@ const ITEMS = [
     secondTrack: {
       id: '022',
       time: '11:30',
-      title: 'Accelerate Your Development and CI/CD Pipelines with Dagger',
+      title: 'Amazon EKS Autoscaling',
       duration: '90 min',
       speakers: [
         {
-          id: '6',
-          name: 'Márk Sági-Kazár',
-          company: 'CNCF Ambassador',
-          photo: MarkSagiKazarPhoto,
+          id: '10',
+          name: 'Claudiu Sonel',
+          company: 'Endava',
+          photo: ClaudiuSonelPhoto,
         },
       ],
       presentation:
-        'Tired of environment drift and inconsistent build results across machines and CI servers? Frustrated by onboarding delays when setting up development environments on new hardware or debugging why scripts fail in CI but work locally?' +
+        'Efficient resource management is vital for businesses scaling their applications in Amazon EKS. This makes autoscaling a crucial aspect of managing workloads in Amazon Elastic Kubernetes Service (EKS), ensuring optimal resource utilization and performance while keeping costs under control.' +
         '<br/><br/>' +
-        'If any of the above resonates, this workshop (and Dagger) is for you.' +
+        "In this hands-on workshop, you'll dive into the world of autoscaling in Amazon Elastic Kubernetes Service (EKS) using a variety of powerful tools and techniques. We'll start by exploring the fundamentals of autoscaling in Kubernetes and how it integrates with Amazon EKS. You'll learn how to use Cluster Autoscaler and Horizontal Pod Autoscaler to dynamically scale your clusters and workloads based on demand." +
         '<br/><br/>' +
-        "Dagger is a portable, programmable CI/CD engine that runs your pipelines in containers. In this workshop, we'll explore how Dagger can:" +
+        "We'll then introduce Karpenter, an open-source, high-performance Kubernetes cluster autoscaler that simplifies the scaling process with advanced features like node provisioning and efficient resource utilization. A key part of the session will include a detailed comparison between Cluster Autoscaler (CA) and Karpenter, focusing on their differences, use cases, and benefits, helping you choose the best autoscaling tool for your environment." +
         '<br/><br/>' +
-        ' - Eliminate Environment Discrepancies: Use containerization to ensure your development and CI environments are identical.' +
+        "Additionally, you’ll gain hands-on experience with practical tools such as Terraform for automating infrastructure setup and kubectl commands to manage Kubernetes resources efficiently. By the end of this workshop, you'll be equipped with the knowledge and skills to implement autoscaling strategies in your EKS environment, optimizing both performance and cost." +
+        '<br/><br/>' +
+        "What You'll Learn:" +
         '<br/>' +
-        ' - Simplify Onboarding: Create self-contained environments that new team members can spin up instantly.' +
+        ' - Setting up and configuring Cluster Autoscaler and Horizontal Pod Autoscaler in Amazon EKS.' +
         '<br/>' +
-        ' - Streamline CI/CD Pipelines: Define complex pipelines with code-first configuration, reducing failures due to environment differences.' +
+        ' - Introduction to Karpenter and how it compares to Cluster Autoscaler.' +
         '<br/>' +
-        ' - Enhance Productivity: Focus on coding rather than environment setup and debugging.' +
+        ' - Automating infrastructure provisioning with Terraform.' +
         '<br/>' +
-        " - Through a hands-on session, we'll port an existing development and CI setup to Dagger using a realistic example project. You'll gain practical experience in:" +
+        ' - Managing autoscaling with kubectl commands for EKS.' +
         '<br/>' +
-        ' - Writing Dagger pipelines using Go' +
+        ' - Best practices for autoscaling Kubernetes workloads in production environments.' +
+        '<br/><br/>' +
+        'Prerequisites:' +
         '<br/>' +
-        ' - Orchestrating builds, tests, and deployments in a consistent environment' +
+        ' - Basic familiarity with Kubernetes concepts and Amazon EKS.' +
         '<br/>' +
-        ' - Integrating Dagger into existing workflows' +
-        '<br/>' +
-        "By the end of this workshop, you'll be equipped to leverage Dagger to standardize environments, accelerate your CI/CD pipelines, and improve team collaboration.",
+        ' - Experience with command-line tools like kubectl and Terraform is helpful but not required.' +
+        '<br/><br/>' +
+        "This workshop is ideal for DevOps engineers, Kubernetes enthusiasts, and anyone looking to optimize resource management in Amazon EKS through autoscaling. Whether you're looking to fine-tune your existing autoscaling setup or explore new ways to optimize resource usage in Amazon EKS, this workshop will equip you with the tools and knowledge to scale your infrastructure effectively.",
     },
     thirdTrack: {
       id: '023',
@@ -261,44 +265,40 @@ const ITEMS = [
     thirdTrack: {
       id: '033',
       time: '14:00',
-      title: 'Amazon EKS Autoscaling',
-      duration: '90 min',
+      title: 'Accelerate Your Development and CI/CD Pipelines with Dagger',
+      duration: '120 min',
       speakers: [
         {
-          id: '10',
-          name: 'Claudiu Sonel',
-          company: 'Endava',
-          photo: ClaudiuSonelPhoto,
+          id: '6',
+          name: 'Márk Sági-Kazár',
+          company: 'CNCF Ambassador',
+          photo: MarkSagiKazarPhoto,
         },
       ],
       presentation:
-        'Efficient resource management is vital for businesses scaling their applications in Amazon EKS. This makes autoscaling a crucial aspect of managing workloads in Amazon Elastic Kubernetes Service (EKS), ensuring optimal resource utilization and performance while keeping costs under control.' +
+        'Tired of environment drift and inconsistent build results across machines and CI servers? Frustrated by onboarding delays when setting up development environments on new hardware or debugging why scripts fail in CI but work locally?' +
         '<br/><br/>' +
-        "In this hands-on workshop, you'll dive into the world of autoscaling in Amazon Elastic Kubernetes Service (EKS) using a variety of powerful tools and techniques. We'll start by exploring the fundamentals of autoscaling in Kubernetes and how it integrates with Amazon EKS. You'll learn how to use Cluster Autoscaler and Horizontal Pod Autoscaler to dynamically scale your clusters and workloads based on demand." +
+        'If any of the above resonates, this workshop (and Dagger) is for you.' +
         '<br/><br/>' +
-        "We'll then introduce Karpenter, an open-source, high-performance Kubernetes cluster autoscaler that simplifies the scaling process with advanced features like node provisioning and efficient resource utilization. A key part of the session will include a detailed comparison between Cluster Autoscaler (CA) and Karpenter, focusing on their differences, use cases, and benefits, helping you choose the best autoscaling tool for your environment." +
+        "Dagger is a portable, programmable CI/CD engine that runs your pipelines in containers. In this workshop, we'll explore how Dagger can:" +
         '<br/><br/>' +
-        "Additionally, you’ll gain hands-on experience with practical tools such as Terraform for automating infrastructure setup and kubectl commands to manage Kubernetes resources efficiently. By the end of this workshop, you'll be equipped with the knowledge and skills to implement autoscaling strategies in your EKS environment, optimizing both performance and cost." +
-        '<br/><br/>' +
-        "What You'll Learn:" +
+        ' - Eliminate Environment Discrepancies: Use containerization to ensure your development and CI environments are identical.' +
         '<br/>' +
-        ' - Setting up and configuring Cluster Autoscaler and Horizontal Pod Autoscaler in Amazon EKS.' +
+        ' - Simplify Onboarding: Create self-contained environments that new team members can spin up instantly.' +
         '<br/>' +
-        ' - Introduction to Karpenter and how it compares to Cluster Autoscaler.' +
+        ' - Streamline CI/CD Pipelines: Define complex pipelines with code-first configuration, reducing failures due to environment differences.' +
         '<br/>' +
-        ' - Automating infrastructure provisioning with Terraform.' +
+        ' - Enhance Productivity: Focus on coding rather than environment setup and debugging.' +
         '<br/>' +
-        ' - Managing autoscaling with kubectl commands for EKS.' +
+        " - Through a hands-on session, we'll port an existing development and CI setup to Dagger using a realistic example project. You'll gain practical experience in:" +
         '<br/>' +
-        ' - Best practices for autoscaling Kubernetes workloads in production environments.' +
-        '<br/><br/>' +
-        'Prerequisites:' +
+        ' - Writing Dagger pipelines using Go' +
         '<br/>' +
-        ' - Basic familiarity with Kubernetes concepts and Amazon EKS.' +
+        ' - Orchestrating builds, tests, and deployments in a consistent environment' +
         '<br/>' +
-        ' - Experience with command-line tools like kubectl and Terraform is helpful but not required.' +
-        '<br/><br/>' +
-        "This workshop is ideal for DevOps engineers, Kubernetes enthusiasts, and anyone looking to optimize resource management in Amazon EKS through autoscaling. Whether you're looking to fine-tune your existing autoscaling setup or explore new ways to optimize resource usage in Amazon EKS, this workshop will equip you with the tools and knowledge to scale your infrastructure effectively.",
+        ' - Integrating Dagger into existing workflows' +
+        '<br/>' +
+        "By the end of this workshop, you'll be equipped to leverage Dagger to standardize environments, accelerate your CI/CD pipelines, and improve team collaboration.",
     },
   },
   {
