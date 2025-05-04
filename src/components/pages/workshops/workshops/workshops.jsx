@@ -21,13 +21,13 @@ import VladMocanuPhoto from './images/vlad-mocanu.jpg';
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
-    title: 'Merope 1',
+    title: 'Electra',
     isHeader: true,
     secondTrack: {
-      title: 'Merope 2',
+      title: 'Merope 1',
     },
     thirdTrack: {
-      title: 'Electra',
+      title: 'Merope 2',
     },
   },
   {
@@ -210,57 +210,57 @@ const ITEMS = [
   {
     id: '031',
     time: '14:00',
-    title: 'AWS GameDay: Llama Farmer - a Kubernetes Day of Fun',
+    title: 'Applied GitOps with Flux Operator',
     duration: '120 min',
     speakers: [
       {
-        id: '8',
-        name: 'Radu Dobrinescu',
-        company: 'Amazon Web Services',
-        photo: RaduDobrinescuPhoto,
+        id: '9',
+        name: 'Stefan Prodan',
+        company: 'ControlPlane',
+        photo: StefanProdanPhoto,
       },
     ],
     presentation:
-      'AWS GameDay is a gamified learning event that challenges participants to use AWS solutions to solve real-world technical problems in a team-based setting. GameDays are open-ended and non-prescriptive to give participants the freedom to explore and think outside the box.' +
+      'In this workshop Stefan will introduce Flux Operator, a new component in the Flux CD ecosystem, that is designed to streamline the GitOps workflow for managing the delivery of application and infrastructure workloads on multi-tenant Kubernetes clusters.' +
       '<br/><br/>' +
-      'Llama Farmer is a GameDay focused on Kubernetes. Its purpose is to let participants familiarize themselves with running Kubernetes on AWS, and solve challenges using both Kubernetes and EKS native tooling.' +
+      'The attendees will get hands-on experience with Flux Operator and learn how to bootstrap a Kubernetes cluster from scratch, and how to deploy cluster addons and applications in a GitOps fashion using a GitHub repository as the single source of truth.' +
       '<br/><br/>' +
-      'The target audience for this GameDay is the technical staff of customers and partners with an AWS knowledge L200-300 and Kubernetes knowledge L100-200, and some previous level of exposure to containers.' +
+      'The workshop will cover Flux key features such as multi-tenancy, Helm release management, continuous delivery observability, secrets encryption and dependency management.' +
       '<br/><br/>' +
       'Additional notes: ' +
       '<br/><br/>' +
-      'The usual 90 minutes for the workshop might not be enough to run through the entire GameDay experience. It is recommended to have allocated 180minutes as following:' +
-      '<br/>' +
-      '30min: Intro & presentation (setting GameDay context)' +
-      '<br/>' +
-      '15min: Accessing sandbox accounts and Game starts' +
-      '<br/>' +
-      '120min: Game runs' +
-      '<br/>' +
-      '15min: Wrap up & award ceremony',
+      'The attendees will need to have a laptop with Docker and Git installed and a personal account on GitHub. If they have a Windows machine, they must have installed the Windows Subsystem for Linux.',
     secondTrack: {
       id: '032',
       time: '14:00',
-      title: 'Applied GitOps with Flux Operator',
+      title: 'AWS GameDay: Llama Farmer - a Kubernetes Day of Fun',
       duration: '120 min',
       speakers: [
         {
-          id: '9',
-          name: 'Stefan Prodan',
-          company: 'ControlPlane',
-          photo: StefanProdanPhoto,
+          id: '8',
+          name: 'Radu Dobrinescu',
+          company: 'Amazon Web Services',
+          photo: RaduDobrinescuPhoto,
         },
       ],
       presentation:
-        'In this workshop Stefan will introduce Flux Operator, a new component in the Flux CD ecosystem, that is designed to streamline the GitOps workflow for managing the delivery of application and infrastructure workloads on multi-tenant Kubernetes clusters.' +
+        'AWS GameDay is a gamified learning event that challenges participants to use AWS solutions to solve real-world technical problems in a team-based setting. GameDays are open-ended and non-prescriptive to give participants the freedom to explore and think outside the box.' +
         '<br/><br/>' +
-        'The attendees will get hands-on experience with Flux Operator and learn how to bootstrap a Kubernetes cluster from scratch, and how to deploy cluster addons and applications in a GitOps fashion using a GitHub repository as the single source of truth.' +
+        'Llama Farmer is a GameDay focused on Kubernetes. Its purpose is to let participants familiarize themselves with running Kubernetes on AWS, and solve challenges using both Kubernetes and EKS native tooling.' +
         '<br/><br/>' +
-        'The workshop will cover Flux key features such as multi-tenancy, Helm release management, continuous delivery observability, secrets encryption and dependency management.' +
+        'The target audience for this GameDay is the technical staff of customers and partners with an AWS knowledge L200-300 and Kubernetes knowledge L100-200, and some previous level of exposure to containers.' +
         '<br/><br/>' +
         'Additional notes: ' +
         '<br/><br/>' +
-        'The attendees will need to have a laptop with Docker and Git installed and a personal account on GitHub. If they have a Windows machine, they must have installed the Windows Subsystem for Linux.',
+        'The usual 90 minutes for the workshop might not be enough to run through the entire GameDay experience. It is recommended to have allocated 180minutes as following:' +
+        '<br/>' +
+        '30min: Intro & presentation (setting GameDay context)' +
+        '<br/>' +
+        '15min: Accessing sandbox accounts and Game starts' +
+        '<br/>' +
+        '120min: Game runs' +
+        '<br/>' +
+        '15min: Wrap up & award ceremony',
     },
     thirdTrack: {
       id: '033',
