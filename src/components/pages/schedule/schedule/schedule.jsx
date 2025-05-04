@@ -339,7 +339,7 @@ From queries, filters, and aggregations to visualizations, time series analysis,
         {
           id: '33',
           name: 'Irina Verlan',
-          company: 'Google',
+          company: 'Google via Algomarketing',
           photo: IrinaVerlanPhoto,
         },
       ],
