@@ -27,6 +27,11 @@ export default {
     id: getAnchor('Sponsors'),
     homeTo: null,
   },
+  photos: {
+    to: `/#${getAnchor('Photos')}`,
+    id: getAnchor('Photos'),
+    homeTo: null,
+  },
   speakers: {
     to: `/speakers#${getAnchor('Speakers')}`,
     id: getAnchor('Speakers'),
@@ -84,10 +89,6 @@ export default {
     target: '_blank',
   },
   // Social-links
-  photos: {
-    to: 'https://drive.google.com/drive',
-    target: '_blank',
-  },
   survey: {
     to: 'https://docs.google.com/forms',
     target: '_blank',

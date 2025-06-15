@@ -1,8 +1,5 @@
 import React from 'react';
 
-import Button from 'components/shared/button';
-import LINKS from 'constants/links.js';
-
 import illustration from './images/romania.svg';
 
 const TITLE = 'Cloud Native Days Romania';
@@ -30,7 +27,7 @@ const Hero = () => (
     */
 
   <section className="safe-paddings overflow-hidden bg-opacity-10 pt-28 md:pt-24">
-    <div className="container flex flex-row md:flex-col md:items-center md:text-center">
+    <div className="container flex flex-row pb-16 md:flex-col md:items-center md:text-center">
       <div className="flex w-1/2 flex-col md:w-full md:items-center md:text-center">
         <span className="w-fit rounded-3xl bg-yellow px-4 py-2 text-sm font-bold leading-none text-black">
           5-6 MAY 2025
@@ -42,7 +39,7 @@ const Hero = () => (
           {DESCRIPTION}
         </p>
 
-        <div className="relative flex flex-wrap gap-4 pb-16 md:justify-center">
+        {/* <div className="relative flex flex-wrap gap-4 pb-16 md:justify-center">
           <Button
             className="mt-7 text-white shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
             theme="blue"
@@ -51,7 +48,7 @@ const Hero = () => (
           >
             Get your tickets now
           </Button>
-        </div>
+        </div> */}
 
         {/* <div className="bg-gray-50 mt-5 max-w-[500px] rounded-lg px-0 py-4 pb-16 text-lg leading-normal text-primary-1 lg:max-w-[500px]">
           <h3 className="mb-2 text-xl font-bold text-blue-1">Cloud Native Scholars</h3>
