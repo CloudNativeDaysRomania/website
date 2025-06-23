@@ -124,4 +124,9 @@ export default {
     to: 'https://docs.google.com/forms/d/e/1FAIpQLSfWTDaIgly_yUZraI6xLx_mDtcMPgrnq5Gn9RWjyIi3i-qYfw/viewform',
     target: '_blank',
   },
+  recordings: {
+    to: `/#${getAnchor('Recordings')}`,
+    id: getAnchor('Recordings'),
+    homeTo: null,
+  },
 };
