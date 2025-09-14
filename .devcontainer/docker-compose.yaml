@@ -1,0 +1,44 @@
+# version: "3.9"
+services:
+  cli:
+    build: cli
+    volumes:
+      - ..:/workspaces/laravel
+
+  fpm:
+    build: fpm
+    volumes:
+      - ..:/workspaces/laravel
+    user: 1000:1000
+
+  nginx:
+    build: nginx
+    volumes:
+      - ..:/workspaces/laravel
+    ports:
+      - 80:80
+    depends_on:
+      - fpm
+
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: laravel
+      MYSQL_ALLOW_EMPTY_PASSWORD: affirm
+      MYSQL_ROOT_PASSWORD: rest
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf # Mount the custom MySQL configuration
+    command: ["mysqld", "--datadir=/var/lib/mysql"] # Removed --initialize-insecure
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: ["redis-server", "--appendonly", "yes"]
+
+volumes:
+  mysql_data:
+  redis_data:
