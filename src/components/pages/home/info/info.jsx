@@ -35,7 +35,7 @@ const Venue = () => (
         cloud native.
       </p>
       <p className="mb-0 mt-7">
-        <span className="font-bold">Date:</span> 5-6 May 2025
+        <span className="font-bold">Date:</span> 18-19 May 2026
       </p>
       <p className="mt-0">
         <span className="font-bold">Events schedule:</span>

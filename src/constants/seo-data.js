@@ -1,6 +1,6 @@
 export default {
   index: {
-    title: 'Cloud Native Days Romania - 5-6 May 2025',
+    title: 'Cloud Native Days Romania - 18-19 May 2026',
     description:
       'Join the Kubernetes & Cloud Native community at the Radisson Blu in Bucharest for technical talks, workshops, and networking opportunities.',
   },
