@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 const prosp_link =
-  'https://drive.google.com/file/d/1FeFCbcuFWB1bAotoJZ7hfJEIjoZVUz6b/view?usp=sharing';
+  'https://docs.google.com/document/d/1ECnExeIaYBsiQroiWbpp01pRA6Dyjt_Cn1CrJNfvg-w/edit?tab=t.0#heading=h.qmhbyqtdndtd';
 
 const SponsorRedirect = () => {
   useEffect(() => {

@@ -114,7 +114,7 @@ export default {
     target: '_blank',
   },
   sponsorProspectus: {
-    to: 'https://bit.ly/4g240dc',
+    to: 'https://docs.google.com/document/d/1ECnExeIaYBsiQroiWbpp01pRA6Dyjt_Cn1CrJNfvg-w/edit?tab=t.0#heading=h.qmhbyqtdndtd',
     target: '_blank',
   },
   emailVladFratila: {

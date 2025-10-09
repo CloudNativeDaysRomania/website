@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Button from 'components/shared/button';
+import LINKS from 'constants/links.js';
+
 import illustration from './images/romania.svg';
 
 const TITLE = 'Cloud Native Days Romania';
@@ -30,7 +33,7 @@ const Hero = () => (
     <div className="container flex flex-row pb-16 md:flex-col md:items-center md:text-center">
       <div className="flex w-1/2 flex-col md:w-full md:items-center md:text-center">
         <span className="w-fit rounded-3xl bg-yellow px-4 py-2 text-sm font-bold leading-none text-black">
-          5-6 MAY 2025
+          18-19 MAY 2026
         </span>
         <h1 className="mt-3 min-w-[38rem] max-w-[570px] text-8xl font-bold leading-denser text-primary-1 lg:max-w-[500px] md:min-w-min sm:text-7xl">
           {TITLE}
@@ -38,6 +41,17 @@ const Hero = () => (
         <p className="mt-5 max-w-[500px] text-lg leading-normal text-primary-1 lg:max-w-[500px]">
           {DESCRIPTION}
         </p>
+
+        <div className="relative flex flex-wrap gap-4 pb-16 md:justify-center">
+          <Button
+            className="mt-7 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
+            theme="primary"
+            size="lg"
+            {...LINKS.sponsorProspectus}
+          >
+            Sponsor prospectus
+          </Button>
+        </div>
 
         {/* <div className="relative flex flex-wrap gap-4 pb-16 md:justify-center">
           <Button
