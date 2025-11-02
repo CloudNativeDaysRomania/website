@@ -106,8 +106,8 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
               <>
                 <iframe
                   allow="autoplay; picture-in-picture; web-share"
-                  src="https://www.youtube.com/embed/yoIMTjJ8O6E?autoplay=1&mute=0&rel=0"
-                  title="KCD Romania 2024"
+                  src="https://www.youtube.com/embed/yoIMTjJ8O6E?autoplay=1&mute=1&rel=0"
+                  title="CND Romania 2025"
                   width="100%"
                   height="520"
                   allowFullScreen
