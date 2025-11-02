@@ -110,7 +110,7 @@ export default {
     target: '_blank',
   },
   youtube: {
-    to: 'https://www.youtube.com/watch?v=IKBuAP1Ybw8&list=PLj6h78yzYM2OK5BDO7YeVGQjfIJydLfyU&ab_channel=CloudNativeDaysRomania',
+    to: 'https://www.youtube.com/watch?v=a2jz8WnJUGY&list=PL6Ztcb9p-UpqG2s7j3mAz3fCuw7ehsrGC',
     target: '_blank',
   },
   sponsorProspectus: {
