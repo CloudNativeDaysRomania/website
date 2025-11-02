@@ -18,7 +18,7 @@ const Venue = () => (
         <iframe
           width="820"
           height="461"
-          src="https://www.youtube.com/embed/XhCeE2V2YfU?autoplay=1&mute=0&rel=0"
+          src="https://youtu.be/yoIMTjJ8O6E?si=csxoWPvAXerqvoLD?autoplay=1&mute=0&rel=0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
           allowFullScreen
         />
