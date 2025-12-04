@@ -37,7 +37,7 @@ const Venue = () => (
       <p className="mb-0 mt-7">
         <span className="font-bold">Date:</span> 18-19 May 2026
       </p>
-      <p className="mt-0">
+      {/* <p className="mt-0">
         <span className="font-bold">Events schedule:</span>
       </p>
       <p className="ml-0 mt-0">
@@ -58,8 +58,7 @@ const Venue = () => (
       </li>
       <li className="ml-8 mt-0" key={2}>
         Available with the Conference ticket.
-      </li>
-
+      </li> */}
       <p className="mt-0">
         <span className="font-bold">Location:</span>{' '}
         <Link {...LINKS.googlemaps}>
