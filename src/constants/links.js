@@ -55,7 +55,7 @@ export default {
     target: '_blank',
   },
   cfp: {
-    to: 'https://sessionize.com/cloud-native-days-2025',
+    to: 'https://sessionize.com/cloud-native-days-2026',
     target: '_blank',
   },
   mission: {

@@ -51,6 +51,14 @@ const Hero = () => (
           >
             Sponsor prospectus
           </Button>
+          <Button
+            className="ml-3 mt-7 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
+            theme="primary"
+            size="lg"
+            {...LINKS.cfp}
+          >
+            Call For Proposals (CFP)
+          </Button>
         </div>
 
         {/* <div className="relative flex flex-wrap gap-4 pb-16 md:justify-center">
